@@ -44,7 +44,7 @@ const socialLinks = [
 </script>
 
 <template>
-  <footer class="bg-[#050505] border-t border-white/5" data-testid="main-footer">
+  <footer class="section-dark border-t border-theme-light" data-testid="main-footer">
     <!-- Main Footer -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
@@ -52,30 +52,26 @@ const socialLinks = [
         <div class="lg:col-span-2">
           <NuxtLink to="/" class="flex items-center space-x-3 mb-6">
             <div
-              class="w-12 h-12 bg-gradient-to-br from-[#d4a574] to-[#b8956e] rounded-xl flex items-center justify-center"
+              class="w-12 h-12 gradient-secondary rounded-xl flex items-center justify-center"
             >
-              <span class="text-[#0a0a0a] font-display font-bold text-xl"
-                >L</span
-              >
+              <span class="text-white dark:text-black font-display font-bold text-xl">L</span>
             </div>
             <div>
-              <span class="font-display text-xl font-semibold gradient-text"
-                >LTHS</span
-              >
-              <p class="text-xs text-gray-500">Lifetime Hospitality Services</p>
+              <span class="font-display text-xl font-semibold gradient-text">LTHS</span>
+              <p class="text-xs text-theme-muted">Lifetime Hospitality Services</p>
             </div>
           </NuxtLink>
 
-          <p class="text-gray-400 text-sm leading-relaxed mb-6 max-w-sm">
+          <p class="text-theme-secondary text-sm leading-relaxed mb-6 max-w-sm">
             Established in 2016, LTHS is a premium hospitality services provider
             based in Pune. We deliver excellence across patient care,
             housekeeping, catering, security, and more.
           </p>
 
           <div class="space-y-3">
-            <div class="flex items-start gap-3 text-sm text-gray-400">
+            <div class="flex items-start gap-3 text-sm text-theme-secondary">
               <svg
-                class="w-5 h-5 text-[#d4a574] mt-0.5 flex-shrink-0"
+                class="w-5 h-5 text-brand mt-0.5 flex-shrink-0"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -93,17 +89,14 @@ const socialLinks = [
                   d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                 />
               </svg>
-              <span
-                >B-609, Ayush Park, 2, Varale Phata,<br />Talegaon Dabhade,
-                Pune – 410507</span
-              >
+              <span>B-609, Ayush Park, 2, Varale Phata,<br />Talegaon Dabhade, Pune – 410507</span>
             </div>
             <a
               href="tel:8956690990"
-              class="flex items-center gap-3 text-sm text-gray-400 hover:text-[#d4a574] transition-colors"
+              class="flex items-center gap-3 text-sm text-theme-secondary hover:text-brand transition-colors"
             >
               <svg
-                class="w-5 h-5 text-[#d4a574]"
+                class="w-5 h-5 text-brand"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -119,10 +112,10 @@ const socialLinks = [
             </a>
             <a
               href="mailto:aman.l@lths.in"
-              class="flex items-center gap-3 text-sm text-gray-400 hover:text-[#d4a574] transition-colors"
+              class="flex items-center gap-3 text-sm text-theme-secondary hover:text-brand transition-colors"
             >
               <svg
-                class="w-5 h-5 text-[#d4a574]"
+                class="w-5 h-5 text-brand"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -141,14 +134,14 @@ const socialLinks = [
 
         <!-- Services -->
         <div>
-          <h4 class="font-display text-lg font-semibold text-white mb-6">
+          <h4 class="font-display text-lg font-semibold text-theme-heading mb-6">
             Services
           </h4>
           <ul class="space-y-3">
             <li v-for="link in services" :key="link.href">
               <NuxtLink
                 :to="link.href"
-                class="text-sm text-gray-400 hover:text-[#d4a574] transition-colors"
+                class="text-sm text-theme-secondary hover:text-brand transition-colors"
               >
                 {{ link.label }}
               </NuxtLink>
@@ -158,14 +151,14 @@ const socialLinks = [
 
         <!-- Company -->
         <div>
-          <h4 class="font-display text-lg font-semibold text-white mb-6">
+          <h4 class="font-display text-lg font-semibold text-theme-heading mb-6">
             Company
           </h4>
           <ul class="space-y-3">
             <li v-for="link in company" :key="link.href">
               <NuxtLink
                 :to="link.href"
-                class="text-sm text-gray-400 hover:text-[#d4a574] transition-colors"
+                class="text-sm text-theme-secondary hover:text-brand transition-colors"
               >
                 {{ link.label }}
               </NuxtLink>
@@ -175,14 +168,14 @@ const socialLinks = [
 
         <!-- Support -->
         <div>
-          <h4 class="font-display text-lg font-semibold text-white mb-6">
+          <h4 class="font-display text-lg font-semibold text-theme-heading mb-6">
             Support
           </h4>
           <ul class="space-y-3">
             <li v-for="link in support" :key="link.href">
               <NuxtLink
                 :to="link.href"
-                class="text-sm text-gray-400 hover:text-[#d4a574] transition-colors"
+                class="text-sm text-theme-secondary hover:text-brand transition-colors"
               >
                 {{ link.label }}
               </NuxtLink>
@@ -191,7 +184,7 @@ const socialLinks = [
 
           <!-- Social Links -->
           <div class="mt-8">
-            <h4 class="font-display text-lg font-semibold text-white mb-4">
+            <h4 class="font-display text-lg font-semibold text-theme-heading mb-4">
               Follow Us
             </h4>
             <div class="flex gap-4">
@@ -200,10 +193,10 @@ const socialLinks = [
                 :key="social.name"
                 :href="social.href"
                 :aria-label="social.name"
-                class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#d4a574]/20 transition-colors group"
+                class="w-10 h-10 rounded-full bg-brand-5 flex items-center justify-center hover:bg-brand-20 transition-colors group"
               >
                 <svg
-                  class="w-5 h-5 text-gray-400 group-hover:text-[#d4a574] transition-colors"
+                  class="w-5 h-5 text-theme-muted group-hover:text-brand transition-colors"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -217,24 +210,18 @@ const socialLinks = [
     </div>
 
     <!-- Bottom Bar -->
-    <div class="border-t border-white/5">
+    <div class="border-t border-theme-light">
       <div
         class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row justify-between items-center gap-4"
       >
-        <p class="text-sm text-gray-500">
-          © {{ currentYear }} Lifetime Hospitality Services. All rights
-          reserved.
+        <p class="text-sm text-theme-muted">
+          © {{ currentYear }} Lifetime Hospitality Services. All rights reserved.
         </p>
-        <div class="flex gap-6 text-sm text-gray-500">
-          <NuxtLink to="/privacy" class="hover:text-[#d4a574] transition-colors"
-            >Privacy Policy</NuxtLink
-          >
-          <NuxtLink to="/terms" class="hover:text-[#d4a574] transition-colors"
-            >Terms of Service</NuxtLink
-          >
+        <div class="flex gap-6 text-sm text-theme-muted">
+          <NuxtLink to="/privacy" class="hover:text-brand transition-colors">Privacy Policy</NuxtLink>
+          <NuxtLink to="/terms" class="hover:text-brand transition-colors">Terms of Service</NuxtLink>
         </div>
       </div>
     </div>
   </footer>
 </template>
-

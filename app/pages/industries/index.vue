@@ -12,13 +12,7 @@ const industries = [
     title: 'Manufacturing & Industrial',
     description:
       'Comprehensive facility management for manufacturing plants and industrial facilities. We understand the unique requirements of industrial environments.',
-    services: [
-      'Housekeeping',
-      'Labour Supply',
-      'Maintenance',
-      'Security',
-      'Catering',
-    ],
+    services: ['Housekeeping', 'Labour Supply', 'Maintenance', 'Security', 'Catering'],
     image: null,
   },
   {
@@ -27,13 +21,7 @@ const industries = [
     title: 'Healthcare Facilities',
     description:
       'Specialized services for hospitals, clinics, and healthcare centers. Our teams are trained in healthcare-specific protocols and hygiene standards.',
-    services: [
-      'Patient Care',
-      'Housekeeping',
-      'Pantry',
-      'Security',
-      'Maintenance',
-    ],
+    services: ['Patient Care', 'Housekeeping', 'Pantry', 'Security', 'Maintenance'],
     image: null,
   },
   {
@@ -42,13 +30,7 @@ const industries = [
     title: 'Corporate Offices',
     description:
       'Professional facility services for modern workplaces. From reception to maintenance, we keep your office running smoothly.',
-    services: [
-      'Housekeeping',
-      'Pantry',
-      'Office Support',
-      'Security',
-      'Maintenance',
-    ],
+    services: ['Housekeeping', 'Pantry', 'Office Support', 'Security', 'Maintenance'],
     image: null,
   },
   {
@@ -57,13 +39,7 @@ const industries = [
     title: 'Educational Institutions',
     description:
       'Creating clean, safe, and nurturing environments for schools, colleges, and universities. We support academic excellence through facility excellence.',
-    services: [
-      'Housekeeping',
-      'Catering',
-      'Security',
-      'Horticulture',
-      'Maintenance',
-    ],
+    services: ['Housekeeping', 'Catering', 'Security', 'Horticulture', 'Maintenance'],
     image: null,
   },
   {
@@ -72,13 +48,7 @@ const industries = [
     title: 'Residential Complexes',
     description:
       'Enhancing community living with comprehensive residential facility management. We help create comfortable, secure, and well-maintained living spaces.',
-    services: [
-      'Housekeeping',
-      'Security',
-      'Horticulture',
-      'Maintenance',
-      'Pantry',
-    ],
+    services: ['Housekeeping', 'Security', 'Horticulture', 'Maintenance', 'Pantry'],
     image: null,
   },
 ]
@@ -89,9 +59,7 @@ const industries = [
     <!-- Hero Section -->
     <section class="relative pt-32 pb-20 overflow-hidden">
       <div class="absolute inset-0 animated-gradient"></div>
-      <div
-        class="absolute top-40 right-20 w-96 h-96 bg-[#d4a574]/10 rounded-full blur-3xl"
-      ></div>
+      <div class="absolute top-40 right-20 w-96 h-96 decorative-blob rounded-full blur-3xl"></div>
 
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl">
@@ -99,14 +67,13 @@ const industries = [
             v-motion
             :initial="{ opacity: 0, y: 20 }"
             :enter="{ opacity: 1, y: 0 }"
-            class="inline-block text-[#d4a574] font-medium uppercase tracking-widest text-sm mb-4"
-            >Industries We Serve</span
-          >
+            class="inline-block text-brand font-medium uppercase tracking-widest text-sm mb-4"
+          >Industries We Serve</span>
           <h1
             v-motion
             :initial="{ opacity: 0, y: 30 }"
             :enter="{ opacity: 1, y: 0, transition: { delay: 100 } }"
-            class="font-display text-5xl md:text-6xl font-bold mb-6"
+            class="font-display text-5xl md:text-6xl font-bold mb-6 text-theme-heading"
           >
             Industry-Specific
             <span class="gradient-text">Expertise</span>
@@ -115,17 +82,16 @@ const industries = [
             v-motion
             :initial="{ opacity: 0, y: 30 }"
             :enter="{ opacity: 1, y: 0, transition: { delay: 200 } }"
-            class="text-xl text-gray-400 leading-relaxed"
+            class="text-xl text-theme-secondary leading-relaxed"
           >
-            Our versatile team brings specialized knowledge and tailored
-            solutions to diverse industry sectors.
+            Our versatile team brings specialized knowledge and tailored solutions to diverse industry sectors.
           </p>
         </div>
       </div>
     </section>
 
     <!-- Industries Grid -->
-    <section class="relative py-24 bg-[#050505]">
+    <section class="relative py-24 section-dark">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="space-y-24">
           <div
@@ -140,39 +106,33 @@ const industries = [
           >
             <!-- Image -->
             <div :class="{ 'lg:col-start-2': index % 2 === 1 }">
-              <div
-                class="aspect-[4/3] rounded-3xl image-placeholder bg-gradient-to-br from-[#1a1a2e] to-[#0a0a0a] border border-white/10 flex items-center justify-center"
-              >
+              <div class="aspect-[4/3] rounded-3xl image-placeholder flex items-center justify-center">
                 <div class="text-center">
                   <span class="text-7xl block mb-4">{{ industry.icon }}</span>
-                  <p class="text-gray-500">Industry Image</p>
+                  <p class="text-theme-muted">Industry Image</p>
                 </div>
               </div>
             </div>
 
             <!-- Content -->
             <div :class="{ 'lg:col-start-1': index % 2 === 1 }">
-              <div
-                class="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#d4a574]/20 to-[#d4a574]/5 flex items-center justify-center text-3xl mb-6"
-              >
+              <div class="w-16 h-16 rounded-2xl icon-box flex items-center justify-center text-3xl mb-6">
                 {{ industry.icon }}
               </div>
-              <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">
+              <h2 class="font-display text-3xl md:text-4xl font-bold mb-4 text-theme-heading">
                 {{ industry.title }}
               </h2>
-              <p class="text-gray-400 text-lg leading-relaxed mb-6">
+              <p class="text-theme-secondary text-lg leading-relaxed mb-6">
                 {{ industry.description }}
               </p>
 
               <div class="mb-8">
-                <h4 class="text-sm text-gray-500 uppercase tracking-wider mb-4">
-                  Key Services
-                </h4>
+                <h4 class="text-sm text-theme-muted uppercase tracking-wider mb-4">Key Services</h4>
                 <div class="flex flex-wrap gap-2">
                   <span
                     v-for="service in industry.services"
                     :key="service"
-                    class="px-4 py-2 text-sm font-medium text-[#d4a574] bg-[#d4a574]/10 rounded-full"
+                    class="px-4 py-2 text-sm font-medium text-brand bg-brand-10 rounded-full"
                   >
                     {{ service }}
                   </span>
@@ -181,22 +141,12 @@ const industries = [
 
               <NuxtLink
                 to="/contact"
-                class="inline-flex items-center gap-2 text-[#d4a574] font-semibold hover:gap-4 transition-all duration-300"
+                class="inline-flex items-center gap-2 text-brand font-semibold hover:gap-4 transition-all duration-300"
                 :data-testid="`industry-${industry.slug}-cta`"
               >
                 Get a Quote
-                <svg
-                  class="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </NuxtLink>
             </div>
@@ -206,18 +156,17 @@ const industries = [
     </section>
 
     <!-- CTA -->
-    <section class="relative py-24">
+    <section class="relative py-24 section-gradient">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="font-display text-4xl font-bold mb-6">
+        <h2 class="font-display text-4xl font-bold mb-6 text-theme-heading">
           Don't See Your <span class="gradient-text">Industry?</span>
         </h2>
-        <p class="text-gray-400 text-lg mb-8">
-          We adapt our services to meet any industry's unique requirements.
-          Contact us to discuss your specific needs.
+        <p class="text-theme-secondary text-lg mb-8">
+          We adapt our services to meet any industry's unique requirements. Contact us to discuss your specific needs.
         </p>
         <NuxtLink
           to="/contact"
-          class="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#d4a574] to-[#b8956e] text-[#0a0a0a] font-semibold rounded-full hover:shadow-2xl hover:shadow-[#d4a574]/30 transition-all duration-500"
+          class="inline-flex items-center gap-3 px-8 py-4 btn-primary rounded-full"
           data-testid="industries-cta"
         >
           Contact Us
@@ -226,4 +175,3 @@ const industries = [
     </section>
   </div>
 </template>
-

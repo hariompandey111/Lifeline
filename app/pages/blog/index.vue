@@ -98,14 +98,13 @@ const filteredPosts = computed(() =>
             v-motion
             :initial="{ opacity: 0, y: 20 }"
             :enter="{ opacity: 1, y: 0 }"
-            class="inline-block text-[#d4a574] font-medium uppercase tracking-widest text-sm mb-4"
-            >Blog & Resources</span
-          >
+            class="inline-block text-brand font-medium uppercase tracking-widest text-sm mb-4"
+          >Blog & Resources</span>
           <h1
             v-motion
             :initial="{ opacity: 0, y: 30 }"
             :enter="{ opacity: 1, y: 0, transition: { delay: 100 } }"
-            class="font-display text-5xl md:text-6xl font-bold mb-6"
+            class="font-display text-5xl md:text-6xl font-bold mb-6 text-theme-heading"
           >
             Industry
             <span class="gradient-text">Insights</span>
@@ -114,17 +113,16 @@ const filteredPosts = computed(() =>
             v-motion
             :initial="{ opacity: 0, y: 30 }"
             :enter="{ opacity: 1, y: 0, transition: { delay: 200 } }"
-            class="text-xl text-gray-400 leading-relaxed"
+            class="text-xl text-theme-secondary leading-relaxed"
           >
-            Expert perspectives, tips, and resources from the hospitality
-            industry.
+            Expert perspectives, tips, and resources from the hospitality industry.
           </p>
         </div>
       </div>
     </section>
 
     <!-- Category Filter -->
-    <section class="relative py-8 bg-[#050505]">
+    <section class="relative py-8 section-dark">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-wrap gap-3">
           <button
@@ -133,8 +131,8 @@ const filteredPosts = computed(() =>
             class="px-5 py-2 rounded-full text-sm font-medium transition-colors"
             :class="
               activeCategory === cat
-                ? 'bg-[#d4a574] text-[#0a0a0a]'
-                : 'bg-white/5 text-gray-400 hover:bg-white/10'
+                ? 'bg-brand text-white dark:text-black'
+                : 'card-gradient text-theme-secondary hover:bg-brand-5'
             "
             :data-testid="`blog-cat-${cat.toLowerCase().replace(/\s+/g, '-')}`"
             @click="activeCategory = cat"
@@ -146,7 +144,7 @@ const filteredPosts = computed(() =>
     </section>
 
     <!-- Blog Posts Grid -->
-    <section class="relative py-24">
+    <section class="relative py-24 section-gradient">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <article
@@ -155,55 +153,35 @@ const filteredPosts = computed(() =>
             v-motion
             :initial="{ opacity: 0, y: 30 }"
             :visible="{ opacity: 1, y: 0, transition: { delay: index * 80 } }"
-            class="group rounded-3xl bg-gradient-to-br from-white/5 to-transparent border border-white/10 hover:border-[#d4a574]/30 transition-all duration-300 overflow-hidden hover-lift"
+            class="group rounded-3xl card-gradient hover:border-brand-30 transition-all duration-300 overflow-hidden hover-lift"
           >
             <!-- Image Placeholder -->
-            <div
-              class="aspect-video image-placeholder bg-gradient-to-br from-[#1a1a2e] to-[#0a0a0a] flex items-center justify-center"
-            >
+            <div class="aspect-video image-placeholder flex items-center justify-center">
               <span class="text-4xl">📰</span>
             </div>
 
             <!-- Content -->
             <div class="p-6">
               <div class="flex items-center gap-4 mb-4">
-                <span
-                  class="px-3 py-1 text-xs font-medium text-[#d4a574] bg-[#d4a574]/10 rounded-full"
-                >
+                <span class="px-3 py-1 text-xs font-medium text-brand bg-brand-10 rounded-full">
                   {{ post.category }}
                 </span>
-                <span class="text-gray-500 text-sm">{{ post.readTime }}</span>
+                <span class="text-theme-muted text-sm">{{ post.readTime }}</span>
               </div>
 
-              <h2
-                class="font-display text-xl font-semibold text-white mb-3 group-hover:text-[#d4a574] transition-colors line-clamp-2"
-              >
+              <h2 class="font-display text-xl font-semibold text-theme-heading mb-3 group-hover:text-brand transition-colors line-clamp-2">
                 {{ post.title }}
               </h2>
-              <p class="text-gray-400 text-sm leading-relaxed mb-4 line-clamp-3">
+              <p class="text-theme-secondary text-sm leading-relaxed mb-4 line-clamp-3">
                 {{ post.excerpt }}
               </p>
 
-              <div
-                class="flex items-center justify-between pt-4 border-t border-white/5"
-              >
-                <span class="text-gray-500 text-sm">{{ post.date }}</span>
-                <span
-                  class="inline-flex items-center gap-1 text-[#d4a574] text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity"
-                >
+              <div class="flex items-center justify-between pt-4 border-t border-theme-light">
+                <span class="text-theme-muted text-sm">{{ post.date }}</span>
+                <span class="inline-flex items-center gap-1 text-brand text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
                   Read More
-                  <svg
-                    class="w-4 h-4"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 5l7 7-7 7"
-                    />
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                   </svg>
                 </span>
               </div>
@@ -214,27 +192,24 @@ const filteredPosts = computed(() =>
     </section>
 
     <!-- Newsletter CTA -->
-    <section class="relative py-24 bg-[#050505]">
-      <div
-        class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center rounded-3xl bg-gradient-to-br from-[#d4a574]/10 to-transparent border border-[#d4a574]/20 p-12"
-      >
-        <h2 class="font-display text-4xl font-bold mb-6">
+    <section class="relative py-24 section-dark">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center rounded-3xl card-gradient border-brand-20 p-12">
+        <h2 class="font-display text-4xl font-bold mb-6 text-theme-heading">
           Stay <span class="gradient-text">Updated</span>
         </h2>
-        <p class="text-gray-400 text-lg mb-8">
-          Subscribe to our newsletter for the latest industry insights and
-          updates.
+        <p class="text-theme-secondary text-lg mb-8">
+          Subscribe to our newsletter for the latest industry insights and updates.
         </p>
         <form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
           <input
             type="email"
             placeholder="Enter your email"
-            class="flex-1 px-6 py-4 rounded-full bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:border-[#d4a574] focus:outline-none focus:ring-1 focus:ring-[#d4a574]"
+            class="flex-1 px-6 py-4 rounded-full input-field"
             data-testid="newsletter-email"
           />
           <button
             type="submit"
-            class="px-8 py-4 bg-gradient-to-r from-[#d4a574] to-[#b8956e] text-[#0a0a0a] font-semibold rounded-full hover:shadow-2xl hover:shadow-[#d4a574]/30 transition-all duration-500"
+            class="px-8 py-4 btn-primary rounded-full"
             data-testid="newsletter-submit"
           >
             Subscribe
@@ -244,4 +219,3 @@ const filteredPosts = computed(() =>
     </section>
   </div>
 </template>
-

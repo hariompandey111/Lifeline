@@ -1,5 +1,12 @@
+<script setup lang="ts">
+const colorMode = useColorMode()
+</script>
+
 <template>
-  <div class="min-h-screen bg-[#0a0a0a] text-white font-body">
+  <div
+    class="min-h-screen bg-theme text-theme font-body transition-colors duration-300"
+    :class="colorMode.value"
+  >
     <TheNavbar />
     <main>
       <slot />

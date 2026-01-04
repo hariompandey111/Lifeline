@@ -91,7 +91,7 @@ function handleScroll() {
     class="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
     :class="[
       isScrolled
-        ? 'bg-[#0a0a0a]/95 backdrop-blur-xl shadow-2xl shadow-black/50'
+        ? 'bg-theme/95 backdrop-blur-xl shadow-2xl border-b border-theme'
         : 'bg-transparent',
     ]"
     data-testid="main-navbar"
@@ -105,15 +105,13 @@ function handleScroll() {
           data-testid="logo-link"
         >
           <div
-            class="w-12 h-12 bg-gradient-to-br from-[#d4a574] to-[#b8956e] rounded-xl flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300"
+            class="w-12 h-12 gradient-secondary rounded-xl flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300"
           >
-            <span class="text-[#0a0a0a] font-display font-bold text-xl">L</span>
+            <span class="text-white dark:text-black font-display font-bold text-xl">L</span>
           </div>
           <div class="hidden sm:block">
-            <span class="font-display text-xl font-semibold gradient-text"
-              >LTHS</span
-            >
-            <p class="text-xs text-gray-400 -mt-1">Lifetime Hospitality</p>
+            <span class="font-display text-xl font-semibold gradient-text">LTHS</span>
+            <p class="text-xs text-theme-muted -mt-1">Lifetime Hospitality</p>
           </div>
         </NuxtLink>
 
@@ -128,8 +126,8 @@ function handleScroll() {
           >
             <NuxtLink
               :to="item.href"
-              class="px-4 py-2 text-sm font-medium text-gray-300 hover:text-[#d4a574] transition-colors duration-300 flex items-center gap-1"
-              :class="{ 'text-[#d4a574]': route.path.startsWith(item.href) }"
+              class="px-4 py-2 text-sm font-medium text-theme-secondary hover:text-brand transition-colors duration-300 flex items-center gap-1"
+              :class="{ 'text-brand': route.path.startsWith(item.href) }"
               :data-testid="`nav-${item.label.toLowerCase().replace(/\s+/g, '-')}`"
             >
               {{ item.label }}
@@ -161,14 +159,14 @@ function handleScroll() {
             >
               <div
                 v-if="item.children && openDropdown === item.label"
-                class="absolute top-full left-0 mt-2 w-64 bg-[#111]/95 backdrop-blur-xl rounded-2xl shadow-2xl shadow-black/50 border border-white/10 overflow-hidden"
+                class="absolute top-full left-0 mt-2 w-64 bg-theme-card/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-theme overflow-hidden"
               >
                 <div class="py-2">
                   <NuxtLink
                     v-for="child in item.children"
                     :key="child.href"
                     :to="child.href"
-                    class="block px-4 py-3 text-sm text-gray-300 hover:text-[#d4a574] hover:bg-white/5 transition-all duration-300"
+                    class="block px-4 py-3 text-sm text-theme-secondary hover:text-brand hover:bg-brand-5 transition-all duration-300"
                     :data-testid="`nav-${child.label.toLowerCase().replace(/\s+/g, '-')}`"
                     @click="closeDropdowns"
                   >
@@ -180,11 +178,11 @@ function handleScroll() {
           </div>
         </div>
 
-        <!-- CTA Button -->
+        <!-- CTA Button & Theme Toggle -->
         <div class="hidden lg:flex items-center space-x-4">
           <a
             href="tel:8956690990"
-            class="text-sm text-gray-400 hover:text-[#d4a574] transition-colors"
+            class="text-sm text-theme-secondary hover:text-brand transition-colors"
             data-testid="phone-link"
           >
             <span class="flex items-center gap-2">
@@ -204,9 +202,13 @@ function handleScroll() {
               8956690990
             </span>
           </a>
+          
+          <!-- Theme Toggle -->
+          <ThemeToggle />
+          
           <NuxtLink
             to="/contact"
-            class="px-6 py-2.5 bg-gradient-to-r from-[#d4a574] to-[#b8956e] text-[#0a0a0a] font-semibold text-sm rounded-full hover:shadow-lg hover:shadow-[#d4a574]/30 transition-all duration-300 transform hover:scale-105"
+            class="px-6 py-2.5 btn-primary text-sm rounded-full"
             data-testid="cta-get-quote"
           >
             Get a Quote
@@ -215,7 +217,7 @@ function handleScroll() {
 
         <!-- Mobile Menu Button -->
         <button
-          class="lg:hidden p-2 text-gray-300 hover:text-[#d4a574] transition-colors"
+          class="lg:hidden p-2 text-theme-secondary hover:text-brand transition-colors"
           data-testid="mobile-menu-toggle"
           @click="isMenuOpen = !isMenuOpen"
         >
@@ -255,14 +257,14 @@ function handleScroll() {
     >
       <div
         v-if="isMenuOpen"
-        class="lg:hidden bg-[#0a0a0a]/98 backdrop-blur-xl border-t border-white/10"
+        class="lg:hidden bg-theme/98 backdrop-blur-xl border-t border-theme"
         data-testid="mobile-menu"
       >
         <div class="max-h-[70vh] overflow-y-auto py-4 px-4">
           <div v-for="item in menuItems" :key="item.label" class="mb-2">
             <button
               v-if="item.children"
-              class="w-full flex items-center justify-between px-4 py-3 text-gray-300 hover:text-[#d4a574] transition-colors"
+              class="w-full flex items-center justify-between px-4 py-3 text-theme-secondary hover:text-brand transition-colors"
               @click="toggleDropdown(item.label)"
             >
               <span>{{ item.label }}</span>
@@ -284,7 +286,7 @@ function handleScroll() {
             <NuxtLink
               v-else
               :to="item.href"
-              class="block px-4 py-3 text-gray-300 hover:text-[#d4a574] transition-colors"
+              class="block px-4 py-3 text-theme-secondary hover:text-brand transition-colors"
               @click="isMenuOpen = false"
             >
               {{ item.label }}
@@ -300,13 +302,13 @@ function handleScroll() {
             >
               <div
                 v-if="item.children && openDropdown === item.label"
-                class="overflow-hidden bg-white/5 rounded-xl mx-2"
+                class="overflow-hidden bg-brand-5 rounded-xl mx-2"
               >
                 <NuxtLink
                   v-for="child in item.children"
                   :key="child.href"
                   :to="child.href"
-                  class="block px-6 py-2.5 text-sm text-gray-400 hover:text-[#d4a574] transition-colors"
+                  class="block px-6 py-2.5 text-sm text-theme-muted hover:text-brand transition-colors"
                   @click="isMenuOpen = false"
                 >
                   {{ child.label }}
@@ -316,28 +318,31 @@ function handleScroll() {
           </div>
 
           <div class="mt-6 px-4 space-y-4">
-            <a
-              href="tel:8956690990"
-              class="flex items-center gap-2 text-gray-400 hover:text-[#d4a574] transition-colors"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
+            <div class="flex items-center justify-between">
+              <a
+                href="tel:8956690990"
+                class="flex items-center gap-2 text-theme-secondary hover:text-brand transition-colors"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                />
-              </svg>
-              8956690990
-            </a>
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
+                8956690990
+              </a>
+              <ThemeToggle />
+            </div>
             <NuxtLink
               to="/contact"
-              class="block w-full text-center px-6 py-3 bg-gradient-to-r from-[#d4a574] to-[#b8956e] text-[#0a0a0a] font-semibold rounded-full"
+              class="block w-full text-center px-6 py-3 btn-primary rounded-full"
               @click="isMenuOpen = false"
             >
               Get a Quote
@@ -348,4 +353,3 @@ function handleScroll() {
     </Transition>
   </nav>
 </template>
-

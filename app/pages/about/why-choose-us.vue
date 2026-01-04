@@ -73,37 +73,29 @@ const stats = [
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <NuxtLink
           to="/about"
-          class="inline-flex items-center gap-2 text-gray-400 hover:text-[#d4a574] transition-colors mb-8"
+          class="inline-flex items-center gap-2 text-theme-secondary hover:text-brand transition-colors mb-8"
         >
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M15 19l-7-7 7-7"
-            />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
           </svg>
           Back to About
         </NuxtLink>
 
         <div class="max-w-3xl">
-          <span class="text-[#d4a574] font-medium uppercase tracking-widest text-sm"
-            >Why Choose Us</span
-          >
-          <h1 class="font-display text-5xl md:text-6xl font-bold mt-4 mb-6">
+          <span class="text-brand font-medium uppercase tracking-widest text-sm">Why Choose Us</span>
+          <h1 class="font-display text-5xl md:text-6xl font-bold mt-4 mb-6 text-theme-heading">
             The LTHS
             <span class="gradient-text">Difference</span>
           </h1>
-          <p class="text-xl text-gray-400 leading-relaxed">
-            Discover why leading organizations trust us for their hospitality
-            needs.
+          <p class="text-xl text-theme-secondary leading-relaxed">
+            Discover why leading organizations trust us for their hospitality needs.
           </p>
         </div>
       </div>
     </section>
 
     <!-- Stats Banner -->
-    <section class="relative py-12 bg-[#050505]">
+    <section class="relative py-12 section-dark">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div
@@ -117,14 +109,14 @@ const stats = [
             <p class="font-display text-4xl font-bold gradient-text">
               {{ stat.value }}
             </p>
-            <p class="text-gray-500 text-sm mt-2">{{ stat.label }}</p>
+            <p class="text-theme-muted text-sm mt-2">{{ stat.label }}</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Reasons Grid -->
-    <section class="relative py-24">
+    <section class="relative py-24 section-gradient">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div
@@ -133,19 +125,15 @@ const stats = [
             v-motion
             :initial="{ opacity: 0, y: 30 }"
             :visible="{ opacity: 1, y: 0, transition: { delay: index * 80 } }"
-            class="group p-6 rounded-2xl bg-gradient-to-br from-white/5 to-transparent border border-white/5 hover:border-[#d4a574]/30 transition-all duration-300 hover-lift"
+            class="group p-6 rounded-2xl card-gradient hover:border-brand-30 transition-all duration-300 hover-lift"
           >
-            <div
-              class="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#d4a574]/20 to-[#d4a574]/5 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform"
-            >
+            <div class="w-16 h-16 rounded-2xl icon-box flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
               {{ reason.icon }}
             </div>
-            <h3
-              class="font-display text-lg font-semibold text-white mb-2 group-hover:text-[#d4a574] transition-colors"
-            >
+            <h3 class="font-display text-lg font-semibold text-theme-heading mb-2 group-hover:text-brand transition-colors">
               {{ reason.title }}
             </h3>
-            <p class="text-gray-500 text-sm leading-relaxed">
+            <p class="text-theme-muted text-sm leading-relaxed">
               {{ reason.description }}
             </p>
           </div>
@@ -154,23 +142,21 @@ const stats = [
     </section>
 
     <!-- Comparison Section -->
-    <section class="relative py-24 bg-[#050505]">
+    <section class="relative py-24 section-dark">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="font-display text-4xl font-bold mb-6">
+          <h2 class="font-display text-4xl font-bold mb-6 text-theme-heading">
             What Sets Us <span class="gradient-text">Apart</span>
           </h2>
         </div>
 
-        <div
-          class="rounded-3xl overflow-hidden border border-white/10 bg-white/5"
-        >
+        <div class="rounded-3xl overflow-hidden border border-theme card-gradient">
           <table class="w-full">
             <thead>
-              <tr class="border-b border-white/10">
-                <th class="p-6 text-left text-gray-400">Feature</th>
-                <th class="p-6 text-center text-[#d4a574]">LTHS</th>
-                <th class="p-6 text-center text-gray-500">Others</th>
+              <tr class="border-b border-theme">
+                <th class="p-6 text-left text-theme-secondary">Feature</th>
+                <th class="p-6 text-center text-brand">LTHS</th>
+                <th class="p-6 text-center text-theme-muted">Others</th>
               </tr>
             </thead>
             <tbody>
@@ -184,20 +170,16 @@ const stats = [
                   'Quality Assurance',
                 ]"
                 :key="item"
-                class="border-b border-white/5"
+                class="border-b border-theme-light"
               >
-                <td class="p-6 text-white">{{ item }}</td>
+                <td class="p-6 text-theme-heading">{{ item }}</td>
                 <td class="p-6 text-center">
-                  <span
-                    class="inline-flex w-8 h-8 rounded-full bg-green-500/20 text-green-400 items-center justify-center"
-                  >
+                  <span class="inline-flex w-8 h-8 rounded-full bg-green-500/20 text-green-400 items-center justify-center">
                     ✓
                   </span>
                 </td>
                 <td class="p-6 text-center">
-                  <span
-                    class="inline-flex w-8 h-8 rounded-full bg-gray-500/20 text-gray-500 items-center justify-center"
-                  >
+                  <span class="inline-flex w-8 h-8 rounded-full bg-brand-10 text-theme-muted items-center justify-center">
                     ?
                   </span>
                 </td>
@@ -209,27 +191,26 @@ const stats = [
     </section>
 
     <!-- CTA -->
-    <section class="relative py-24">
+    <section class="relative py-24 section-gradient">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="font-display text-4xl font-bold mb-6">
+        <h2 class="font-display text-4xl font-bold mb-6 text-theme-heading">
           Ready to Experience the
           <span class="gradient-text">Difference?</span>
         </h2>
-        <p class="text-gray-400 text-lg mb-8">
-          Join our growing list of satisfied clients. Request a free quote
-          today.
+        <p class="text-theme-secondary text-lg mb-8">
+          Join our growing list of satisfied clients. Request a free quote today.
         </p>
         <div class="flex flex-wrap justify-center gap-4">
           <NuxtLink
             to="/contact"
-            class="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#d4a574] to-[#b8956e] text-[#0a0a0a] font-semibold rounded-full hover:shadow-2xl hover:shadow-[#d4a574]/30 transition-all duration-500"
+            class="inline-flex items-center gap-3 px-8 py-4 btn-primary rounded-full"
             data-testid="why-choose-cta"
           >
             Get a Free Quote
           </NuxtLink>
           <a
             href="tel:8956690990"
-            class="inline-flex items-center gap-3 px-8 py-4 border border-white/20 text-white font-semibold rounded-full hover:bg-white/5 transition-all duration-300"
+            class="inline-flex items-center gap-3 px-8 py-4 btn-ghost rounded-full"
           >
             Call 8956690990
           </a>
@@ -238,4 +219,3 @@ const stats = [
     </section>
   </div>
 </template>
-

@@ -10,8 +10,7 @@ const openings = [
     location: 'Pune',
     type: 'Full-time',
     experience: '3-5 years',
-    description:
-      'Lead a team of housekeeping staff to maintain cleanliness standards across client facilities.',
+    description: 'Lead a team of housekeeping staff to maintain cleanliness standards across client facilities.',
     responsibilities: [
       'Supervise daily housekeeping operations',
       'Train and mentor team members',
@@ -24,8 +23,7 @@ const openings = [
     location: 'Chakan, Pune',
     type: 'Full-time',
     experience: '1-3 years',
-    description:
-      'Provide security services for corporate and industrial clients.',
+    description: 'Provide security services for corporate and industrial clients.',
     responsibilities: [
       'Monitor premises and access control',
       'Conduct regular patrols',
@@ -38,8 +36,7 @@ const openings = [
     location: 'Pune',
     type: 'Full-time',
     experience: '2-4 years',
-    description:
-      'Provide compassionate care and assistance to patients in healthcare settings.',
+    description: 'Provide compassionate care and assistance to patients in healthcare settings.',
     responsibilities: [
       'Assist patients with daily activities',
       'Monitor patient condition',
@@ -52,8 +49,7 @@ const openings = [
     location: 'Talegaon, Pune',
     type: 'Full-time',
     experience: '1-2 years',
-    description:
-      'Handle administrative duties and front desk management for corporate offices.',
+    description: 'Handle administrative duties and front desk management for corporate offices.',
     responsibilities: [
       'Manage reception and visitor handling',
       'Handle documentation and filing',
@@ -66,8 +62,7 @@ const openings = [
     location: 'Multiple Locations',
     type: 'Full-time',
     experience: '1-3 years',
-    description:
-      'Prepare and serve food in corporate canteens and events.',
+    description: 'Prepare and serve food in corporate canteens and events.',
     responsibilities: [
       'Food preparation assistance',
       'Serving and counter management',
@@ -80,8 +75,7 @@ const openings = [
     location: 'Pune Region',
     type: 'Full-time',
     experience: '2-5 years',
-    description:
-      'Handle electrical, plumbing, and general maintenance tasks.',
+    description: 'Handle electrical, plumbing, and general maintenance tasks.',
     responsibilities: [
       'Preventive and corrective maintenance',
       'Equipment troubleshooting',
@@ -107,24 +101,19 @@ function toggleJob(title: string) {
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <NuxtLink
           to="/careers"
-          class="inline-flex items-center gap-2 text-gray-400 hover:text-[#d4a574] transition-colors mb-8"
+          class="inline-flex items-center gap-2 text-theme-secondary hover:text-brand transition-colors mb-8"
         >
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M15 19l-7-7 7-7"
-            />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
           </svg>
           Back to Careers
         </NuxtLink>
 
         <div class="max-w-3xl">
-          <h1 class="font-display text-5xl font-bold mb-6">
+          <h1 class="font-display text-5xl font-bold mb-6 text-theme-heading">
             Current <span class="gradient-text">Openings</span>
           </h1>
-          <p class="text-xl text-gray-400">
+          <p class="text-xl text-theme-secondary">
             Find your next opportunity at LTHS. We're always looking for talented individuals to join our team.
           </p>
         </div>
@@ -132,7 +121,7 @@ function toggleJob(title: string) {
     </section>
 
     <!-- Job Listings -->
-    <section class="relative py-24 bg-[#050505]">
+    <section class="relative py-24 section-dark">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="space-y-4">
           <div
@@ -141,7 +130,7 @@ function toggleJob(title: string) {
             v-motion
             :initial="{ opacity: 0, y: 20 }"
             :visible="{ opacity: 1, y: 0, transition: { delay: index * 50 } }"
-            class="rounded-2xl bg-gradient-to-r from-white/5 to-transparent border border-white/10 hover:border-[#d4a574]/30 transition-all duration-300 overflow-hidden"
+            class="rounded-2xl card-gradient hover:border-brand-30 transition-all duration-300 overflow-hidden"
           >
             <!-- Header -->
             <button
@@ -149,34 +138,29 @@ function toggleJob(title: string) {
               @click="toggleJob(job.title)"
             >
               <div>
-                <h3 class="font-display text-xl font-semibold text-white">
+                <h3 class="font-display text-xl font-semibold text-theme-heading">
                   {{ job.title }}
                 </h3>
                 <div class="flex flex-wrap gap-4 mt-2">
-                  <span class="flex items-center gap-1 text-gray-400 text-sm">
+                  <span class="flex items-center gap-1 text-theme-secondary text-sm">
                     📍 {{ job.location }}
                   </span>
-                  <span class="flex items-center gap-1 text-gray-400 text-sm">
+                  <span class="flex items-center gap-1 text-theme-secondary text-sm">
                     ⏰ {{ job.type }}
                   </span>
-                  <span class="flex items-center gap-1 text-gray-400 text-sm">
+                  <span class="flex items-center gap-1 text-theme-secondary text-sm">
                     💼 {{ job.experience }}
                   </span>
                 </div>
               </div>
               <svg
-                class="w-6 h-6 text-[#d4a574] transition-transform"
+                class="w-6 h-6 text-brand transition-transform"
                 :class="{ 'rotate-180': expandedJob === job.title }"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
 
@@ -191,41 +175,29 @@ function toggleJob(title: string) {
             >
               <div
                 v-if="expandedJob === job.title"
-                class="px-6 pb-6 border-t border-white/5"
+                class="px-6 pb-6 border-t border-theme"
               >
-                <p class="text-gray-400 mt-4">{{ job.description }}</p>
+                <p class="text-theme-secondary mt-4">{{ job.description }}</p>
 
-                <h4 class="text-white font-semibold mt-4 mb-2">
-                  Responsibilities:
-                </h4>
+                <h4 class="text-theme-heading font-semibold mt-4 mb-2">Responsibilities:</h4>
                 <ul class="space-y-2">
                   <li
                     v-for="resp in job.responsibilities"
                     :key="resp"
-                    class="flex items-start gap-2 text-gray-400 text-sm"
+                    class="flex items-start gap-2 text-theme-secondary text-sm"
                   >
-                    <span class="text-[#d4a574]">•</span>
+                    <span class="text-brand">•</span>
                     {{ resp }}
                   </li>
                 </ul>
 
                 <NuxtLink
                   to="/careers/apply"
-                  class="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-gradient-to-r from-[#d4a574] to-[#b8956e] text-[#0a0a0a] font-semibold rounded-full hover:shadow-lg hover:shadow-[#d4a574]/30 transition-all"
+                  class="inline-flex items-center gap-2 mt-6 px-6 py-3 btn-primary rounded-full"
                 >
                   Apply Now
-                  <svg
-                    class="w-4 h-4"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 5l7 7-7 7"
-                    />
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                   </svg>
                 </NuxtLink>
               </div>
@@ -236,17 +208,17 @@ function toggleJob(title: string) {
     </section>
 
     <!-- CTA -->
-    <section class="relative py-24">
+    <section class="relative py-24 section-gradient">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="font-display text-3xl font-bold mb-6">
+        <h2 class="font-display text-3xl font-bold mb-6 text-theme-heading">
           Don't See a Matching Role?
         </h2>
-        <p class="text-gray-400 mb-8">
+        <p class="text-theme-secondary mb-8">
           We're always interested in meeting talented people. Send us your resume and we'll keep you in mind for future opportunities.
         </p>
         <NuxtLink
           to="/careers/apply"
-          class="inline-flex items-center gap-2 px-8 py-4 border border-[#d4a574]/30 text-[#d4a574] font-semibold rounded-full hover:bg-[#d4a574]/10 transition-colors"
+          class="inline-flex items-center gap-2 px-8 py-4 btn-outline rounded-full"
         >
           Submit General Application
         </NuxtLink>
@@ -254,4 +226,3 @@ function toggleJob(title: string) {
     </section>
   </div>
 </template>
-
