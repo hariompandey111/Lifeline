@@ -16,6 +16,22 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   compatibilityDate: '2024-04-03',
 
+  // Runtime config - automatically reads from .env file
+  // Variables prefixed with NUXT_ are auto-mapped
+  runtimeConfig: {
+    // Server-only keys (not exposed to client)
+    supabaseUrl: '',
+    supabaseServiceRoleKey: '',
+    resendApiKey: '',
+    emailFrom: 'LTHS Contact <onboarding@resend.dev>',
+    emailTo: 'aman.l@lths.in',
+
+    // Public keys (exposed to client)
+    public: {
+      // Add public runtime config here if needed
+    },
+  },
+
   colorMode: {
     preference: 'dark', // default theme
     fallback: 'dark',

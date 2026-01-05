@@ -18,11 +18,13 @@
     "@nuxt/ui": "^4.3.0",
     "@nuxtjs/color-mode": "^4.0.0",
     "@nuxtjs/i18n": "^10.2.1",
+    "@supabase/supabase-js": "^2.89.0",
     "@unhead/vue": "^2.1.1",
     "@vueuse/motion": "^3.0.3",
     "better-sqlite3": "^12.5.0",
     "eslint": "^9.39.2",
     "nuxt": "^4.2.2",
+    "resend": "^6.6.0",
     "typescript": "^5.9.3"
   }
 }

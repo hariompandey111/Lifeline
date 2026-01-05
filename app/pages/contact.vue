@@ -14,6 +14,10 @@ const formData = reactive({
   message: '',
 })
 
+const isSubmitting = ref(false)
+const submitStatus = ref<'idle' | 'success' | 'error'>('idle')
+const submitMessage = ref('')
+
 const services = [
   'Patient Care Services',
   'Housekeeping Services',
@@ -28,9 +32,34 @@ const services = [
   'Other',
 ]
 
-function handleSubmit() {
-  console.log('Contact form submitted:', formData)
-  alert('Thank you for your inquiry! We will get back to you within 24 hours.')
+async function handleSubmit() {
+  isSubmitting.value = true
+  submitStatus.value = 'idle'
+  submitMessage.value = ''
+
+  try {
+    const response = await $fetch('/api/contact', {
+      method: 'POST',
+      body: formData,
+    })
+
+    submitStatus.value = 'success'
+    submitMessage.value = response.message
+
+    // Reset form on success
+    formData.name = ''
+    formData.email = ''
+    formData.phone = ''
+    formData.company = ''
+    formData.service = ''
+    formData.message = ''
+  } catch (error: unknown) {
+    submitStatus.value = 'error'
+    const fetchError = error as { data?: { message?: string } }
+    submitMessage.value = fetchError.data?.message || 'Something went wrong. Please try again or contact us directly.'
+  } finally {
+    isSubmitting.value = false
+  }
 }
 </script>
 
@@ -173,12 +202,32 @@ function handleSubmit() {
                 ></textarea>
               </div>
 
+              <!-- Status Message -->
+              <div
+                v-if="submitStatus !== 'idle'"
+                :class="[
+                  'p-4 rounded-xl text-sm',
+                  submitStatus === 'success' ? 'bg-green-500/10 text-green-400 border border-green-500/20' : 'bg-red-500/10 text-red-400 border border-red-500/20'
+                ]"
+                data-testid="contact-status-message"
+              >
+                <div class="flex items-center gap-2">
+                  <UIcon 
+                    :name="submitStatus === 'success' ? 'i-heroicons-check-circle' : 'i-heroicons-exclamation-circle'" 
+                    class="w-5 h-5 flex-shrink-0" 
+                  />
+                  <span>{{ submitMessage }}</span>
+                </div>
+              </div>
+
               <button
                 type="submit"
-                class="w-full py-4 btn-primary rounded-full"
+                :disabled="isSubmitting"
+                class="w-full py-4 btn-primary rounded-full disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                 data-testid="contact-submit"
               >
-                Send Message
+                <UIcon v-if="isSubmitting" name="i-heroicons-arrow-path" class="w-5 h-5 animate-spin" />
+                {{ isSubmitting ? 'Sending...' : 'Send Message' }}
               </button>
             </form>
           </div>
