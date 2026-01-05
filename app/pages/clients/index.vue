@@ -2,30 +2,37 @@
 useSeoMeta({
   title: 'Our Clients | LTHS - Lifetime Hospitality Services',
   description:
-    'Trusted by leading companies like TE Connectivity, Thyssenkrupp, and Forbes Marshall. Discover our client success stories.',
+    'Trusted by leading companies like Shreeji Construction, TE Connectivity, Thyssenkrupp, and Forbes Marshall. Discover our client success stories.',
 })
 
 const clients = [
+  {
+    name: 'Shreeji Construction',
+    logo: 'https://www.shreejiconstruction.com/images/company/company16174285011.jpg',
+    location: 'Chakan, Pune',
+    industry: 'Construction',
+    services: ['Housekeeping', 'Labour Supply', 'Maintenance'],
+  },
   {
     name: 'TE Connectivity',
     location: 'Wagholi, Pune',
     industry: 'Electronics Manufacturing',
     services: ['Housekeeping', 'Security', 'Catering'],
-    logo: null,
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/TE_Connectivity_logo.svg/1200px-TE_Connectivity_logo.svg.png',
   },
   {
     name: 'Thyssenkrupp',
     location: 'Chakan, Pune',
     industry: 'Industrial Manufacturing',
     services: ['Housekeeping', 'Labour Supply', 'Maintenance'],
-    logo: null,
+    logo: 'https://companieslogo.com/img/orig/TKA.F-9979cdec.png?t=1722308607',
   },
   {
     name: 'Forbes Marshall',
     location: 'Chakan & Pimpri, Pune',
     industry: 'Steam Engineering',
     services: ['Housekeeping', 'Pantry', 'Security'],
-    logo: null,
+    logo: 'https://www.renewablethermal.org/our-solutions-providers/forbes-marshall/',
   },
 ]
 
@@ -51,10 +58,10 @@ const testimonials = [
 ]
 
 const stats = [
-  { value: '50+', label: 'Happy Clients' },
+  { value: '10+', label: 'Happy Clients' },
   { value: '8+', label: 'Years of Service' },
   { value: '95%', label: 'Client Retention' },
-  { value: '100%', label: 'Commitment' },
+  { value: '10+', label: 'Industries Served' },
 ]
 </script>
 
@@ -134,7 +141,7 @@ const stats = [
           >
             <!-- Logo Placeholder -->
             <div class="h-24 rounded-xl bg-brand-10 flex items-center justify-center mb-6">
-              <span class="text-2xl font-bold text-theme-secondary">{{ client.name }}</span>
+              <img :src="client.logo" :alt="client.name" class="h-24 w-24 object-contain">
             </div>
 
             <h3 class="font-display text-xl font-semibold text-theme-heading mb-2">

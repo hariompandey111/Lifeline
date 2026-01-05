@@ -157,7 +157,7 @@ const filteredPosts = computed(() =>
           >
             <!-- Image Placeholder -->
             <div class="aspect-video image-placeholder flex items-center justify-center">
-              <span class="text-4xl">📰</span>
+              <UIcon name="i-heroicons-newspaper" class="w-12 h-12 text-brand" />
             </div>
 
             <!-- Content -->

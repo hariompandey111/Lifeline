@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     '@nuxt/test-utils',
     '@nuxt/ui',
     '@nuxtjs/color-mode',
+    '@nuxtjs/i18n',
     '@vueuse/motion/nuxt',
   ],
 
@@ -20,6 +21,22 @@ export default defineNuxtConfig({
     fallback: 'dark',
     classSuffix: '',
     storageKey: 'lths-color-mode',
+  },
+
+  i18n: {
+    locales: [
+      { code: 'en', name: 'English', file: 'en.json' },
+      { code: 'hi', name: 'हिंदी', file: 'hi.json' },
+      { code: 'mr', name: 'मराठी', file: 'mr.json' },
+    ],
+    defaultLocale: 'en',
+    langDir: 'locales',
+    strategy: 'prefix_except_default',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'lths-i18n',
+      fallbackLocale: 'en',
+    },
   },
 
   app: {

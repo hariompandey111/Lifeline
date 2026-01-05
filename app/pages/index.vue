@@ -1,66 +1,86 @@
 <script setup lang="ts">
+const { t } = useI18n()
+const localePath = useLocalePath()
+
 useSeoMeta({
   title: 'LTHS - Lifetime Hospitality Services | Premium Hospitality Since 2016',
   description:
     'LTHS provides premium hospitality services including patient care, housekeeping, catering, security, and more. Trusted by leading companies across Pune.',
 })
 
-const stats = [
-  { value: '8+', label: 'Years of Excellence' },
-  { value: '500+', label: 'Trained Professionals' },
-  { value: '50+', label: 'Corporate Clients' },
-  { value: '9', label: 'Service Categories' },
-]
+const stats = computed(() => [
+  { value: '10+', label: t('home.stats.years') },
+  { value: '500+', label: t('home.stats.professionals') },
+  { value: '10+', label: t('home.stats.clients') },
+  { value: '9+', label: t('nav.services') },
+])
 
-const services = [
+const services = computed(() => [
   {
-    icon: '🏥',
-    title: 'Patient Care Services',
-    description:
-      'Compassionate and professional patient care with trained attendants ensuring comfort and well-being.',
+    icon: 'i-heroicons-heart',
+    title: t('services.patientCare.name'),
+    description: t('services.patientCare.description'),
     href: '/services/patient-care',
   },
   {
-    icon: '✨',
-    title: 'Housekeeping Services',
-    description:
-      'Comprehensive cleaning and maintenance solutions for pristine, hygienic environments.',
+    icon: 'i-heroicons-sparkles',
+    title: t('services.housekeeping.name'),
+    description: t('services.housekeeping.description'),
     href: '/services/housekeeping',
   },
   {
-    icon: '🌿',
-    title: 'Horticulture Services',
-    description:
-      'Expert landscaping and garden maintenance to create beautiful green spaces.',
-    href: '/services/horticulture',
-  },
-  {
-    icon: '🍽️',
-    title: 'Catering Services',
-    description:
-      'Delicious, nutritious meals prepared with quality ingredients and professional service.',
+    icon: 'i-lucide-utensils',
+    title: t('services.catering.name'),
+    description: t('services.catering.description'),
     href: '/services/catering',
   },
   {
-    icon: '💼',
-    title: 'Office Support Services',
-    description:
-      'Efficient administrative and office support to streamline your operations.',
+    icon: 'i-heroicons-briefcase',
+    title: t('services.officeSupport.name'),
+    description: t('services.officeSupport.description'),
     href: '/services/office-support',
   },
   {
-    icon: '🔧',
-    title: 'Maintenance Services',
-    description:
-      'Reliable maintenance and repair services to keep your facilities running smoothly.',
+    icon: 'i-heroicons-wrench-screwdriver',
+    title: t('services.maintenance.name'),
+    description: t('services.maintenance.description'),
     href: '/services/maintenance',
   },
-]
+])
 
 const clients = [
-  { name: 'TE Connectivity', location: 'Wagholi' },
-  { name: 'Thyssenkrupp', location: 'Chakan' },
-  { name: 'Forbes Marshall', location: 'Chakan & Pimpri' },
+{
+    name: 'Shreeji Construction',
+    logo: 'https://www.shreejiconstruction.com/images/company/company16174285011.jpg',
+    logoOrientation: 'landscape',
+    location: 'Bhuj, Gujarat',
+    industry: 'Construction',
+    services: ['Housekeeping', 'Labour Supply', 'Maintenance'],
+  },
+  {
+    name: 'TE Connectivity',
+    location: 'Wagholi, Pune',
+    industry: 'Electronics Manufacturing',
+    services: ['Housekeeping', 'Security', 'Catering'],
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/TE_Connectivity_logo.svg/1200px-TE_Connectivity_logo.svg.png',
+    logoOrientation: 'landscape',
+  },
+  {
+    name: 'Thyssenkrupp',
+    location: 'Chakan, Pune',
+    industry: 'Industrial Manufacturing',
+    services: ['Housekeeping', 'Labour Supply', 'Maintenance'],
+    logo: 'https://companieslogo.com/img/orig/TKA.F-9979cdec.png?t=1722308607',
+    logoOrientation: 'square',
+  },
+  {
+    name: 'Forbes Marshall',
+    location: 'Chakan & Pimpri, Pune',
+    industry: 'Steam Engineering',
+    services: ['Housekeeping', 'Pantry', 'Security'],
+    logo: 'https://idronline.org/wp-content/uploads/2024/02/NEW-FM-logo.jpg',
+    logoOrientation: 'landscape',
+  },
 ]
 </script>
 
@@ -100,30 +120,27 @@ const clients = [
               class="inline-flex items-center gap-2 px-4 py-2 bg-brand-10 rounded-full border border-brand-20 mb-8"
             >
               <span class="w-2 h-2 bg-brand rounded-full animate-pulse"></span>
-              <span class="text-brand text-sm font-medium">Trusted Since 2016</span>
+              <span class="text-brand text-sm font-medium">{{ t('common.tagline') }}</span>
             </div>
 
             <h1
               class="font-display text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-theme-heading"
             >
-              Elevating
-              <span class="gradient-text block">Hospitality</span>
-              Standards
+              {{ t('home.hero.title1') }}
+              <span class="gradient-text block">{{ t('home.hero.title2') }}</span>
             </h1>
 
             <p class="text-xl text-theme-secondary leading-relaxed mb-10 max-w-xl">
-              From patient care to security services, we deliver comprehensive
-              hospitality solutions that transform spaces and exceed
-              expectations.
+              {{ t('home.hero.description') }}
             </p>
 
             <div class="flex flex-wrap gap-4">
               <NuxtLink
-                to="/contact"
+                :to="localePath('/contact')"
                 class="group inline-flex items-center gap-3 px-8 py-4 btn-primary rounded-full"
                 data-testid="hero-cta-quote"
               >
-                Get a Free Quote
+                {{ t('home.hero.cta2') }}
                 <svg
                   class="w-5 h-5 transform group-hover:translate-x-1 transition-transform"
                   fill="none"
@@ -139,25 +156,51 @@ const clients = [
                 </svg>
               </NuxtLink>
               <NuxtLink
-                to="/about"
+                :to="localePath('/about')"
                 class="inline-flex items-center gap-3 px-8 py-4 btn-ghost rounded-full"
                 data-testid="hero-cta-learn"
               >
-                Learn More
+                {{ t('common.learnMore') }}
               </NuxtLink>
             </div>
 
-            <!-- Client Logos Preview -->
+            <!-- Client Logos Carousel -->
             <div class="mt-16 pt-8 border-t border-theme-light">
               <p class="text-sm text-theme-muted mb-4">Trusted by leading companies</p>
-              <div class="flex flex-wrap gap-8 items-center">
-                <div
-                  v-for="client in clients"
-                  :key="client.name"
-                  class="text-theme-secondary hover:text-brand transition-colors cursor-pointer"
-                >
-                  <p class="font-semibold">{{ client.name }}</p>
-                  <p class="text-xs text-theme-muted">{{ client.location }}</p>
+              <div class="client-carousel-container overflow-hidden" data-testid="client-carousel">
+                <div class="client-carousel-track flex gap-8 items-center">
+                  <!-- First set of logos -->
+                  <div
+                    v-for="client in clients"
+                    :key="`first-${client.name}`"
+                    class="client-card flex-shrink-0 text-theme-secondary hover:text-brand transition-colors cursor-pointer"
+                    data-testid="client-carousel-item"
+                  >
+                    <img 
+                      v-if="client.logo" 
+                      :src="client.logo" 
+                      :alt="client.name" 
+                      :class="client.logoOrientation === 'landscape' ? 'h-12 w-24 object-contain rounded-lg overflow-hidden' : 'h-12 w-12 object-contain'"
+                    >
+                    <p class="font-semibold">{{ client.name }}</p>
+                    <p class="text-xs text-theme-muted">{{ client.location }}</p>
+                  </div>
+                  <!-- Duplicate set for seamless loop -->
+                  <div
+                    v-for="client in clients"
+                    :key="`second-${client.name}`"
+                    class="client-card flex-shrink-0 text-theme-secondary hover:text-brand transition-colors cursor-pointer"
+                    aria-hidden="true"
+                  >
+                    <img 
+                      v-if="client.logo" 
+                      :src="client.logo" 
+                      :alt="client.name" 
+                      :class="client.logoOrientation === 'landscape' ? 'h-12 w-24 object-contain rounded-lg overflow-hidden' : 'h-12 w-12 object-contain'"
+                    >
+                    <p class="font-semibold">{{ client.name }}</p>
+                    <p class="text-xs text-theme-muted">{{ client.location }}</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -204,7 +247,7 @@ const clients = [
                 <div
                   class="w-14 h-14 rounded-xl icon-box-primary flex items-center justify-center"
                 >
-                  <span class="text-2xl">⭐</span>
+                  <UIcon name="i-heroicons-star" class="w-7 h-7 text-yellow-400" />
                 </div>
                 <div>
                   <p class="text-2xl font-bold text-theme-heading">10+</p>
@@ -263,24 +306,24 @@ const clients = [
               <div
                 class="aspect-[3/4] rounded-2xl image-placeholder flex items-center justify-center"
               >
-                <span class="text-4xl">🏢</span>
+                <UIcon name="i-heroicons-building-office-2" class="w-12 h-12 text-brand" />
               </div>
               <div
                 class="aspect-square rounded-2xl image-placeholder flex items-center justify-center"
               >
-                <span class="text-4xl">👥</span>
+                <UIcon name="i-heroicons-user-group" class="w-12 h-12 text-brand" />
               </div>
             </div>
             <div class="space-y-4 pt-8">
               <div
                 class="aspect-square rounded-2xl image-placeholder flex items-center justify-center"
               >
-                <span class="text-4xl">🤝</span>
+                <UIcon name="i-heroicons-hand-raised" class="w-12 h-12 text-brand" />
               </div>
               <div
                 class="aspect-[3/4] rounded-2xl image-placeholder flex items-center justify-center"
               >
-                <span class="text-4xl">✨</span>
+                <UIcon name="i-heroicons-sparkles" class="w-12 h-12 text-brand" />
               </div>
             </div>
           </div>
@@ -291,10 +334,10 @@ const clients = [
             :initial="{ opacity: 0, x: 30 }"
             :visible="{ opacity: 1, x: 0, transition: { duration: 600, delay: 200 } }"
           >
-            <span class="text-brand font-medium uppercase tracking-widest text-sm">About LTHS</span>
+            <span class="text-brand font-medium uppercase tracking-widest text-sm">{{ t('nav.aboutUs') }}</span>
             <h2 class="font-display text-4xl md:text-5xl font-bold mt-4 mb-6 text-theme-heading">
-              A Legacy of
-              <span class="gradient-text">Excellence</span>
+              {{ t('about.hero.title1') }}
+              <span class="gradient-text">{{ t('about.hero.title2') }}</span>
             </h2>
             <p class="text-theme-secondary text-lg leading-relaxed mb-6">
               Lifetime Hospitality Services (LTHS), established in 2016 with our
@@ -354,11 +397,11 @@ const clients = [
             </div>
 
             <NuxtLink
-              to="/about"
+              :to="localePath('/about')"
               class="inline-flex items-center gap-2 text-brand font-semibold hover:gap-4 transition-all duration-300"
               data-testid="about-learn-more"
             >
-              Discover Our Story
+              {{ t('common.learnMore') }}
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
                   stroke-linecap="round"
@@ -382,15 +425,15 @@ const clients = [
             :initial="{ opacity: 0, y: 20 }"
             :visible="{ opacity: 1, y: 0 }"
             class="text-brand font-medium uppercase tracking-widest text-sm"
-          >Our Services</span>
+          >{{ t('home.services.title') }} {{ t('home.services.titleHighlight') }}</span>
           <h2
             v-motion
             :initial="{ opacity: 0, y: 20 }"
             :visible="{ opacity: 1, y: 0, transition: { delay: 100 } }"
             class="font-display text-4xl md:text-5xl font-bold mt-4 mb-6 text-theme-heading"
           >
-            Comprehensive
-            <span class="gradient-text">Hospitality</span> Solutions
+            {{ t('home.services.title') }}
+            <span class="gradient-text">{{ t('home.services.titleHighlight') }}</span>
           </h2>
           <p
             v-motion
@@ -398,26 +441,25 @@ const clients = [
             :visible="{ opacity: 1, y: 0, transition: { delay: 200 } }"
             class="text-theme-secondary text-lg"
           >
-            We offer a complete range of hospitality services tailored to meet
-            your unique requirements with excellence and professionalism.
+            {{ t('home.services.subtitle') }}
           </p>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           <NuxtLink
             v-for="(service, index) in services"
-            :key="service.title"
+            :key="service.href"
             v-motion
             :initial="{ opacity: 0, y: 30 }"
             :visible="{ opacity: 1, y: 0, transition: { delay: index * 100, duration: 500 } }"
-            :to="service.href"
+            :to="localePath(service.href)"
             class="group p-8 rounded-3xl card-gradient hover-lift"
-            :data-testid="`service-card-${service.title.toLowerCase().replace(/\s+/g, '-')}`"
+            :data-testid="`service-card-${service.href.split('/').pop()}`"
           >
             <div
-              class="w-16 h-16 rounded-2xl icon-box flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform duration-300"
+              class="w-16 h-16 rounded-2xl icon-box flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"
             >
-              {{ service.icon }}
+              <UIcon :name="service.icon" class="w-8 h-8" />
             </div>
             <h3
               class="font-display text-xl font-semibold text-theme-heading mb-3 group-hover:text-brand transition-colors"
@@ -430,7 +472,7 @@ const clients = [
             <span
               class="inline-flex items-center gap-2 text-brand text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity"
             >
-              Learn more
+              {{ t('common.learnMore') }}
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
                   stroke-linecap="round"
@@ -445,11 +487,11 @@ const clients = [
 
         <div class="text-center mt-12">
           <NuxtLink
-            to="/services"
+            :to="localePath('/services')"
             class="inline-flex items-center gap-3 px-8 py-4 btn-outline rounded-full"
             data-testid="view-all-services"
           >
-            View All Services
+            {{ t('common.viewAll') }} {{ t('nav.services') }}
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
                 stroke-linecap="round"
@@ -468,10 +510,10 @@ const clients = [
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <span class="text-brand font-medium uppercase tracking-widest text-sm">Industries We Serve</span>
+            <span class="text-brand font-medium uppercase tracking-widest text-sm">{{ t('industries.hero.subtitle') }}</span>
             <h2 class="font-display text-4xl md:text-5xl font-bold mt-4 mb-6 text-theme-heading">
-              Expertise Across
-              <span class="gradient-text">Sectors</span>
+              {{ t('industries.hero.title1') }}
+              <span class="gradient-text">{{ t('industries.hero.title2') }}</span>
             </h2>
             <p class="text-theme-secondary text-lg leading-relaxed mb-8">
               Our versatile team brings industry-specific expertise to deliver
@@ -516,7 +558,7 @@ const clients = [
               class="aspect-square rounded-3xl image-placeholder flex items-center justify-center"
             >
               <div class="text-center">
-                <span class="text-6xl mb-4 block">🏭</span>
+                <UIcon name="i-heroicons-building-office" class="w-16 h-16 mb-4 text-brand" />
                 <p class="text-theme-muted">Industry Image Placeholder</p>
               </div>
             </div>
@@ -547,21 +589,20 @@ const clients = [
           <div class="relative grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-theme-heading">
-                Ready to Transform Your
-                <span class="gradient-text">Workplace?</span>
+                {{ t('home.cta.title') }}
+                <span class="gradient-text">{{ t('home.cta.titleHighlight') }}</span>
               </h2>
               <p class="text-theme-secondary text-lg leading-relaxed mb-8">
-                Partner with LTHS for comprehensive hospitality solutions that
-                elevate your environment and exceed expectations.
+                {{ t('home.cta.subtitle') }}
               </p>
 
               <div class="flex flex-wrap gap-4">
                 <NuxtLink
-                  to="/contact"
+                  :to="localePath('/contact')"
                   class="inline-flex items-center gap-3 px-8 py-4 btn-primary rounded-full"
                   data-testid="cta-get-started"
                 >
-                  Get Started Today
+                  {{ t('home.cta.button') }}
                 </NuxtLink>
                 <a
                   href="tel:8956690990"
@@ -609,7 +650,12 @@ const clients = [
                   </div>
                   <div>
                     <p class="text-sm text-theme-muted">Phone</p>
-                    <p class="text-theme-heading font-medium">8956690990 / 8320140215</p>
+                    <a
+                      href="tel:+918320140215"
+                      class="flex items-center gap-2 text-theme-secondary hover:text-brand transition-colors text-white"
+                    >
+                      +918320140215
+                    </a>
                   </div>
                 </div>
                 <div class="flex items-center gap-4">
@@ -630,7 +676,7 @@ const clients = [
                   </div>
                   <div>
                     <p class="text-sm text-theme-muted">Email</p>
-                    <p class="text-theme-heading font-medium">aman.l@lths.in</p>
+                    <p class="text-theme-heading font-medium">anup@lifetimehospitality.in</p>
                   </div>
                 </div>
                 <div class="flex items-start gap-4">
@@ -671,3 +717,51 @@ const clients = [
     </section>
   </div>
 </template>
+
+<style scoped>
+.client-carousel-container {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
+
+.client-carousel-track {
+  animation: scroll 20s linear infinite;
+  width: max-content;
+}
+
+.client-carousel-container:hover .client-carousel-track {
+  animation-play-state: paused;
+}
+
+.client-card {
+  min-width: 160px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .client-carousel-track {
+    animation: none;
+  }
+}
+</style>

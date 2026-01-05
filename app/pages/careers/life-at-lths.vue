@@ -5,32 +5,32 @@ useSeoMeta({
 })
 
 const gallery = [
-  { type: 'Team Training', icon: '📚' },
-  { type: 'Team Celebration', icon: '🎉' },
-  { type: 'Work Environment', icon: '💼' },
-  { type: 'Client Site', icon: '🏢' },
-  { type: 'Team Outing', icon: '🌴' },
-  { type: 'Awards & Recognition', icon: '🏆' },
+  { type: 'Team Training', icon: 'i-heroicons-book-open' },
+  { type: 'Team Celebration', icon: 'i-heroicons-sparkles' },
+  { type: 'Work Environment', icon: 'i-heroicons-briefcase' },
+  { type: 'Client Site', icon: 'i-heroicons-building-office-2' },
+  { type: 'Team Outing', icon: 'i-heroicons-sun' },
+  { type: 'Awards & Recognition', icon: 'i-heroicons-trophy' },
 ]
 
 const values = [
   {
-    icon: '🤝',
+    icon: 'i-heroicons-hand-raised',
     title: 'Teamwork',
     description: 'We believe in the power of collaboration and supporting each other.',
   },
   {
-    icon: '📈',
+    icon: 'i-heroicons-chart-bar',
     title: 'Growth',
     description: 'Continuous learning and development opportunities for all.',
   },
   {
-    icon: '💯',
+    icon: 'i-heroicons-star',
     title: 'Excellence',
     description: 'We strive for the highest standards in everything we do.',
   },
   {
-    icon: '❤️',
+    icon: 'i-heroicons-heart',
     title: 'Care',
     description: 'Genuine concern for our team members, clients, and communities.',
   },
@@ -117,7 +117,7 @@ const values = [
             :visible="{ opacity: 1, y: 0, transition: { delay: index * 100 } }"
             class="text-center p-8 rounded-2xl card-gradient"
           >
-            <span class="text-5xl mb-4 block">{{ value.icon }}</span>
+            <UIcon :name="value.icon" class="w-12 h-12 mb-4 text-brand" />
             <h3 class="font-display text-xl font-semibold text-theme-heading mb-2">
               {{ value.title }}
             </h3>
@@ -146,7 +146,7 @@ const values = [
             class="aspect-square rounded-2xl image-placeholder flex items-center justify-center hover:border-brand-30 transition-colors cursor-pointer group"
           >
             <div class="text-center">
-              <span class="text-5xl block mb-2 group-hover:scale-110 transition-transform">{{ item.icon }}</span>
+              <UIcon :name="item.icon" class="w-12 h-12 mb-2 group-hover:scale-110 transition-transform text-brand" />
               <p class="text-theme-muted text-sm">{{ item.type }}</p>
             </div>
           </div>

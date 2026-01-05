@@ -7,7 +7,7 @@ useSeoMeta({
 
 const services = [
   {
-    icon: '🏥',
+    icon: 'i-heroicons-heart',
     title: 'Patient Care Services',
     description:
       'Compassionate and professional patient care with trained attendants ensuring comfort, dignity, and well-being of patients.',
@@ -15,7 +15,7 @@ const services = [
     features: ['24/7 Care', 'Trained Attendants', 'Medical Support'],
   },
   {
-    icon: '✨',
+    icon: 'i-heroicons-sparkles',
     title: 'Housekeeping Services',
     description:
       'Comprehensive cleaning and maintenance solutions for pristine, hygienic environments that reflect professionalism.',
@@ -23,7 +23,7 @@ const services = [
     features: ['Deep Cleaning', 'Daily Maintenance', 'Specialized Cleaning'],
   },
   {
-    icon: '🌿',
+    icon: 'i-lucide-leaf',
     title: 'Horticulture Services',
     description:
       'Expert landscaping and garden maintenance to create beautiful, serene green spaces that enhance your environment.',
@@ -31,7 +31,7 @@ const services = [
     features: ['Landscaping', 'Garden Maintenance', 'Plant Care'],
   },
   {
-    icon: '🍽️',
+    icon: 'i-lucide-utensils',
     title: 'Catering Services',
     description:
       'Delicious, nutritious meals prepared with quality ingredients and served with professional hospitality.',
@@ -39,7 +39,7 @@ const services = [
     features: ['Corporate Catering', 'Event Catering', 'Canteen Management'],
   },
   {
-    icon: '💼',
+    icon: 'i-heroicons-briefcase',
     title: 'Office Support Services',
     description:
       'Efficient administrative and office support to streamline your operations and boost productivity.',
@@ -47,7 +47,7 @@ const services = [
     features: ['Reception', 'Admin Support', 'Documentation'],
   },
   {
-    icon: '👷',
+    icon: 'i-heroicons-users',
     title: 'Labour Supply',
     description:
       'Reliable, skilled workforce supply for various industrial and commercial requirements.',
@@ -55,7 +55,7 @@ const services = [
     features: ['Skilled Labour', 'Semi-skilled', 'Unskilled Workers'],
   },
   {
-    icon: '🔧',
+    icon: 'i-heroicons-wrench-screwdriver',
     title: 'Maintenance Services',
     description:
       'Reliable maintenance and repair services to keep your facilities running smoothly and efficiently.',
@@ -63,7 +63,7 @@ const services = [
     features: ['Preventive', 'Corrective', 'Emergency Repairs'],
   },
   {
-    icon: '☕',
+    icon: 'i-lucide-coffee',
     title: 'Pantry Services',
     description:
       'Professional pantry management ensuring your team has access to refreshments and amenities.',
@@ -71,7 +71,7 @@ const services = [
     features: ['Tea/Coffee Service', 'Snack Management', 'Inventory'],
   },
   {
-    icon: '🛡️',
+    icon: 'i-heroicons-shield-check',
     title: 'Security Services',
     description:
       'Trained security personnel providing comprehensive protection for your premises and assets.',
@@ -133,8 +133,8 @@ const services = [
             :data-testid="`service-${service.title.toLowerCase().replace(/\s+/g, '-')}`"
           >
             <!-- Icon -->
-            <div class="w-20 h-20 rounded-2xl icon-box flex items-center justify-center text-4xl mb-6 group-hover:scale-110 transition-transform duration-300">
-              {{ service.icon }}
+            <div class="w-20 h-20 rounded-2xl icon-box flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <UIcon :name="service.icon" class="w-10 h-10" />
             </div>
 
             <!-- Content -->
@@ -182,22 +182,22 @@ const services = [
               <div
                 v-for="item in [
                   {
-                    icon: '✓',
+                    icon: 'i-heroicons-check-circle',
                     title: 'Trained Professionals',
                     desc: 'All staff undergo rigorous training and certification',
                   },
                   {
-                    icon: '✓',
+                    icon: 'i-heroicons-check-circle',
                     title: 'Quality Assurance',
                     desc: 'Regular audits and feedback systems ensure standards',
                   },
                   {
-                    icon: '✓',
+                    icon: 'i-heroicons-check-circle',
                     title: 'Customized Solutions',
                     desc: 'Services tailored to your specific requirements',
                   },
                   {
-                    icon: '✓',
+                    icon: 'i-heroicons-check-circle',
                     title: '24/7 Support',
                     desc: 'Round-the-clock assistance for all your needs',
                   },
@@ -206,7 +206,7 @@ const services = [
                 class="flex items-start gap-4"
               >
                 <div class="w-10 h-10 rounded-lg icon-box flex items-center justify-center flex-shrink-0">
-                  {{ item.icon }}
+                  <UIcon :name="item.icon" class="w-5 h-5" />
                 </div>
                 <div>
                   <h3 class="font-semibold text-theme-heading">{{ item.title }}</h3>

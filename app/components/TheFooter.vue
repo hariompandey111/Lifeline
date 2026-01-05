@@ -1,28 +1,30 @@
 <script setup lang="ts">
+const { t } = useI18n()
+const localePath = useLocalePath()
 const currentYear = new Date().getFullYear()
 
-const services = [
-  { label: 'Patient Care', href: '/services/patient-care' },
-  { label: 'Housekeeping', href: '/services/housekeeping' },
-  { label: 'Catering', href: '/services/catering' },
-  { label: 'Security', href: '/services/security' },
-  { label: 'Maintenance', href: '/services/maintenance' },
-]
+const services = computed(() => [
+  { label: t('services.patientCare.name'), href: '/services/patient-care' },
+  { label: t('services.housekeeping.name'), href: '/services/housekeeping' },
+  { label: t('services.catering.name'), href: '/services/catering' },
+  { label: t('services.security.name'), href: '/services/security' },
+  { label: t('services.maintenance.name'), href: '/services/maintenance' },
+])
 
-const company = [
-  { label: 'About Us', href: '/about' },
-  { label: 'Our Story', href: '/about/our-story' },
-  { label: 'Leadership', href: '/about/leadership' },
-  { label: 'Careers', href: '/careers' },
-  { label: 'Blog', href: '/blog' },
-]
+const company = computed(() => [
+  { label: t('nav.aboutUs'), href: '/about' },
+  { label: t('nav.ourStory'), href: '/about/our-story' },
+  { label: t('nav.leadership'), href: '/about/leadership' },
+  { label: t('nav.careers'), href: '/careers' },
+  { label: t('nav.blog'), href: '/blog' },
+])
 
-const support = [
-  { label: 'Contact Us', href: '/contact' },
-  { label: 'Request Quote', href: '/contact#quote' },
-  { label: 'Industries', href: '/industries' },
-  { label: 'Clients', href: '/clients' },
-]
+const support = computed(() => [
+  { label: t('nav.contact'), href: '/contact' },
+  { label: t('common.getQuote'), href: '/contact#quote' },
+  { label: t('nav.industries'), href: '/industries' },
+  { label: t('nav.clients'), href: '/clients' },
+])
 
 const socialLinks = [
   {
@@ -50,22 +52,20 @@ const socialLinks = [
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
         <!-- Brand Column -->
         <div class="lg:col-span-2">
-          <NuxtLink to="/" class="flex items-center space-x-3 mb-6">
+          <NuxtLink :to="localePath('/')" class="flex items-center space-x-3 mb-6">
             <div
               class="w-12 h-12 gradient-secondary rounded-xl flex items-center justify-center"
             >
               <span class="text-white dark:text-black font-display font-bold text-xl">L</span>
             </div>
             <div>
-              <span class="font-display text-xl font-semibold gradient-text">LTHS</span>
-              <p class="text-xs text-theme-muted">Lifetime Hospitality Services</p>
+              <span class="font-display text-xl font-semibold gradient-text">{{ t('common.companyName') }}</span>
+              <p class="text-xs text-theme-muted">{{ t('common.companyFullName') }}</p>
             </div>
           </NuxtLink>
 
           <p class="text-theme-secondary text-sm leading-relaxed mb-6 max-w-sm">
-            Established in 2016, LTHS is a premium hospitality services provider
-            based in Pune. We deliver excellence across patient care,
-            housekeeping, catering, security, and more.
+            {{ t('footer.description') }}
           </p>
 
           <div class="space-y-3">
@@ -135,12 +135,12 @@ const socialLinks = [
         <!-- Services -->
         <div>
           <h4 class="font-display text-lg font-semibold text-theme-heading mb-6">
-            Services
+            {{ t('footer.ourServices') }}
           </h4>
           <ul class="space-y-3">
             <li v-for="link in services" :key="link.href">
               <NuxtLink
-                :to="link.href"
+                :to="localePath(link.href)"
                 class="text-sm text-theme-secondary hover:text-brand transition-colors"
               >
                 {{ link.label }}
@@ -152,12 +152,12 @@ const socialLinks = [
         <!-- Company -->
         <div>
           <h4 class="font-display text-lg font-semibold text-theme-heading mb-6">
-            Company
+            {{ t('footer.quickLinks') }}
           </h4>
           <ul class="space-y-3">
             <li v-for="link in company" :key="link.href">
               <NuxtLink
-                :to="link.href"
+                :to="localePath(link.href)"
                 class="text-sm text-theme-secondary hover:text-brand transition-colors"
               >
                 {{ link.label }}
@@ -169,12 +169,12 @@ const socialLinks = [
         <!-- Support -->
         <div>
           <h4 class="font-display text-lg font-semibold text-theme-heading mb-6">
-            Support
+            {{ t('footer.contactInfo') }}
           </h4>
           <ul class="space-y-3">
             <li v-for="link in support" :key="link.href">
               <NuxtLink
-                :to="link.href"
+                :to="localePath(link.href)"
                 class="text-sm text-theme-secondary hover:text-brand transition-colors"
               >
                 {{ link.label }}
@@ -185,7 +185,7 @@ const socialLinks = [
           <!-- Social Links -->
           <div class="mt-8">
             <h4 class="font-display text-lg font-semibold text-theme-heading mb-4">
-              Follow Us
+              {{ t('common.followUs') }}
             </h4>
             <div class="flex gap-4">
               <a
@@ -215,11 +215,11 @@ const socialLinks = [
         class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row justify-between items-center gap-4"
       >
         <p class="text-sm text-theme-muted">
-          © {{ currentYear }} Lifetime Hospitality Services. All rights reserved.
+          {{ t('footer.copyright', { year: currentYear }) }}
         </p>
         <div class="flex gap-6 text-sm text-theme-muted">
-          <NuxtLink to="/privacy" class="hover:text-brand transition-colors">Privacy Policy</NuxtLink>
-          <NuxtLink to="/terms" class="hover:text-brand transition-colors">Terms of Service</NuxtLink>
+          <NuxtLink :to="localePath('/privacy')" class="hover:text-brand transition-colors">{{ t('footer.privacyPolicy') }}</NuxtLink>
+          <NuxtLink :to="localePath('/terms')" class="hover:text-brand transition-colors">{{ t('footer.termsOfService') }}</NuxtLink>
         </div>
       </div>
     </div>

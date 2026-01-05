@@ -279,21 +279,21 @@ function handleSubmit() {
           <div
             v-for="(item, index) in [
               {
-                icon: '📞',
+                icon: 'i-heroicons-phone',
                 title: 'Call Us',
                 desc: 'Speak directly with our team',
                 action: 'Call 8956690990',
                 href: 'tel:8956690990',
               },
               {
-                icon: '📧',
+                icon: 'i-heroicons-envelope',
                 title: 'Email Us',
                 desc: 'We reply within 24 hours',
                 action: 'aman.l@lths.in',
                 href: 'mailto:aman.l@lths.in',
               },
               {
-                icon: '💬',
+                icon: 'i-heroicons-chat-bubble-left-right',
                 title: 'WhatsApp',
                 desc: 'Quick chat with us',
                 action: 'Start Chat',
@@ -306,7 +306,7 @@ function handleSubmit() {
             :visible="{ opacity: 1, y: 0, transition: { delay: index * 100 } }"
             class="text-center p-8 rounded-3xl card-gradient hover:border-brand-30 transition-colors"
           >
-            <span class="text-5xl mb-4 block">{{ item.icon }}</span>
+            <UIcon :name="item.icon" class="w-12 h-12 mb-4 text-brand" />
             <h3 class="font-display text-xl font-semibold text-theme-heading mb-2">
               {{ item.title }}
             </h3>

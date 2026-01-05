@@ -7,7 +7,7 @@ useSeoMeta({
 
 const industries = [
   {
-    icon: '🏭',
+    icon: 'i-heroicons-building-office',
     slug: 'manufacturing',
     title: 'Manufacturing & Industrial',
     description:
@@ -16,7 +16,7 @@ const industries = [
     image: null,
   },
   {
-    icon: '🏥',
+    icon: 'i-heroicons-heart',
     slug: 'healthcare',
     title: 'Healthcare Facilities',
     description:
@@ -25,7 +25,7 @@ const industries = [
     image: null,
   },
   {
-    icon: '🏢',
+    icon: 'i-heroicons-building-office-2',
     slug: 'corporate',
     title: 'Corporate Offices',
     description:
@@ -34,7 +34,7 @@ const industries = [
     image: null,
   },
   {
-    icon: '🎓',
+    icon: 'i-heroicons-academic-cap',
     slug: 'education',
     title: 'Educational Institutions',
     description:
@@ -43,7 +43,7 @@ const industries = [
     image: null,
   },
   {
-    icon: '🏘️',
+    icon: 'i-heroicons-home-modern',
     slug: 'residential',
     title: 'Residential Complexes',
     description:
@@ -108,7 +108,7 @@ const industries = [
             <div :class="{ 'lg:col-start-2': index % 2 === 1 }">
               <div class="aspect-[4/3] rounded-3xl image-placeholder flex items-center justify-center">
                 <div class="text-center">
-                  <span class="text-7xl block mb-4">{{ industry.icon }}</span>
+                  <UIcon :name="industry.icon" class="w-20 h-20 mb-4 text-brand" />
                   <p class="text-theme-muted">Industry Image</p>
                 </div>
               </div>
@@ -116,8 +116,8 @@ const industries = [
 
             <!-- Content -->
             <div :class="{ 'lg:col-start-1': index % 2 === 1 }">
-              <div class="w-16 h-16 rounded-2xl icon-box flex items-center justify-center text-3xl mb-6">
-                {{ industry.icon }}
+              <div class="w-16 h-16 rounded-2xl icon-box flex items-center justify-center mb-6">
+                <UIcon :name="industry.icon" class="w-8 h-8" />
               </div>
               <h2 class="font-display text-3xl md:text-4xl font-bold mb-4 text-theme-heading">
                 {{ industry.title }}

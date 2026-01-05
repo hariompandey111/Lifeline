@@ -1,0 +1,335 @@
+{
+  "common": {
+    "companyName": "LTHS",
+    "companyFullName": "Lifetime Hospitality Services",
+    "tagline": "Premium Hospitality Services Since 2016",
+    "learnMore": "Learn More",
+    "getQuote": "Get a Quote",
+    "contactUs": "Contact Us",
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "submit": "Submit",
+    "send": "Send",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "success": "Success",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "followUs": "Follow Us"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "aboutUs": "About Us",
+    "ourStory": "Our Story",
+    "missionVision": "Mission & Vision",
+    "leadership": "Leadership",
+    "whyChooseUs": "Why Choose Us",
+    "services": "Services",
+    "industries": "Industries",
+    "clients": "Clients",
+    "ourClients": "Our Clients",
+    "caseStudies": "Case Studies",
+    "successStories": "Success Stories",
+    "careers": "Careers",
+    "joinUs": "Join Us",
+    "openings": "Current Openings",
+    "lifeAtLths": "Life at LTHS",
+    "apply": "Apply Now",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "subtitle": "Excellence in Hospitality",
+      "title1": "Transforming Spaces,",
+      "title2": "Elevating Experiences",
+      "description": "From healthcare to corporate, we deliver comprehensive facility management solutions that set new standards in quality, reliability, and care.",
+      "cta1": "Explore Services",
+      "cta2": "Get Free Quote"
+    },
+    "stats": {
+      "years": "Years of Excellence",
+      "clients": "Happy Clients",
+      "professionals": "Trained Professionals",
+      "cities": "Cities Covered"
+    },
+    "services": {
+      "title": "Our",
+      "titleHighlight": "Services",
+      "subtitle": "Comprehensive solutions tailored to your industry needs"
+    },
+    "whyUs": {
+      "title": "Why Choose",
+      "titleHighlight": "LTHS",
+      "subtitle": "Setting the benchmark in hospitality services",
+      "point1": "8+ Years of Industry Experience",
+      "point2": "Trained & Verified Professionals",
+      "point3": "24/7 Support & Monitoring",
+      "point4": "Customized Solutions"
+    },
+    "cta": {
+      "title": "Ready to Transform Your",
+      "titleHighlight": "Facility?",
+      "subtitle": "Let's discuss how LTHS can elevate your hospitality experience with our tailored solutions.",
+      "button": "Schedule a Consultation"
+    }
+  },
+  "services": {
+    "patientCare": {
+      "name": "Patient Care Services",
+      "description": "Compassionate, trained attendants for hospitals and home care",
+      "features": ["24/7 Patient Monitoring", "Medication Reminders", "Personal Hygiene Assistance", "Mobility Support"]
+    },
+    "housekeeping": {
+      "name": "Housekeeping Services",
+      "description": "Immaculate cleaning solutions for all environments",
+      "features": ["Daily Cleaning", "Deep Cleaning", "Sanitization", "Waste Management"]
+    },
+    "catering": {
+      "name": "Catering Services",
+      "description": "Hygienic and delicious food services at scale",
+      "features": ["Corporate Catering", "Hospital Nutrition", "Event Catering", "Canteen Management"]
+    },
+    "security": {
+      "name": "Security Services",
+      "description": "Professional guards and surveillance solutions",
+      "features": ["Access Control", "CCTV Monitoring", "Patrol Services", "Emergency Response"]
+    },
+    "horticulture": {
+      "name": "Horticulture Services",
+      "description": "Beautiful landscaping and garden maintenance",
+      "features": ["Landscape Design", "Garden Maintenance", "Indoor Plants", "Lawn Care"]
+    },
+    "maintenance": {
+      "name": "Maintenance Services",
+      "description": "Complete facility maintenance solutions",
+      "features": ["Electrical Work", "Plumbing", "HVAC Maintenance", "General Repairs"]
+    },
+    "officeSupport": {
+      "name": "Office Support Services",
+      "description": "Administrative and clerical support staff",
+      "features": ["Reception Services", "Data Entry", "Document Management", "Office Assistance"]
+    },
+    "pantry": {
+      "name": "Pantry Services",
+      "description": "Efficient pantry and refreshment management",
+      "features": ["Tea/Coffee Service", "Snack Management", "Guest Hospitality", "Inventory Control"]
+    },
+    "labourSupply": {
+      "name": "Labour Supply",
+      "description": "Skilled and unskilled workforce solutions",
+      "features": ["Temporary Staffing", "Project-based Labour", "Skilled Workers", "Manpower Solutions"]
+    }
+  },
+  "about": {
+    "hero": {
+      "subtitle": "About Us",
+      "title1": "Building Trust Through",
+      "title2": "Excellence",
+      "description": "Since 2016, LTHS has been redefining hospitality standards across India with unwavering commitment to quality and care."
+    },
+    "story": {
+      "title": "Our Story",
+      "content": "What started as a small team with a big vision has grown into one of the most trusted names in facility management. Our journey began with a simple belief: every space deserves the highest standard of care.",
+      "founder": "Founded by professionals with decades of experience in hospitality, LTHS was born from the understanding that great service comes from great people."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "content": "To deliver exceptional hospitality services that enhance lives, improve environments, and create lasting partnerships built on trust and excellence."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "content": "To be India's most trusted name in integrated facility management, setting new benchmarks in service quality, innovation, and sustainable practices."
+    },
+    "values": {
+      "title": "Our Values",
+      "excellence": "Excellence",
+      "excellenceDesc": "We never settle for good enough",
+      "integrity": "Integrity",
+      "integrityDesc": "Transparency in all we do",
+      "care": "Care",
+      "careDesc": "People-first approach always",
+      "innovation": "Innovation",
+      "innovationDesc": "Constantly improving our methods"
+    }
+  },
+  "contact": {
+    "hero": {
+      "subtitle": "Contact Us",
+      "title1": "Let's Start a",
+      "title2": "Conversation",
+      "description": "Ready to transform your facility? Get in touch for a free consultation and customized quote."
+    },
+    "form": {
+      "title": "Send Us a",
+      "titleHighlight": "Message",
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "company": "Company Name",
+      "service": "Service Interested In",
+      "selectService": "Select a service",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your requirements...",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Thank You!",
+      "successMessage": "We've received your message and will get back to you within 24 hours.",
+      "sendAnother": "Send Another Message"
+    },
+    "info": {
+      "title": "Get in",
+      "titleHighlight": "Touch",
+      "registeredOffice": "Registered Office",
+      "businessHours": "Business Hours",
+      "weekdays": "Monday - Saturday: 9:00 AM - 6:00 PM",
+      "sunday": "Sunday: Closed"
+    },
+    "quickContact": {
+      "call": "Call Us",
+      "callDesc": "Speak directly with our team",
+      "emailUs": "Email Us",
+      "emailDesc": "We reply within 24 hours",
+      "whatsapp": "WhatsApp",
+      "whatsappDesc": "Quick chat with us",
+      "startChat": "Start Chat"
+    }
+  },
+  "careers": {
+    "hero": {
+      "subtitle": "Careers",
+      "title1": "Build Your Career",
+      "title2": "With LTHS",
+      "description": "Join a team that values growth, respect, and excellence. We're always looking for passionate individuals."
+    },
+    "benefits": {
+      "title": "Why Work With Us",
+      "growth": "Career Growth",
+      "growthDesc": "Clear progression paths and promotions from within",
+      "training": "Training & Development",
+      "trainingDesc": "Regular skill enhancement programs",
+      "culture": "Great Culture",
+      "cultureDesc": "Supportive, inclusive work environment",
+      "compensation": "Competitive Pay",
+      "compensationDesc": "Industry-standard salaries and benefits"
+    },
+    "openings": {
+      "title": "Current Openings",
+      "noOpenings": "No openings match your criteria",
+      "applyNow": "Apply Now",
+      "experience": "Experience",
+      "location": "Location"
+    },
+    "apply": {
+      "title": "Apply",
+      "titleHighlight": "Now",
+      "description": "Fill out the form below and take the first step towards joining our team.",
+      "position": "Position Applying For",
+      "selectPosition": "Select position",
+      "yearsExperience": "Years of Experience",
+      "selectExperience": "Select experience",
+      "resume": "Resume/CV",
+      "uploadResume": "Click to upload or drag and drop",
+      "fileTypes": "PDF, DOC up to 5MB",
+      "coverLetter": "Cover Letter / Additional Information",
+      "coverLetterPlaceholder": "Tell us about yourself...",
+      "submit": "Submit Application",
+      "submitting": "Submitting...",
+      "successTitle": "Application Received!",
+      "successMessage": "Thank you for your interest in joining LTHS. Our HR team will review your application and get back to you within 3-5 business days.",
+      "viewMoreOpenings": "View More Openings",
+      "submitAnother": "Submit Another Application"
+    }
+  },
+  "clients": {
+    "hero": {
+      "subtitle": "Our Clients",
+      "title1": "Trusted by",
+      "title2": "Industry Leaders",
+      "description": "We're proud to serve some of the most respected names across healthcare, corporate, and hospitality sectors."
+    },
+    "industries": {
+      "healthcare": "Healthcare",
+      "corporate": "Corporate",
+      "hospitality": "Hospitality",
+      "education": "Education",
+      "manufacturing": "Manufacturing"
+    }
+  },
+  "industries": {
+    "hero": {
+      "subtitle": "Industries We Serve",
+      "title1": "Expertise Across",
+      "title2": "Sectors",
+      "description": "Specialized solutions tailored to the unique needs of each industry."
+    },
+    "healthcare": {
+      "name": "Healthcare",
+      "description": "Hospitals, clinics, and medical facilities",
+      "services": ["Patient Care", "Hospital Housekeeping", "Dietary Services", "Facility Maintenance"]
+    },
+    "corporate": {
+      "name": "Corporate",
+      "description": "Offices, IT parks, and business centers",
+      "services": ["Office Housekeeping", "Pantry Services", "Security", "Maintenance"]
+    },
+    "hospitality": {
+      "name": "Hospitality",
+      "description": "Hotels, resorts, and restaurants",
+      "services": ["Housekeeping", "F&B Services", "Concierge", "Landscaping"]
+    },
+    "education": {
+      "name": "Education",
+      "description": "Schools, colleges, and universities",
+      "services": ["Campus Cleaning", "Canteen Services", "Security", "Gardening"]
+    },
+    "manufacturing": {
+      "name": "Manufacturing",
+      "description": "Factories, warehouses, and industrial facilities",
+      "services": ["Industrial Cleaning", "Canteen", "Security", "Maintenance"]
+    }
+  },
+  "blog": {
+    "hero": {
+      "subtitle": "Blog & Resources",
+      "title1": "Industry",
+      "title2": "Insights",
+      "description": "Expert perspectives, tips, and resources from the hospitality industry."
+    },
+    "newsletter": {
+      "title": "Stay",
+      "titleHighlight": "Updated",
+      "description": "Subscribe to our newsletter for the latest industry insights and updates.",
+      "placeholder": "Enter your email",
+      "subscribe": "Subscribe",
+      "subscribing": "Subscribing...",
+      "success": "You're subscribed! Check your inbox."
+    },
+    "categories": {
+      "all": "All",
+      "industryInsights": "Industry Insights",
+      "healthcare": "Healthcare",
+      "sustainability": "Sustainability",
+      "security": "Security",
+      "catering": "Catering"
+    }
+  },
+  "footer": {
+    "description": "Premium hospitality services transforming spaces across India since 2016.",
+    "quickLinks": "Quick Links",
+    "ourServices": "Our Services",
+    "contactInfo": "Contact Info",
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Subscribe for updates and industry insights.",
+      "placeholder": "Your email",
+      "subscribe": "Subscribe"
+    },
+    "copyright": "© {year} LTHS. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  }
+}
+

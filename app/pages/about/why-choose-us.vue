@@ -7,49 +7,49 @@ useSeoMeta({
 
 const reasons = [
   {
-    icon: '🏆',
+    icon: 'i-heroicons-trophy',
     title: 'Proven Track Record',
     description:
       'Over 8 years of excellence serving leading corporations like TE Connectivity, Thyssenkrupp, and Forbes Marshall.',
   },
   {
-    icon: '👥',
+    icon: 'i-heroicons-user-group',
     title: 'Trained Professionals',
     description:
       '500+ trained and certified professionals delivering quality service across all our service categories.',
   },
   {
-    icon: '🔧',
+    icon: 'i-heroicons-wrench-screwdriver',
     title: 'Own Infrastructure',
     description:
       'We operate with our own resources and infrastructure, ensuring complete control and quality assurance.',
   },
   {
-    icon: '📋',
+    icon: 'i-heroicons-clipboard-document-list',
     title: 'Comprehensive Solutions',
     description:
       'From patient care to security services - we offer end-to-end hospitality solutions under one roof.',
   },
   {
-    icon: '⚡',
+    icon: 'i-heroicons-bolt',
     title: 'Quick Response',
     description:
       '24/7 support and rapid response times to ensure your operations never face disruption.',
   },
   {
-    icon: '💰',
+    icon: 'i-heroicons-banknotes',
     title: 'Cost-Effective',
     description:
       'Competitive pricing without compromising on quality. We deliver value that exceeds investment.',
   },
   {
-    icon: '🎓',
+    icon: 'i-heroicons-academic-cap',
     title: 'Industry Expertise',
     description:
       'Led by professionals with decades of hospitality experience, bringing best practices to every engagement.',
   },
   {
-    icon: '🔄',
+    icon: 'i-heroicons-arrow-path',
     title: 'Flexible Engagement',
     description:
       'Customizable service packages tailored to your specific requirements and budget.',
@@ -127,8 +127,8 @@ const stats = [
             :visible="{ opacity: 1, y: 0, transition: { delay: index * 80 } }"
             class="group p-6 rounded-2xl card-gradient hover:border-brand-30 transition-all duration-300 hover-lift"
           >
-            <div class="w-16 h-16 rounded-2xl icon-box flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform">
-              {{ reason.icon }}
+            <div class="w-16 h-16 rounded-2xl icon-box flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <UIcon :name="reason.icon" class="w-8 h-8" />
             </div>
             <h3 class="font-display text-lg font-semibold text-theme-heading mb-2 group-hover:text-brand transition-colors">
               {{ reason.title }}

@@ -85,7 +85,7 @@ useSeoMeta({
                 <span class="text-4xl">🏗️</span>
               </div>
               <div class="aspect-square rounded-2xl image-placeholder flex items-center justify-center">
-                <span class="text-4xl">🤝</span>
+                <UIcon name="i-heroicons-hand-raised" class="w-12 h-12 text-brand" />
               </div>
             </div>
 

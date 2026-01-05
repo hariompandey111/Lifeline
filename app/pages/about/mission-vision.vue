@@ -7,32 +7,32 @@ useSeoMeta({
 
 const values = [
   {
-    icon: '💎',
+    icon: 'i-heroicons-sparkles',
     title: 'Excellence',
     description: 'Striving for the highest standards in every service we deliver.',
   },
   {
-    icon: '🤝',
+    icon: 'i-heroicons-hand-raised',
     title: 'Integrity',
     description: 'Building trust through honest and transparent business practices.',
   },
   {
-    icon: '💡',
+    icon: 'i-heroicons-light-bulb',
     title: 'Innovation',
     description: 'Continuously improving and adapting to meet evolving needs.',
   },
   {
-    icon: '❤️',
+    icon: 'i-heroicons-heart',
     title: 'Care',
     description: 'Genuine concern for our clients, employees, and communities.',
   },
   {
-    icon: '⚡',
+    icon: 'i-heroicons-bolt',
     title: 'Reliability',
     description: 'Consistent, dependable service you can count on every time.',
   },
   {
-    icon: '🌱',
+    icon: 'i-lucide-sprout',
     title: 'Growth',
     description: 'Committed to the continuous development of our team and services.',
   },
@@ -173,7 +173,7 @@ const values = [
             :visible="{ opacity: 1, y: 0, transition: { delay: index * 100 } }"
             class="p-8 rounded-2xl card-gradient hover:border-brand-30 transition-all duration-300 hover-lift"
           >
-            <span class="text-4xl mb-4 block">{{ value.icon }}</span>
+            <UIcon :name="value.icon" class="w-10 h-10 mb-4 text-brand" />
             <h3 class="font-display text-xl font-semibold text-theme-heading mb-2">
               {{ value.title }}
             </h3>

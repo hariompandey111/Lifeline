@@ -7,19 +7,19 @@ useSeoMeta({
 
 const highlights = [
   {
-    icon: '🎯',
+    icon: 'i-heroicons-cursor-arrow-rays',
     title: 'Our Mission',
     description:
       'To deliver exceptional hospitality services that transform environments and exceed expectations.',
   },
   {
-    icon: '👁️',
+    icon: 'i-heroicons-eye',
     title: 'Our Vision',
     description:
       'To be the most trusted hospitality brand globally, known for innovation and excellence.',
   },
   {
-    icon: '💎',
+    icon: 'i-heroicons-sparkles',
     title: 'Our Values',
     description:
       'Integrity, excellence, innovation, and a commitment to our clients and communities.',
@@ -100,25 +100,25 @@ const timeline = [
                 title: 'Our Story',
                 desc: 'The journey that shaped us',
                 href: '/about/our-story',
-                icon: '📖',
+                icon: 'i-heroicons-book-open',
               },
               {
                 title: 'Leadership',
                 desc: 'Meet our team',
                 href: '/about/leadership',
-                icon: '👥',
+                icon: 'i-heroicons-user-group',
               },
               {
                 title: 'Mission & Vision',
                 desc: 'What drives us',
                 href: '/about/mission-vision',
-                icon: '🎯',
+                icon: 'i-heroicons-cursor-arrow-rays',
               },
               {
                 title: 'Why Choose Us',
                 desc: 'Our differentiators',
                 href: '/about/why-choose-us',
-                icon: '⭐',
+                icon: 'i-heroicons-star',
               },
             ]"
             :key="item.title"
@@ -129,7 +129,7 @@ const timeline = [
             class="group p-6 rounded-2xl card-gradient hover:border-brand-30 transition-all duration-300 hover-lift"
             :data-testid="`about-nav-${item.title.toLowerCase().replace(/\s+/g, '-')}`"
           >
-            <span class="text-3xl mb-4 block">{{ item.icon }}</span>
+            <UIcon :name="item.icon" class="w-10 h-10 mb-4 text-brand" />
             <h3 class="font-display text-xl font-semibold text-theme-heading group-hover:text-brand transition-colors">
               {{ item.title }}
             </h3>
@@ -147,7 +147,7 @@ const timeline = [
           <div class="relative">
             <div class="aspect-[4/3] rounded-3xl image-placeholder flex items-center justify-center">
               <div class="text-center">
-                <span class="text-6xl block mb-4">🏢</span>
+                <UIcon name="i-heroicons-building-office-2" class="w-16 h-16 mb-4 text-brand" />
                 <p class="text-theme-muted">Company Image</p>
               </div>
             </div>
@@ -200,8 +200,8 @@ const timeline = [
             :visible="{ opacity: 1, y: 0, transition: { delay: index * 100 } }"
             class="text-center p-8 rounded-3xl card-gradient"
           >
-            <div class="w-20 h-20 mx-auto rounded-2xl icon-box flex items-center justify-center text-4xl mb-6">
-              {{ item.icon }}
+            <div class="w-20 h-20 mx-auto rounded-2xl icon-box flex items-center justify-center mb-6">
+              <UIcon :name="item.icon" class="w-10 h-10" />
             </div>
             <h3 class="font-display text-2xl font-semibold text-theme-heading mb-4">
               {{ item.title }}

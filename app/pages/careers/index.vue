@@ -34,32 +34,32 @@ const openings = [
 
 const benefits = [
   {
-    icon: '💰',
+    icon: 'i-heroicons-banknotes',
     title: 'Competitive Salary',
     description: 'Industry-standard compensation with regular increments.',
   },
   {
-    icon: '📚',
+    icon: 'i-heroicons-book-open',
     title: 'Training & Development',
     description: 'Continuous learning opportunities to grow your skills.',
   },
   {
-    icon: '🏥',
+    icon: 'i-heroicons-heart',
     title: 'Health Benefits',
     description: 'Medical coverage for you and your family.',
   },
   {
-    icon: '📈',
+    icon: 'i-heroicons-chart-bar',
     title: 'Career Growth',
     description: 'Clear paths for advancement within the organization.',
   },
   {
-    icon: '👥',
+    icon: 'i-heroicons-user-group',
     title: 'Great Team',
     description: 'Work with supportive colleagues in a positive environment.',
   },
   {
-    icon: '⚖️',
+    icon: 'i-heroicons-scale',
     title: 'Work-Life Balance',
     description: 'We value your time and personal commitments.',
   },
@@ -138,7 +138,7 @@ const benefits = [
           <div class="relative">
             <div class="aspect-[4/3] rounded-3xl image-placeholder flex items-center justify-center">
               <div class="text-center">
-                <span class="text-6xl block mb-4">👥</span>
+                <UIcon name="i-heroicons-user-group" class="w-16 h-16 mb-4 text-brand" />
                 <p class="text-theme-muted">Team Photo</p>
               </div>
             </div>
@@ -161,8 +161,8 @@ const benefits = [
                 :visible="{ opacity: 1, y: 0, transition: { delay: index * 50 } }"
                 class="flex gap-4"
               >
-                <div class="w-12 h-12 rounded-lg icon-box flex items-center justify-center text-2xl flex-shrink-0">
-                  {{ benefit.icon }}
+                <div class="w-12 h-12 rounded-lg icon-box flex items-center justify-center flex-shrink-0">
+                  <UIcon :name="benefit.icon" class="w-6 h-6" />
                 </div>
                 <div>
                   <h3 class="font-semibold text-theme-heading">{{ benefit.title }}</h3>

@@ -14,7 +14,7 @@ interface ServiceData {
 
 const servicesData: Record<string, ServiceData> = {
   'patient-care': {
-    icon: '🏥',
+    icon: 'i-heroicons-heart',
     title: 'Patient Care Services',
     description: 'Compassionate and professional patient care with trained attendants ensuring comfort and well-being.',
     longDescription: 'Our Patient Care Services provide comprehensive support for individuals requiring medical or personal assistance. Our trained attendants offer compassionate care while maintaining the highest standards of professionalism and dignity.',
@@ -42,7 +42,7 @@ const servicesData: Record<string, ServiceData> = {
     ],
   },
   housekeeping: {
-    icon: '✨',
+    icon: 'i-heroicons-sparkles',
     title: 'Housekeeping Services',
     description: 'Comprehensive cleaning and maintenance for pristine, hygienic environments.',
     longDescription: 'Our Housekeeping Services deliver thorough cleaning and maintenance solutions that ensure your facilities remain spotless, hygienic, and professionally maintained at all times.',
@@ -61,7 +61,7 @@ const servicesData: Record<string, ServiceData> = {
     ],
   },
   horticulture: {
-    icon: '🌿',
+    icon: 'i-lucide-leaf',
     title: 'Horticulture Services',
     description: 'Expert landscaping and garden maintenance for beautiful green spaces.',
     longDescription: 'Transform your outdoor and indoor spaces with our professional Horticulture Services. From landscaping design to ongoing maintenance, we create and maintain beautiful green environments.',
@@ -80,7 +80,7 @@ const servicesData: Record<string, ServiceData> = {
     ],
   },
   catering: {
-    icon: '🍽️',
+    icon: 'i-lucide-utensils',
     title: 'Catering Services',
     description: 'Delicious, nutritious meals with quality ingredients and professional service.',
     longDescription: 'Our Catering Services provide exceptional food experiences for your organization. From daily canteen operations to special events, we deliver quality cuisine with impeccable service.',
@@ -99,7 +99,7 @@ const servicesData: Record<string, ServiceData> = {
     ],
   },
   'office-support': {
-    icon: '💼',
+    icon: 'i-heroicons-briefcase',
     title: 'Office Support Services',
     description: 'Efficient administrative and office support to streamline operations.',
     longDescription: 'Our Office Support Services provide the administrative backbone your organization needs. From reception to documentation, we handle the details so you can focus on core business.',
@@ -118,7 +118,7 @@ const servicesData: Record<string, ServiceData> = {
     ],
   },
   'labour-supply': {
-    icon: '👷',
+    icon: 'i-heroicons-users',
     title: 'Labour Supply',
     description: 'Reliable, skilled workforce supply for industrial and commercial needs.',
     longDescription: 'Our Labour Supply services provide you with a flexible, reliable workforce for various industrial and commercial requirements. We handle recruitment, training, and management.',
@@ -137,7 +137,7 @@ const servicesData: Record<string, ServiceData> = {
     ],
   },
   maintenance: {
-    icon: '🔧',
+    icon: 'i-heroicons-wrench-screwdriver',
     title: 'Maintenance Services',
     description: 'Reliable maintenance and repair services for smooth facility operations.',
     longDescription: 'Our Maintenance Services ensure your facilities and equipment remain in optimal condition. From preventive maintenance to emergency repairs, we keep your operations running smoothly.',
@@ -156,7 +156,7 @@ const servicesData: Record<string, ServiceData> = {
     ],
   },
   pantry: {
-    icon: '☕',
+    icon: 'i-lucide-coffee',
     title: 'Pantry Services',
     description: 'Professional pantry management for refreshments and amenities.',
     longDescription: 'Our Pantry Services ensure your employees and guests have access to quality refreshments and amenities. We manage everything from tea and coffee service to inventory management.',
@@ -175,7 +175,7 @@ const servicesData: Record<string, ServiceData> = {
     ],
   },
   security: {
-    icon: '🛡️',
+    icon: 'i-heroicons-shield-check',
     title: 'Security Services',
     description: 'Trained security personnel for comprehensive premises protection.',
     longDescription: 'Our Security Services provide reliable protection for your premises, assets, and people. Our trained security personnel are equipped to handle various security requirements professionally.',
@@ -227,9 +227,9 @@ useSeoMeta({
               v-motion
               :initial="{ opacity: 0, scale: 0.8 }"
               :enter="{ opacity: 1, scale: 1 }"
-              class="w-24 h-24 rounded-3xl icon-box flex items-center justify-center text-5xl mb-8"
+              class="w-24 h-24 rounded-3xl icon-box flex items-center justify-center mb-8"
             >
-              {{ currentService.icon }}
+              <UIcon :name="currentService.icon" class="w-12 h-12" />
             </div>
             <h1
               v-motion
@@ -277,7 +277,7 @@ useSeoMeta({
           <div class="relative hidden lg:block">
             <div class="aspect-square rounded-3xl image-placeholder flex items-center justify-center">
               <div class="text-center">
-                <span class="text-8xl block mb-4">{{ currentService.icon }}</span>
+                <UIcon :name="currentService.icon" class="w-24 h-24 mb-4 text-brand" />
                 <p class="text-theme-muted">Service Image</p>
               </div>
             </div>

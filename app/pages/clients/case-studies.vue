@@ -111,7 +111,7 @@ const caseStudies = [
             <!-- Image Placeholder -->
             <div class="aspect-video rounded-2xl image-placeholder flex items-center justify-center mb-8">
               <div class="text-center">
-                <span class="text-5xl block mb-2">🏭</span>
+                <UIcon name="i-heroicons-building-office" class="w-14 h-14 mb-2 text-brand" />
                 <p class="text-theme-muted">Project Image</p>
               </div>
             </div>
