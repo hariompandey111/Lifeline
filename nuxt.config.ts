@@ -62,6 +62,7 @@ export default defineNuxtConfig({
         { name: 'description', content: 'Premium hospitality services since 2016 - Patient Care, Housekeeping, Catering, Security & more' },
       ],
       link: [
+        { rel: 'icon', type: 'image/png', href: '/favicon.png' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         // ============================================
