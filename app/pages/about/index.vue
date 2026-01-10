@@ -222,7 +222,7 @@ const timeline = [
 
         <div class="relative">
           <!-- Timeline Line -->
-          <div class="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-secondary-500 via-secondary-500/50 to-transparent"></div>
+          <!-- <div class="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-secondary-500 via-secondary-500/50 to-transparent z-0"></div> -->
 
           <div class="flex flex-col gap-12">
             <div
@@ -237,12 +237,12 @@ const timeline = [
               <div class="flex-1 hidden md:block"></div>
 
               <!-- Dot -->
-              <div class="absolute left-8 md:left-1/2 w-4 h-4 -translate-x-1/2 rounded-full bg-brand z-10"></div>
+              <!-- <div class="absolute left-8 md:left-1/2 w-4 h-4 -translate-x-1/2 rounded-full bg-brand z-10"></div> -->
 
               <!-- Content -->
               <div
-                class="flex-1 ml-16 md:ml-0 p-6 rounded-2xl card-gradient"
-                :class="index % 2 === 0 ? 'md:mr-12' : 'md:ml-12'"
+                class="flex-1 ml-16 md:ml-0 p-6 rounded-2xl card-gradient z-5 relative"
+                :class="index % 2 === 0 ? 'md:mr-20' : 'md:ml-20'"
               >
                 <span class="text-brand font-bold text-lg">{{ item.year }}</span>
                 <h3 class="font-display text-xl font-semibold text-theme-heading mt-2">
