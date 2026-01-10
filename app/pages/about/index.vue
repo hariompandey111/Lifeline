@@ -147,7 +147,7 @@ const timeline = [
           <div class="relative">
             <div class="aspect-[4/3] rounded-3xl image-placeholder flex items-center justify-center">
               <div class="text-center">
-                <img src="/success_story_image.png" alt="About Image" class="w-full h-full object-cover rounded-3xl">
+                <img src="https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/success_story_image.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvc3VjY2Vzc19zdG9yeV9pbWFnZS5wbmciLCJpYXQiOjE3NjgwNDI4NzcsImV4cCI6MTgzMjgxNzg1NzQwNzd9.Gu0yMonpCwktvJb3fSNDKHLQD2E6dr4Iz9tyOJjdbWM" alt="About Image" class="w-full h-full object-cover rounded-3xl">
               </div>
             </div>
             <div class="absolute -bottom-8 -right-8 glass rounded-2xl p-6 shadow-2xl">

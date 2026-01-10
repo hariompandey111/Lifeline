@@ -54,7 +54,7 @@ const socialLinks = [
         <div class="lg:col-span-2">
           <NuxtLink :to="localePath('/')" class="flex items-center space-x-3 mb-6">
             <img
-              src="/lths_logo.svg"
+              src="https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/lths_logo.svg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvbHRoc19sb2dvLnN2ZyIsImlhdCI6MTc2ODA0Mjg0NSwiZXhwIjoxMDQ3Mjc0NTU1MzYxNDA0NH0.e8nzvrMxHaFXMddvWt4eyBtLVENG_-ld1HJK2aSF3QA"
               alt="LTHS Logo"
               class="h-12 w-auto object-contain"
             >

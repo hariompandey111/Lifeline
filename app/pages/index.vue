@@ -230,7 +230,7 @@ const clients = [
                 playsinline
                 class="absolute inset-0 w-full h-full object-cover"
               >
-                <source src="/hero_video_new.mp4" type="video/mp4" />
+                <source src="https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/hero_video_new.mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvaGVyb192aWRlb19uZXcubXA0IiwiaWF0IjoxNzY4MDQyNzkxLCJleHAiOjE5OTk2MDU4Njk5OTF9.oLvkmUY9ziBfy1RbbCvUcWM2BbtuWEWRK_32O4zj0IM" type="video/mp4" />
               </video>
               
               <!-- Video Overlay for better text contrast -->
@@ -312,24 +312,24 @@ const clients = [
               <div
                 class="aspect-[3/4] rounded-2xl image-placeholder flex items-center justify-center"
               >
-                <UIcon name="i-heroicons-building-office-2" class="w-12 h-12 text-brand" />
+                <img src="/home_grid_1.png" alt="Home Grid 1" class="w-full h-full object-cover rounded-2xl">
               </div>
               <div
                 class="aspect-square rounded-2xl image-placeholder flex items-center justify-center"
               >
-                <UIcon name="i-heroicons-user-group" class="w-12 h-12 text-brand" />
+                <img src="/home_grid_2.png" alt="Home Grid 2" class="w-full h-full object-cover rounded-2xl">
               </div>
             </div>
             <div class="space-y-4 pt-8">
               <div
                 class="aspect-square rounded-2xl image-placeholder flex items-center justify-center"
               >
-                <UIcon name="i-heroicons-hand-raised" class="w-12 h-12 text-brand" />
+                <img src="/home_grid_3.png" alt="Home Grid 3" class="w-full h-full object-cover rounded-2xl">
               </div>
               <div
                 class="aspect-[3/4] rounded-2xl image-placeholder flex items-center justify-center"
               >
-                <UIcon name="i-heroicons-sparkles" class="w-12 h-12 text-brand" />
+                <img src="/home_grid_4.png" alt="Home Grid 4" class="w-full h-full object-cover rounded-2xl">
               </div>
             </div>
           </div>
@@ -564,7 +564,7 @@ const clients = [
               class="aspect-square rounded-3xl image-placeholder flex items-center justify-center"
             >
               <div class="text-center">
-                <img src="/industry_image.png" alt="Industry Image" class="w-full h-full object-cover rounded-3xl">
+                <img src="https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/industry_image.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvaW5kdXN0cnlfaW1hZ2UucG5nIiwiaWF0IjoxNzY4MDQyODE5LCJleHAiOjEwNDc0NDk0NTE5NjE5fQ.osWhFlJgZDpaNoEKamvRL10KhWQmV9u6xsxr_qMwaTo" alt="Industry Image" class="w-full h-full object-cover rounded-3xl">
               </div>
             </div>
 

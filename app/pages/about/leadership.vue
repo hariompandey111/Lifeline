@@ -12,7 +12,7 @@ const leaders = [
     // qualification: '3-Year Diploma in Hotel Management (Pune University)',
     experience: '20+ years in facility & hospitality management',
     bio: 'An experienced Operations Manager with a proven track record of optimizing processes, reducing costs, and driving operational excellence. With over 20 years in the hospitality and facility management industry, Mr. Londhe has led teams of 550+ professionals and managed multi-site operations across healthcare, corporate, and hospitality sectors. His expertise spans strategic planning, staff development, client relationship management, and ensuring compliance with labor laws, safety norms, and environmental regulations. Previously holding leadership positions at Unify Facility Management, SMS Integrated Facility Services, and other renowned hospitality companies, he brings invaluable experience in business development, budgeting, and service delivery optimization.',
-    image: '/vishal_londhe_pic.png',
+    image: 'https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/vishal_londhe_pic.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvdmlzaGFsX2xvbmRoZV9waWMucG5nIiwiaWF0IjoxNzY4MDQyOTI0LCJleHAiOjEwNDc0Mzk2MDU4NzAxMjR9.Qj_OMYS1dcBm7en4gzFHJNRk5ckXxr6Vb5kIBk4KQGo',
     contact: {
       phone: '+918320140215',
       email: 'londhe.vishal20@gmail.com',
@@ -32,7 +32,7 @@ const leaders = [
     // qualification: 'Bachelor of Arts (Shri Vishwanath PG College, Jaunpur UP)',
     experience: '10+ years in hospitality & facility management',
     bio: 'An accomplished Operations Manager with expertise in optimizing processes, reducing costs, and improving operational efficiency. With over a decade of experience across hospitality and healthcare sectors, Mr. Mishra has successfully led teams of 400+ professionals and managed end-to-end operations including billing, vendor coordination, and staff development. His career spans leadership roles at Unify Facility Management, Express Hospitality, and Zydus Hospital, where he excelled in client relationship management, business development, and ensuring compliance with labor laws and safety standards. His strong communication skills and decision-making abilities have consistently driven operational excellence.',
-    image: '/anoop picture.png',
+    image: 'https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/anoop%20picture.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvYW5vb3AgcGljdHVyZS5wbmciLCJpYXQiOjE3NjgwNDI3MTgsImV4cCI6NDYyNzM2MzMxMTh9.XibE6OPcEcgU2teRIB5mtaJ_F95yo6OErsMP9PkqqvY',
     contact: {
       phone: '+918320140215',
       email: 'anuphsd@gmail.com',
