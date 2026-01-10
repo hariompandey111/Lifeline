@@ -224,7 +224,7 @@ const clients = [
                 playsinline
                 class="absolute inset-0 w-full h-full object-cover"
               >
-                <source src="/hero_video.mp4" type="video/mp4" />
+                <source src="/hero_video_new.mp4" type="video/mp4" />
               </video>
               
               <!-- Video Overlay for better text contrast -->

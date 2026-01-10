@@ -105,14 +105,15 @@ function handleScroll() {
           class="flex items-center space-x-3 group"
           data-testid="logo-link"
         >
-          <div
-            class="w-12 h-12 gradient-secondary rounded-xl flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300"
+          <img 
+            src="/lths_logo.svg" 
+            alt="LTHS Logo" 
+            class="h-16 w-auto object-contain transform group-hover:scale-105 transition-transform duration-300"
           >
-            <span class="text-white dark:text-black font-display font-bold text-xl">L</span>
-          </div>
           <div class="hidden sm:block">
             <span class="font-display text-xl font-semibold gradient-text">{{ t('common.companyName') }}</span>
-            <p class="text-xs text-theme-muted -mt-1">{{ t('common.companyFullName') }}</p>
+            <p class="text-[13px]  -mt-1">{{ t('common.companyFullName') }}</p>
+            <p class="text-[10px] text-theme-muted">{{ t('common.tagLine') }}</p>
           </div>
         </NuxtLink>
 

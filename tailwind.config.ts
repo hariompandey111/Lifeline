@@ -205,11 +205,37 @@ const themes = {
       800: '#423056', 900: '#251B32', 950: '#130E19',
     },
   },
+
+  // ──────────────────────────────────────────
+  // THEME 9: "Brand Signature"
+  // Logo Colors - Dark Teal Shield + Golden Arrow
+  // Matches LTHS Logo Identity
+  // ──────────────────────────────────────────
+  brandSignature: {
+    primary: {
+      DEFAULT: '#2D5058',
+      50: '#EBF1F2', 100: '#D7E3E5', 200: '#AFC7CB', 300: '#87ABB1',
+      400: '#5F8F97', 500: '#2D5058', 600: '#264349', 700: '#1E363A',
+      800: '#17292B', 900: '#0F1C1C', 950: '#080E0E',
+    },
+    secondary: {
+      DEFAULT: '#C7A067',
+      50: '#FAF6EF', 100: '#F5EDDF', 200: '#EBDABF', 300: '#E0C79F',
+      400: '#D4B383', 500: '#C7A067', 600: '#A88350', 700: '#84663E',
+      800: '#60492C', 900: '#3C2C1A', 950: '#1E160D',
+    },
+    accent: {
+      DEFAULT: '#4A7C86',
+      50: '#EDF4F5', 100: '#DBE9EB', 200: '#B7D3D7', 300: '#93BDC3',
+      400: '#6FA7AF', 500: '#4A7C86', 600: '#3D666E', 700: '#305056',
+      800: '#233A3E', 900: '#162426', 950: '#0B1213',
+    },
+  },
 }
 
 // ⬇️ CHANGE THIS TO SWITCH THEME ⬇️
-const activeTheme = 'modernHealthcare'
-// Options: 'corporateTrust' | 'elegantEmerald' | 'modernHealthcare' | 'royalHospitality' | 'cleanFresh' | 'warmEarth' | 'oceanBreeze' | 'luxePurple'
+const activeTheme = 'brandSignature'
+// Options: 'corporateTrust' | 'elegantEmerald' | 'modernHealthcare' | 'royalHospitality' | 'cleanFresh' | 'warmEarth' | 'oceanBreeze' | 'luxePurple' | 'brandSignature'
 
 const selectedTheme = themes[activeTheme]
 
