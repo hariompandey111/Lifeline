@@ -268,9 +268,7 @@ async function handleSubmit() {
                 <div>
                   <h3 class="font-semibold text-theme-heading text-lg mb-1">Phone</h3>
                   <p class="text-theme-secondary">
-                    <a href="tel:8956690990" class="hover:text-brand transition-colors">8956690990</a>
-                    /
-                    <a href="tel:8320140215" class="hover:text-brand transition-colors">8320140215</a>
+                    <a href="tel:+918320140215" class="hover:text-brand transition-colors">+918320140215</a>
                   </p>
                 </div>
               </div>
@@ -284,7 +282,7 @@ async function handleSubmit() {
                 <div>
                   <h3 class="font-semibold text-theme-heading text-lg mb-1">Email</h3>
                   <p class="text-theme-secondary">
-                    <a href="mailto:aman.l@lths.in" class="hover:text-brand transition-colors">aman.l@lths.in</a>
+                    <a href="mailto:anup@lifetimehospitality.in" class="hover:text-brand transition-colors">anup@lifetimehospitality.in</a>
                   </p>
                 </div>
               </div>
@@ -331,22 +329,22 @@ async function handleSubmit() {
                 icon: 'i-heroicons-phone',
                 title: 'Call Us',
                 desc: 'Speak directly with our team',
-                action: 'Call 8956690990',
-                href: 'tel:8956690990',
+                action: 'Call +918320140215',
+                href: 'tel:+918320140215',
               },
               {
                 icon: 'i-heroicons-envelope',
                 title: 'Email Us',
                 desc: 'We reply within 24 hours',
-                action: 'aman.l@lths.in',
-                href: 'mailto:aman.l@lths.in',
+                action: 'anup@lifetimehospitality.in',
+                href: 'mailto:anup@lifetimehospitality.in',
               },
               {
                 icon: 'i-heroicons-chat-bubble-left-right',
                 title: 'WhatsApp',
                 desc: 'Quick chat with us',
                 action: 'Start Chat',
-                href: 'https://wa.me/918956690990',
+                href: 'https://wa.me/918320140215',
               },
             ]"
             :key="item.title"

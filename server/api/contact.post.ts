@@ -136,8 +136,8 @@ export default defineEventHandler(async (event) => {
           <p>Best regards,<br>LTHS Team</p>
           <p style="color: #666; font-size: 12px;">
             Lifetime Hospitality Services<br>
-            Phone: 8956690990 / 8320140215<br>
-            Email: aman.l@lths.in
+            Phone: +918320140215<br>
+            Email: anup@lifetimehospitality.in
           </p>
         `,
       })

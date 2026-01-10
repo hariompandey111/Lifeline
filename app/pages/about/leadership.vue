@@ -14,7 +14,7 @@ const leaders = [
     bio: 'An experienced Operations Manager with a proven track record of optimizing processes, reducing costs, and driving operational excellence. With over 20 years in the hospitality and facility management industry, Mr. Londhe has led teams of 550+ professionals and managed multi-site operations across healthcare, corporate, and hospitality sectors. His expertise spans strategic planning, staff development, client relationship management, and ensuring compliance with labor laws, safety norms, and environmental regulations. Previously holding leadership positions at Unify Facility Management, SMS Integrated Facility Services, and other renowned hospitality companies, he brings invaluable experience in business development, budgeting, and service delivery optimization.',
     image: '/vishal_londhe_pic.png',
     contact: {
-      phone: '+918956690990',
+      phone: '+918320140215',
       email: 'londhe.vishal20@gmail.com',
     },
     highlights: [

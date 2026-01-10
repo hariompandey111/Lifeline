@@ -53,11 +53,11 @@ const socialLinks = [
         <!-- Brand Column -->
         <div class="lg:col-span-2">
           <NuxtLink :to="localePath('/')" class="flex items-center space-x-3 mb-6">
-            <div
-              class="w-12 h-12 gradient-secondary rounded-xl flex items-center justify-center"
+            <img
+              src="/lths_logo.svg"
+              alt="LTHS Logo"
+              class="h-12 w-auto object-contain"
             >
-              <span class="text-white dark:text-black font-display font-bold text-xl">L</span>
-            </div>
             <div>
               <span class="font-display text-xl font-semibold gradient-text">{{ t('common.companyName') }}</span>
               <p class="text-xs text-theme-muted">{{ t('common.companyFullName') }}</p>
@@ -92,7 +92,7 @@ const socialLinks = [
               <span>B-609, Ayush Park, 2, Varale Phata,<br />Talegaon Dabhade, Pune – 410507</span>
             </div>
             <a
-              href="tel:8956690990"
+              href="tel:+918320140215"
               class="flex items-center gap-3 text-sm text-theme-secondary hover:text-brand transition-colors"
             >
               <svg
@@ -108,10 +108,10 @@ const socialLinks = [
                   d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                 />
               </svg>
-              8956690990 / 8320140215
+              +918320140215
             </a>
             <a
-              href="mailto:aman.l@lths.in"
+              href="mailto:anup@lifetimehospitality.in"
               class="flex items-center gap-3 text-sm text-theme-secondary hover:text-brand transition-colors"
             >
               <svg
@@ -127,7 +127,7 @@ const socialLinks = [
                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                 />
               </svg>
-              aman.l@lths.in
+              anup@lifetimehospitality.in
             </a>
           </div>
         </div>

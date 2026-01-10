@@ -262,7 +262,7 @@ useSeoMeta({
                 Get a Quote
               </NuxtLink>
               <a
-                href="tel:8956690990"
+                href="tel:+918320140215"
                 class="inline-flex items-center gap-2 px-8 py-4 btn-ghost rounded-full"
               >
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

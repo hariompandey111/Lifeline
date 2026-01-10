@@ -46,6 +46,12 @@ const services = computed(() => [
     description: t('services.maintenance.description'),
     href: '/services/maintenance',
   },
+  {
+    icon: 'i-lucide-users',
+    title: t('services.labourSupply.name'),
+    description: t('services.labourSupply.description'),
+    href: '/services/labour-supply',
+  }
 ])
 
 const clients = [
@@ -558,8 +564,7 @@ const clients = [
               class="aspect-square rounded-3xl image-placeholder flex items-center justify-center"
             >
               <div class="text-center">
-                <UIcon name="i-heroicons-building-office" class="w-16 h-16 mb-4 text-brand" />
-                <p class="text-theme-muted">Industry Image Placeholder</p>
+                <img src="/industry_image.png" alt="Industry Image" class="w-full h-full object-cover rounded-3xl">
               </div>
             </div>
 
@@ -605,7 +610,7 @@ const clients = [
                   {{ t('home.cta.button') }}
                 </NuxtLink>
                 <a
-                  href="tel:8956690990"
+                  href="tel:+918320140215"
                   class="inline-flex items-center gap-3 px-8 py-4 btn-ghost rounded-full"
                 >
                   <svg

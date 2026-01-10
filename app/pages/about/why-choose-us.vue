@@ -209,10 +209,10 @@ const stats = [
             Get a Free Quote
           </NuxtLink>
           <a
-            href="tel:8956690990"
+            href="tel:+918320140215"
             class="inline-flex items-center gap-3 px-8 py-4 btn-ghost rounded-full"
           >
-            Call 8956690990
+            Call +918320140215
           </a>
         </div>
       </div>

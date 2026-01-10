@@ -22,6 +22,6 @@ export function getEmailConfig() {
   const config = useRuntimeConfig()
   return {
     from: config.emailFrom || 'LTHS Contact <onboarding@resend.dev>',
-    to: config.emailTo || 'aman.l@lths.in',
+    to: config.emailTo || 'anup@lifetimehospitality.in',
   }
 }

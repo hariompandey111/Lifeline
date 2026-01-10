@@ -247,8 +247,7 @@ const stats = [
           <div class="relative">
             <div class="aspect-square rounded-3xl image-placeholder flex items-center justify-center">
               <div class="text-center">
-                <span class="text-6xl block mb-4">📈</span>
-                <p class="text-theme-muted">Success Story Image</p>
+                <img src="/success_story_image.png" alt="Success Story Image" class="w-full h-full object-cover rounded-3xl">
               </div>
             </div>
           </div>

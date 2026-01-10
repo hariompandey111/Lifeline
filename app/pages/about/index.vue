@@ -147,8 +147,7 @@ const timeline = [
           <div class="relative">
             <div class="aspect-[4/3] rounded-3xl image-placeholder flex items-center justify-center">
               <div class="text-center">
-                <UIcon name="i-heroicons-building-office-2" class="w-16 h-16 mb-4 text-brand" />
-                <p class="text-theme-muted">Company Image</p>
+                <img src="/success_story_image.png" alt="About Image" class="w-full h-full object-cover rounded-3xl">
               </div>
             </div>
             <div class="absolute -bottom-8 -right-8 glass rounded-2xl p-6 shadow-2xl">
@@ -225,7 +224,7 @@ const timeline = [
           <!-- Timeline Line -->
           <div class="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-secondary-500 via-secondary-500/50 to-transparent"></div>
 
-          <div class="space-y-12">
+          <div class="flex flex-col gap-12">
             <div
               v-for="(item, index) in timeline"
               :key="item.year"

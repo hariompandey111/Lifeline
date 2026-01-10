@@ -16,6 +16,26 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   compatibilityDate: '2024-04-03',
 
+  // Alias Configuration
+  alias: {
+    // Root aliases
+    '~': '.',
+    '@': '.',
+    '~~': '.',
+    '@@': '.',
+
+    // Directory-specific aliases
+    '@assets': './assets',
+    '@components': './app/components',
+    '@pages': './app/pages',
+    '@layouts': './app/layouts',
+    '@composables': './composables',
+    '@utils': './utils',
+    '@types': './types',
+    '@stores': './stores',
+    '@server': './server',
+  },
+
   // Runtime config - automatically reads from .env file
   // Variables prefixed with NUXT_ are auto-mapped
   runtimeConfig: {
@@ -24,7 +44,7 @@ export default defineNuxtConfig({
     supabaseServiceRoleKey: '',
     resendApiKey: '',
     emailFrom: 'LTHS Contact <onboarding@resend.dev>',
-    emailTo: 'aman.l@lths.in',
+    emailTo: 'anup@lifetimehospitality.in',
 
     // Public keys (exposed to client)
     public: {

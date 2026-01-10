@@ -174,8 +174,8 @@ useSeoMeta({
                 <p class="font-semibold text-theme-heading">Lifetime Hospitality Services</p>
                 <p class="text-theme-secondary">B-609, Ayush Park, 2, Varale Phata</p>
                 <p class="text-theme-secondary">Talegaon Dabhade, Pune – 410507</p>
-                <p class="text-theme-secondary">Email: <a href="mailto:aman.l@lths.in" class="text-brand hover:underline">aman.l@lths.in</a></p>
-                <p class="text-theme-secondary">Phone: <a href="tel:8956690990" class="text-brand hover:underline">8956690990</a></p>
+                <p class="text-theme-secondary">Email: <a href="mailto:anup@lifetimehospitality.in" class="text-brand hover:underline">anup@lifetimehospitality.in</a></p>
+                <p class="text-theme-secondary">Phone: <a href="tel:+918320140215" class="text-brand hover:underline">+918320140215</a></p>
               </div>
             </div>
 
