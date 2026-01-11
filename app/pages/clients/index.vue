@@ -32,7 +32,7 @@ const clients = [
     location: 'Chakan & Pimpri, Pune',
     industry: 'Steam Engineering',
     services: ['Housekeeping', 'Pantry', 'Security'],
-    logo: 'https://www.renewablethermal.org/our-solutions-providers/forbes-marshall/',
+    logo: 'https://nus.edu.sg/cfg/images/default-source/events-company-logo/forbes-marshall.png?sfvrsn=8c6d8c00_2',
   },
 ]
 

@@ -19,7 +19,7 @@ const caseStudies = [
       'High employee satisfaction scores',
     ],
     services: ['Housekeeping', 'Security', 'Catering'],
-    image: null,
+    image: 'https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_940/https://tnetsglobal.com/wp-content/uploads/2024/08/9d711896-e6d9-42cf-b7ee-b27e1f9fd7f3_0-jpg-940x470.webp',
   },
   {
     title: 'Forbes Marshall - Multi-Site Management',
@@ -34,7 +34,7 @@ const caseStudies = [
       'Seamless coordination between sites',
     ],
     services: ['Housekeeping', 'Pantry', 'Security'],
-    image: null,
+    image: 'https://www.puneinsight.com/wp-content/uploads/2020/04/forbesmarshall-forbesmarshall.jpg',
   },
   {
     title: 'Thyssenkrupp - Industrial Facility Services',
@@ -49,7 +49,7 @@ const caseStudies = [
       'Improved workplace safety scores',
     ],
     services: ['Housekeeping', 'Labour Supply', 'Maintenance'],
-    image: null,
+    image: 'https://www.reuters.com/resizer/v2/JTJMDB5HNVO27HLQIXGALSTV4I.jpg?auth=6dd87ed7c721781a44000fbe82af04d71808efcc17f5ddaf19945411a3a6c0a2&width=640&quality=80',
   },
 ]
 </script>
@@ -111,8 +111,7 @@ const caseStudies = [
             <!-- Image Placeholder -->
             <div class="aspect-video rounded-2xl image-placeholder flex items-center justify-center mb-8">
               <div class="text-center">
-                <UIcon name="i-heroicons-building-office" class="w-14 h-14 mb-2 text-brand" />
-                <p class="text-theme-muted">Project Image</p>
+                <img :src="study.image || ''" alt="Case Study Image" class="w-full h-full object-cover rounded-2xl">
               </div>
             </div>
 

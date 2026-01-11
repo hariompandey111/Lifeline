@@ -84,7 +84,7 @@ const clients = [
     location: 'Chakan & Pimpri, Pune',
     industry: 'Steam Engineering',
     services: ['Housekeeping', 'Pantry', 'Security'],
-    logo: 'https://idronline.org/wp-content/uploads/2024/02/NEW-FM-logo.jpg',
+    logo: 'https://nus.edu.sg/cfg/images/default-source/events-company-logo/forbes-marshall.png?sfvrsn=8c6d8c00_2',
     logoOrientation: 'landscape',
   },
 ]
