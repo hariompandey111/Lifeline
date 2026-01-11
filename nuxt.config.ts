@@ -53,8 +53,8 @@ export default defineNuxtConfig({
   },
 
   colorMode: {
-    preference: 'dark', // default theme
-    fallback: 'dark',
+    preference: 'light', // default theme
+    fallback: 'light',
     classSuffix: '',
     storageKey: 'lths-color-mode',
   },
@@ -82,7 +82,7 @@ export default defineNuxtConfig({
         { name: 'description', content: 'Premium hospitality services since 2016 - Patient Care, Housekeeping, Catering, Security & more' },
       ],
       link: [
-        { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+        { rel: 'icon', type: 'image/png', href: 'https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/vishal_londhe_pic.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvdmlzaGFsX2xvbmRoZV9waWMucG5nIiwiaWF0IjoxNzY4MTIwMzgzLCJleHAiOjE4MzQ1ODA5OTcxODN9.7w7_blr3iduoihkhSenW4I9LGFBGEEuZ09BhSidIedw' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         // ============================================

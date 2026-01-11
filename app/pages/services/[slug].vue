@@ -10,6 +10,7 @@ interface ServiceData {
   features: string[]
   benefits: { title: string; description: string }[]
   process: { step: number; title: string; description: string }[]
+  image: string | undefined
 }
 
 const servicesData: Record<string, ServiceData> = {
@@ -40,6 +41,7 @@ const servicesData: Record<string, ServiceData> = {
       { step: 3, title: 'Staff Assignment', description: 'Match the right caregiver to the patient.' },
       { step: 4, title: 'Ongoing Support', description: 'Regular monitoring and quality checks.' },
     ],
+    image: "https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/patient_care.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvcGF0aWVudF9jYXJlLmpwZyIsImlhdCI6MTc2ODEyMTUxNSwiZXhwIjoxOTk3ODM3ODM5NjE1Mjc5OTAwfQ.K0oa-97kzLyieFSDhJ-e1-cspw2HJOZDxsb0kt7mL0E",
   },
   housekeeping: {
     icon: 'i-heroicons-sparkles',
@@ -59,6 +61,7 @@ const servicesData: Record<string, ServiceData> = {
       { step: 3, title: 'Team Deployment', description: 'Deploy trained housekeeping staff.' },
       { step: 4, title: 'Quality Audits', description: 'Regular inspections ensure standards.' },
     ],
+    image: "https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/housekeeping.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvaG91c2VrZWVwaW5nLmpwZyIsImlhdCI6MTc2ODEyMTY3MSwiZXhwIjoxODMyNzI3Mjc0NDAyOTcxNjAwMDB9.qacs6VBHCY1RchlDbMCTx1G11dYoLjXCfmMJzB_C6IY"
   },
   horticulture: {
     icon: 'i-lucide-leaf',
@@ -78,6 +81,7 @@ const servicesData: Record<string, ServiceData> = {
       { step: 3, title: 'Implementation', description: 'Execute the approved design plan.' },
       { step: 4, title: 'Maintenance', description: 'Ongoing care to keep gardens thriving.' },
     ],
+    image: "https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/horticulture.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvaG9ydGljdWx0dXJlLmpwZyIsImlhdCI6MTc2ODEyMTg1OSwiZXhwIjozODIxNjgzMTUyODE5NDU5fQ.U_4zjgBKtd_VTpNzIC7U149vTH3rhXqn5JnLdFNUtQU"
   },
   catering: {
     icon: 'i-lucide-utensils',
@@ -97,6 +101,7 @@ const servicesData: Record<string, ServiceData> = {
       { step: 3, title: 'Service', description: 'Daily food preparation and service.' },
       { step: 4, title: 'Feedback Loop', description: 'Continuous improvement based on feedback.' },
     ],
+    image: "https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/catering.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvY2F0ZXJpbmcuanBnIiwiaWF0IjoxNzY4MTIyMTQ4LCJleHAiOjE5OTc5NDIwMDY5MTc0OH0.mb-tfP0VXAuRQhnbbtvJXxuIXH5dY5DmEy5B1vqaPj4"
   },
   'office-support': {
     icon: 'i-heroicons-briefcase',
@@ -116,6 +121,7 @@ const servicesData: Record<string, ServiceData> = {
       { step: 3, title: 'Training', description: 'Familiarize staff with your processes.' },
       { step: 4, title: 'Deployment', description: 'Seamless integration with your team.' },
     ],
+    image: "https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/office.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvb2ZmaWNlLmpwZyIsImlhdCI6MTc2ODEyMjIyMCwiZXhwIjoyNjk4Mzk2MDU5NDk0MjB9.NqzamNjj7SiNc3rQ0hr_j5e69QjRSZ3msoX8f_cLHVQ"
   },
   'labour-supply': {
     icon: 'i-heroicons-users',
@@ -135,6 +141,7 @@ const servicesData: Record<string, ServiceData> = {
       { step: 3, title: 'Training', description: 'Basic orientation and safety training.' },
       { step: 4, title: 'Deployment', description: 'Place workers at your site with supervision.' },
     ],
+    image: "https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/labour-supply.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvbGFib3VyLXN1cHBseS5qcGciLCJpYXQiOjE3NjgxMjIzMjQsImV4cCI6MjY5ODM5NjE1MjgwNzI0fQ.apA3ueus9StFNflK0yEBBv36IIApgzg_f6Qg6DtG8WA"
   },
   maintenance: {
     icon: 'i-heroicons-wrench-screwdriver',
@@ -152,8 +159,9 @@ const servicesData: Record<string, ServiceData> = {
       { step: 1, title: 'Audit', description: 'Comprehensive facility and equipment assessment.' },
       { step: 2, title: 'Schedule', description: 'Create preventive maintenance calendar.' },
       { step: 3, title: 'Execute', description: 'Regular maintenance and repairs.' },
-      { step: 4, title: 'Report', description: 'Detailed reporting and recommendations.' },
-    ],
+        { step: 4, title: 'Report', description: 'Detailed reporting and recommendations.' },
+      ],
+    image: "https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/elecrician.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvZWxlY3JpY2lhbi5qcGciLCJpYXQiOjE3NjgxMjI0MDgsImV4cCI6MTg0MTU2MDU5NDk2MDh9.OTb0cE8fEQ_sKW3I_yj1ckrbhfCX_VoARkftRYjOR5k"
   },
   pantry: {
     icon: 'i-lucide-coffee',
@@ -173,6 +181,7 @@ const servicesData: Record<string, ServiceData> = {
       { step: 3, title: 'Daily Operations', description: 'Manage refreshment services.' },
       { step: 4, title: 'Inventory', description: 'Regular stock management and replenishment.' },
     ],
+    image: "https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/pantry.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvcGFudHJ5LmpwZyIsImlhdCI6MTc2ODEyMjQ3NywiZXhwIjoxODQxMzg0NTYxNTYwNTk1MDAwMH0.X-ZLIIF-KG-xELplLpVTFPxF7sLeYJu9zY_4b__uwuY"
   },
   security: {
     icon: 'i-heroicons-shield-check',
@@ -192,6 +201,7 @@ const servicesData: Record<string, ServiceData> = {
       { step: 3, title: 'Deployment', description: 'Deploy trained security personnel.' },
       { step: 4, title: 'Monitoring', description: 'Continuous oversight and improvement.' },
     ],
+    image: "https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/security.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvc2VjdXJpdHkuanBnIiwiaWF0IjoxNzY4MTIyNjM0LCJleHAiOjIxODUxMTExNDM0fQ.cODlK1UzZL1RhesBEasrRMLxK42_xddzD6iIhvAT-io"
   },
 }
 
@@ -276,10 +286,7 @@ useSeoMeta({
           <!-- Image Placeholder -->
           <div class="relative hidden lg:block">
             <div class="aspect-square rounded-3xl image-placeholder flex items-center justify-center">
-              <div class="text-center">
-                <UIcon :name="currentService.icon" class="w-24 h-24 mb-4 text-brand" />
-                <p class="text-theme-muted">Service Image</p>
-              </div>
+              <img :src="currentService.image" alt="Patient Care Image" class="w-full h-full object-cover rounded-3xl">
             </div>
           </div>
         </div>
@@ -387,9 +394,9 @@ useSeoMeta({
               <div class="flex-1 hidden md:block"></div>
 
               <!-- Step Number -->
-              <div class="absolute left-0 md:left-1/2 w-16 h-16 -translate-x-0 md:-translate-x-1/2 rounded-full gradient-secondary flex items-center justify-center z-10">
+              <!-- <div class="absolute left-0 md:left-1/2 w-16 h-16 -translate-x-0 md:-translate-x-1/2 rounded-full gradient-secondary flex items-center justify-center z-10">
                 <span class="text-white dark:text-black font-bold text-xl">{{ step.step }}</span>
-              </div>
+              </div> -->
 
               <!-- Content -->
               <div

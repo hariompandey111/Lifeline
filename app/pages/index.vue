@@ -657,7 +657,7 @@ const clients = [
                     <p class="text-sm text-theme-muted">Phone</p>
                     <a
                       href="tel:+918320140215"
-                      class="flex items-center gap-2 text-theme-secondary hover:text-brand transition-colors text-white"
+                      class="flex items-center gap-2 text-theme-secondary hover:text-brand transition-colors"
                     >
                       +918320140215
                     </a>
