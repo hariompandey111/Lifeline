@@ -312,24 +312,24 @@ const clients = [
               <div
                 class="aspect-[3/4] rounded-2xl image-placeholder flex items-center justify-center"
               >
-                <img src="/home_grid_1.png" alt="Home Grid 1" class="w-full h-full object-cover rounded-2xl">
+                <img src="https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/home_grid_1.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvaG9tZV9ncmlkXzEucG5nIiwiaWF0IjoxNzY4MTI5MjMxLCJleHAiOjI5NjE2ODM2NDMxfQ.ARsP3wzSDuLIxirPQ_9MZZzeU-FR5Hls-7y-0oGKo-8" alt="Home Grid 1" class="w-full h-full object-cover rounded-2xl">
               </div>
               <div
                 class="aspect-square rounded-2xl image-placeholder flex items-center justify-center"
               >
-                <img src="/home_grid_2.png" alt="Home Grid 2" class="w-full h-full object-cover rounded-2xl">
+                <img src="https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/home_grid_2.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvaG9tZV9ncmlkXzIucG5nIiwiaWF0IjoxNzY4MTI5MjU2LCJleHAiOjI2OTgzNzg1NTUxOTcyNDU2fQ.flKfCM3BzfJT0ncTAKtp58Ze4Lk8koo-VJS9NZala8g" alt="Home Grid 2" class="w-full h-full object-cover rounded-2xl">
               </div>
             </div>
             <div class="space-y-4 pt-8">
               <div
                 class="aspect-square rounded-2xl image-placeholder flex items-center justify-center"
               >
-                <img src="/home_grid_3.png" alt="Home Grid 3" class="w-full h-full object-cover rounded-2xl">
+                <img src="https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/home_grid_3.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvaG9tZV9ncmlkXzMucG5nIiwiaWF0IjoxNzY4MTI5MjY3LCJleHAiOjI2OTgzOTYwNTk1NjQ2N30.yTRBb21K1lax7W0iQ0RI1a-bdVrKRmqIWDSY8a8y9Cs" alt="Home Grid 3" class="w-full h-full object-cover rounded-2xl">
               </div>
               <div
                 class="aspect-[3/4] rounded-2xl image-placeholder flex items-center justify-center"
               >
-                <img src="/home_grid_4.png" alt="Home Grid 4" class="w-full h-full object-cover rounded-2xl">
+                <img src="https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/home_grid_4.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvaG9tZV9ncmlkXzQucG5nIiwiaWF0IjoxNzY4MTI5Mjg5LCJleHAiOjEwNDc0NTExODg2MDg5fQ.p7z7RaCmZbsxGtQvqES4n1NQNCCg2KZWFKF-yKU8ghA" alt="Home Grid 4" class="w-full h-full object-cover rounded-2xl">
               </div>
             </div>
           </div>

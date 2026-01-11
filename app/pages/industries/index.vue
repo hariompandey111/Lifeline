@@ -13,7 +13,7 @@ const industries = [
     description:
       'Comprehensive facility management for manufacturing plants and industrial facilities. We understand the unique requirements of industrial environments.',
     services: ['Housekeeping', 'Labour Supply', 'Maintenance', 'Security', 'Catering'],
-    image: null,
+    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop&crop=center',
   },
   {
     icon: 'i-heroicons-heart',
@@ -22,7 +22,7 @@ const industries = [
     description:
       'Specialized services for hospitals, clinics, and healthcare centers. Our teams are trained in healthcare-specific protocols and hygiene standards.',
     services: ['Patient Care', 'Housekeeping', 'Pantry', 'Security', 'Maintenance'],
-    image: null,
+    image: 'https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800&h=600&fit=crop&crop=center',
   },
   {
     icon: 'i-heroicons-building-office-2',
@@ -31,7 +31,7 @@ const industries = [
     description:
       'Professional facility services for modern workplaces. From reception to maintenance, we keep your office running smoothly.',
     services: ['Housekeeping', 'Pantry', 'Office Support', 'Security', 'Maintenance'],
-    image: null,
+    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop&crop=center',
   },
   {
     icon: 'i-heroicons-academic-cap',
@@ -40,7 +40,7 @@ const industries = [
     description:
       'Creating clean, safe, and nurturing environments for schools, colleges, and universities. We support academic excellence through facility excellence.',
     services: ['Housekeeping', 'Catering', 'Security', 'Horticulture', 'Maintenance'],
-    image: null,
+    image: 'https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=800&h=600&fit=crop&crop=center',
   },
   {
     icon: 'i-heroicons-wrench-screwdriver',
@@ -49,7 +49,7 @@ const industries = [
     description:
       'Specialized facility management for construction sites and infrastructure projects. We provide comprehensive support for efficient and safe construction operations.',
     services: ['Site Management', 'Labour Support', 'Safety Compliance', 'Logistics', 'Maintenance'],
-    image: null,
+    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&h=600&fit=crop&crop=center',
   },
   {
     icon: 'i-heroicons-home-modern',
@@ -58,7 +58,7 @@ const industries = [
     description:
       'Enhancing community living with comprehensive residential facility management. We help create comfortable, secure, and well-maintained living spaces.',
     services: ['Housekeeping', 'Security', 'Horticulture', 'Maintenance', 'Pantry'],
-    image: null,
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=600&fit=crop&crop=center',
   },
 ]
 </script>
@@ -117,8 +117,7 @@ const industries = [
             <div :class="{ 'lg:col-start-2': index % 2 === 1 }">
               <div class="aspect-[4/3] rounded-3xl image-placeholder flex items-center justify-center">
                 <div class="text-center">
-                  <UIcon :name="industry.icon" class="w-20 h-20 mb-4 text-brand" />
-                  <p class="text-theme-muted">Industry Image</p>
+                  <img :src="industry.image" alt="Industry Image" class="w-full h-full object-cover rounded-3xl">
                 </div>
               </div>
             </div>
