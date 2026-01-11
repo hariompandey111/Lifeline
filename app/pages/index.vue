@@ -610,7 +610,8 @@ const clients = [
                 {{ t('home.cta.title') }}
                 <span class="gradient-text">{{ t('home.cta.titleHighlight') }}</span>
               </h2>
-              <p class="text-theme-secondary text-lg sm:text-xl leading-relaxed mb-6 sm:mb-8 max-w-lg">
+              
+              <p class="text-theme-secondary text-sm sm:text-xl leading-relaxed mb-6 sm:mb-8 max-w-lg">
                 {{ t('home.cta.subtitle') }}
               </p>
 
@@ -646,11 +647,13 @@ const clients = [
 
             <!-- Contact Card -->
             <div class="glass rounded-2xl p-6 sm:p-8">
-              <h3 class="font-display text-2xl sm:text-3xl font-semibold text-theme-heading mb-6 sm:mb-8">
+              <h3 class="font-display text-xl md:text-2xl lg:text-3xl font-semibold text-theme-heading mb-6 sm:mb-8">
                 {{ t('home.quickContact') }}
               </h3>
+
               <div class="space-y-4 sm:space-y-6">
                 <div class="flex items-center gap-4">
+                  <!-- Phone Icon -->
                   <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl icon-box flex items-center justify-center">
                     <svg
                       class="w-6 h-6 sm:w-7 sm:h-7"
@@ -666,6 +669,8 @@ const clients = [
                       />
                     </svg>
                   </div>
+
+                  <!-- Phone Number -->
                   <div>
                     <p class="text-xs sm:text-sm text-theme-muted">{{ t('common.phone') }}</p>
                     <a
@@ -678,6 +683,7 @@ const clients = [
                 </div>
                 <div class="flex items-center gap-4">
                   <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl icon-box flex items-center justify-center">
+                    <!-- Email Icon -->
                     <svg
                       class="w-6 h-6 sm:w-7 sm:h-7"
                       fill="none"
@@ -692,9 +698,10 @@ const clients = [
                       />
                     </svg>
                   </div>
+                  <!-- Email -->
                   <div>
                     <p class="text-xs sm:text-sm text-theme-muted">{{ t('common.email') }}</p>
-                    <p class="text-sm sm:text-base text-theme-heading font-medium">anup@lifetimehospitality.in</p>
+                    <p class="text-sm sm:text-base text-theme-heading font-medium break-all md:max-w-none max-w-[160px]">anup@lifetimehospitality.in</p>
                   </div>
                 </div>
                 <div class="flex items-start gap-4 sm:gap-6">
