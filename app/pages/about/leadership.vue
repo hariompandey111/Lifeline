@@ -245,7 +245,7 @@ const coreValues = [
     </section>
 
     <!-- Join Team CTA -->
-    <section class="relative py-24 section-gradient">
+    <!-- <section class="relative py-24 section-gradient">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="font-display text-4xl font-bold mb-6 text-theme-heading">
           Join Our <span class="gradient-text">Team</span>
@@ -261,6 +261,6 @@ const coreValues = [
           View Careers
         </NuxtLink>
       </div>
-    </section>
+    </section> -->
   </div>
 </template>

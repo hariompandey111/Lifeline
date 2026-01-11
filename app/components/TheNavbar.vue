@@ -11,7 +11,7 @@ const menuItems = computed(() => [
     label: t('nav.aboutUs'),
     href: '/about',
     children: [
-      { label: t('nav.ourStory'), href: '/about/our-story' },
+      // { label: t('nav.ourStory'), href: '/about/our-story' },
       { label: t('nav.leadership'), href: '/about/leadership' },
       { label: t('nav.missionVision'), href: '/about/mission-vision' },
       { label: t('nav.whyChooseUs'), href: '/about/why-choose-us' },
@@ -161,7 +161,7 @@ function handleScroll() {
             >
               <div
                 v-if="item.children && openDropdown === item.label"
-                class="absolute top-full left-0 mt-2 w-64 bg-theme-card/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-theme overflow-hidden"
+                class="absolute top-full left-0 w-64 bg-theme-card/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-theme overflow-hidden"
               >
                 <div class="py-2">
                   <NuxtLink

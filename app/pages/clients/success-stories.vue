@@ -151,7 +151,7 @@ const highlights = [
     </section>
 
     <!-- Video Testimonial Placeholder -->
-    <section class="relative py-24 section-dark">
+    <!-- <section class="relative py-24 section-dark">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
           <h2 class="font-display text-4xl font-bold text-theme-heading">
@@ -170,7 +170,7 @@ const highlights = [
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- CTA -->
     <section class="relative py-24 section-gradient">

@@ -219,10 +219,7 @@ const services = [
           <!-- Image Placeholder -->
           <div class="relative">
             <div class="aspect-square rounded-3xl image-placeholder flex items-center justify-center">
-              <div class="text-center">
-                <span class="text-6xl block mb-4">🎯</span>
-                <p class="text-theme-muted">Quality Services Image</p>
-              </div>
+             <img src="https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/success_story.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvc3VjY2Vzc19zdG9yeS5qcGciLCJpYXQiOjE3NjgxMTk0MzcsImV4cCI6MTA0NzI5OTA0OTIyNjM3fQ.4D1sZWEVBMQt_ncP1QJW_l8yf_RoALZGtczTMGkOoko" alt="Quality Services Image" class="w-full h-full object-cover rounded-3xl">
             </div>
           </div>
         </div>

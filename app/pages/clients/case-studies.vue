@@ -7,6 +7,22 @@ useSeoMeta({
 
 const caseStudies = [
   {
+    title: 'Shreeji Construction - World\'s Largest Solar Plant Development',
+    client: 'Shreeji Construction',
+    location: 'Gujarat, India',
+    industry: 'Renewable Energy',
+    challenge: 'Managing comprehensive workforce requirements for the construction of the world\'s largest solar power plant, requiring specialized manpower, engineering expertise, and facility support services.',
+    solution: 'Deployed over 500 skilled personnel including professional engineers, specialized fittings teams, transportation services, and comprehensive catering and security support to ensure seamless project execution.',
+    results: [
+      'Successful completion of the world\'s largest solar power plant',
+      'Efficient management of 500+ skilled workforce',
+      'Zero safety incidents during construction phase',
+      'On-time project delivery with full operational readiness',
+    ],
+    services: ['Labour Supply', 'Engineering Support', 'Catering', 'Security', 'Transportation'],
+      image: 'https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/solar-plant.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvc29sYXItcGxhbnQuanBnIiwiaWF0IjoxNzY4MTEwNTUyLCJleHAiOjEwNDcyOTA0MDgyNzM1Mn0.EfbMjQGJ0QYtZiYnbEN6lsR8rmTqodzmAv0y7RDjx4o',
+  },
+  {
     title: 'TE Connectivity - Complete Facility Management',
     client: 'TE Connectivity',
     location: 'Wagholi, Pune',

@@ -162,7 +162,7 @@ const stats = [
           </div>
         </div>
 
-        <p class="text-center text-theme-muted mt-8">...and many more</p>
+        <!-- <p class="text-center text-theme-muted mt-8">...and many more</p> -->
       </div>
     </section>
 

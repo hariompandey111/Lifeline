@@ -81,7 +81,7 @@ const values = [
             class="relative p-10 rounded-3xl card-gradient border-brand-20"
           >
             <div class="w-20 h-20 rounded-2xl gradient-secondary flex items-center justify-center text-4xl mb-8">
-              🎯
+             <UIcon name="i-lucide-goal" class="w-10 h-10 text-brand text-white" />
             </div>
             <h2 class="font-display text-3xl font-bold text-theme-heading mb-6">
               Our Mission
@@ -119,7 +119,7 @@ const values = [
             class="relative p-10 rounded-3xl card-gradient"
           >
             <div class="w-20 h-20 rounded-2xl image-placeholder flex items-center justify-center text-4xl mb-8">
-              👁️
+              <UIcon  name="i-lucide-flag" class="w-10 h-10 text-brand" />
             </div>
             <h2 class="font-display text-3xl font-bold text-theme-heading mb-6">
               Our Vision
