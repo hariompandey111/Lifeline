@@ -239,16 +239,14 @@ const services = [
               </div>
             </div>
           </div>
-
           <div
             v-motion
             :initial="{ opacity: 0, x: 30 }"
             :visible="{ opacity: 1, x: 0 }"
-            class="aspect-[4/3] rounded-3xl image-placeholder flex items-center justify-center"
+            class="aspect-[4/4] rounded-3xl overflow-hidden"
           >
             <div class="text-center">
-              <UIcon name="i-heroicons-wrench-screwdriver" class="w-20 h-20 mb-4 text-brand" />
-              <p class="text-theme-muted">Construction Site Image</p>
+              <img src="https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/construction.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvY29uc3RydWN0aW9uLnBuZyIsImlhdCI6MTc2ODEyNTY0NCwiZXhwIjozNTYyMzc4Mzk2MDU5NTI4MzB9.53-BtPpV6-evEO6Vzgfud7JXBs0PEFmKWUDGRs25igI" alt="Construction Site Image" class="w-full h-full object-cover scale-150">
             </div>
           </div>
         </div>

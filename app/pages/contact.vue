@@ -304,16 +304,15 @@ async function handleSubmit() {
             </div>
 
             <!-- Map Placeholder -->
-            <div class="aspect-video rounded-2xl image-placeholder flex items-center justify-center">
-              <div class="text-center">
-                <svg class="w-12 h-12 mx-auto text-theme-muted mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                <p class="text-theme-muted">Google Maps Integration</p>
-                <p class="text-theme-muted text-sm">Talegaon Dabhade, Pune</p>
-              </div>
-            </div>
+            <!-- <div class="aspect-video rounded-2xl overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.452664163537!2d73.67592627496591!3d18.71678748235185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b1e0b7b7b7b7%3A0x3bc2b1e0b7b7b7b7!2sTalegaon%20Dabhade%2C%20Maharashtra%20410207!5e0!3m2!1sen!2sin!4v1703123456789!5m2!1sen!2sin"
+                class="w-full h-full border-0"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="LTHS Office Location - Talegaon Dabhade, Pune"
+              ></iframe>
+            </div> -->
           </div>
         </div>
       </div>

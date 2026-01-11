@@ -242,12 +242,9 @@ const services = [
             v-motion
             :initial="{ opacity: 0, x: 30 }"
             :visible="{ opacity: 1, x: 0 }"
-            class="aspect-[4/3] rounded-3xl image-placeholder flex items-center justify-center"
+            class="aspect-[4/4] rounded-3xl overflow-hidden"
           >
-            <div class="text-center">
-              <UIcon name="i-heroicons-heart" class="w-20 h-20 mb-4 text-brand" />
-              <p class="text-theme-muted">Healthcare Facility Image</p>
-            </div>
+            <img src="https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/hospitalise.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvaG9zcGl0YWxpc2UucG5nIiwiaWF0IjoxNzY4MTI0NzY0LCJleHAiOjI5NTg1NTYwNTk0MjM2NH0.E3vsMQbeijs5RXfPCkGJ0ycf3D9yJhgM9gpPJFPm1kU" alt="Healthcare Facility Image" class="w-full h-full object-cover scale-150">
           </div>
         </div>
       </div>

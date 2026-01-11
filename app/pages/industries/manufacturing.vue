@@ -242,12 +242,9 @@ const services = [
             v-motion
             :initial="{ opacity: 0, x: 30 }"
             :visible="{ opacity: 1, x: 0 }"
-            class="aspect-[4/3] rounded-3xl image-placeholder flex items-center justify-center"
+            class="aspect-[4/4] rounded-3xl overflow-hidden"
           >
-            <div class="text-center">
-              <UIcon name="i-heroicons-building-office" class="w-20 h-20 mb-4 text-brand" />
-              <p class="text-theme-muted">Manufacturing Facility Image</p>
-            </div>
+            <img src="https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/manufacturing.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvbWFudWZhY3R1cmluZy5wbmciLCJpYXQiOjE3NjgxMjQyNjYsImV4cCI6MTMyNzA4Mjc0NjY2fQ.gUspFVPfeYF4hdqHkQjIvRmJy6dy7KBNyGrkqUsWDEE" alt="Manufacturing Facility Image" class="w-full h-full object-cover scale-150">
           </div>
         </div>
       </div>

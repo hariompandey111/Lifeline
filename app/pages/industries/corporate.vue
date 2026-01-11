@@ -242,11 +242,10 @@ const services = [
             v-motion
             :initial="{ opacity: 0, x: 30 }"
             :visible="{ opacity: 1, x: 0 }"
-            class="aspect-[4/3] rounded-3xl image-placeholder flex items-center justify-center"
+            class="aspect-[4/4] rounded-3xl overflow-hidden"
           >
             <div class="text-center">
-              <UIcon name="i-heroicons-building-office-2" class="w-20 h-20 mb-4 text-brand" />
-              <p class="text-theme-muted">Corporate Office Image</p>
+              <img src="https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/office.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvb2ZmaWNlLnBuZyIsImlhdCI6MTc2ODEyNTI4MSwiZXhwIjoxMDQ3Mjc0NTExODgyMDgxfQ.djLmZclfMI5-CNGTjYvYcE8zD7fx5A3ojlkQc1ls9hc" alt="Educational Institution Image" class="w-full h-full object-cover scale-150">
             </div>
           </div>
         </div>
