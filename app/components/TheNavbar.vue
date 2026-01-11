@@ -40,6 +40,7 @@ const menuItems = computed(() => [
       { label: t('industries.healthcare.name'), href: '/industries/healthcare' },
       { label: t('industries.corporate.name'), href: '/industries/corporate' },
       { label: t('industries.education.name'), href: '/industries/education' },
+      { label: t('industries.construction.name'), href: '/industries/construction' },
     ],
   },
   {

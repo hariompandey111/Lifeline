@@ -2,7 +2,7 @@
 useSeoMeta({
   title: 'Industries We Serve | LTHS - Lifetime Hospitality Services',
   description:
-    'LTHS serves diverse industries including manufacturing, healthcare, corporate offices, education, and residential complexes.',
+    'LTHS serves diverse industries including manufacturing, healthcare, corporate offices, education, construction, and residential complexes.',
 })
 
 const industries = [
@@ -40,6 +40,15 @@ const industries = [
     description:
       'Creating clean, safe, and nurturing environments for schools, colleges, and universities. We support academic excellence through facility excellence.',
     services: ['Housekeeping', 'Catering', 'Security', 'Horticulture', 'Maintenance'],
+    image: null,
+  },
+  {
+    icon: 'i-heroicons-wrench-screwdriver',
+    slug: 'construction',
+    title: 'Construction & Infrastructure',
+    description:
+      'Specialized facility management for construction sites and infrastructure projects. We provide comprehensive support for efficient and safe construction operations.',
+    services: ['Site Management', 'Labour Support', 'Safety Compliance', 'Logistics', 'Maintenance'],
     image: null,
   },
   {

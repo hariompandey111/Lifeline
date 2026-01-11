@@ -256,7 +256,8 @@
       "corporate": "Corporate",
       "hospitality": "Hospitality",
       "education": "Education",
-      "manufacturing": "Manufacturing"
+      "manufacturing": "Manufacturing",
+      "construction": "Construction"
     }
   },
   "industries": {
@@ -290,6 +291,11 @@
       "name": "Manufacturing",
       "description": "Factories, warehouses, and industrial facilities",
       "services": ["Industrial Cleaning", "Canteen", "Security", "Maintenance"]
+    },
+    "construction": {
+      "name": "Construction",
+      "description": "Construction sites, infrastructure projects, and real estate developments",
+      "services": ["Site Management", "Labour Support", "Safety Compliance", "Logistics", "Maintenance"]
     }
   },
   "blog": {
