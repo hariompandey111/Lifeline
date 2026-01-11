@@ -157,7 +157,7 @@ const services = [
             v-motion
             :initial="{ opacity: 0, y: 30 }"
             :visible="{ opacity: 1, y: 0, transition: { delay: index * 100 } }"
-            class="bg-theme-card p-8 rounded-3xl border border-theme-border hover:shadow-xl transition-all duration-300"
+            class="bg-theme-card p-8 rounded-3xl border-theme-border hover:shadow-xl transition-all duration-300"
           >
             <div class="w-16 h-16 rounded-2xl icon-box flex items-center justify-center mb-6">
               <UIcon :name="feature.icon" class="w-8 h-8" />
