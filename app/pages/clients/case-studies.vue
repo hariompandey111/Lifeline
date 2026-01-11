@@ -88,7 +88,7 @@ const caseStudies = [
         </NuxtLink>
 
         <div class="max-w-3xl">
-          <h1 class="font-display text-5xl md:text-6xl font-bold mb-6 text-theme-heading">
+          <h1 class="font-display text-2xl md:text-6xl font-bold mb-6 text-theme-heading">
             Case <span class="gradient-text">Studies</span>
           </h1>
           <p class="text-xl text-theme-secondary leading-relaxed">

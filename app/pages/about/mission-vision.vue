@@ -58,7 +58,7 @@ const values = [
 
         <div class="max-w-3xl">
           <span class="text-brand font-medium uppercase tracking-widest text-sm">Mission & Vision</span>
-          <h1 class="font-display text-5xl md:text-6xl font-bold mt-4 mb-6 text-theme-heading">
+          <h1 class="font-display text-2xl md:text-6xl font-bold mt-4 mb-6 text-theme-heading">
             Guided by
             <span class="gradient-text">Purpose</span>
           </h1>

@@ -290,7 +290,7 @@ const clients = [
 
       <!-- Scroll Indicator -->
       <div
-        class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-theme-muted"
+        class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-theme-muted hidden sm:block"
       >
         <span class="text-xs uppercase tracking-widest">Scroll</span>
         <div class="w-px h-12 bg-gradient-to-b from-secondary-500 to-transparent"></div>

@@ -112,7 +112,7 @@ function handleScroll() {
             style="width: 40px; height: auto;"
             class="h-16 w-auto object-contain transform group-hover:scale-105 transition-transform duration-300"
           >
-          <div class="hidden sm:block">
+          <div class="">
             <span class="font-display text-xl font-semibold gradient-text">{{ t('common.companyName') }}</span>
             <p class="text-[13px]  -mt-1">{{ t('common.companyFullName') }}</p>
             <p class="text-[10px] text-theme-muted">{{ t('common.tagLine') }}</p>
@@ -346,7 +346,7 @@ function handleScroll() {
                 918320140215
               </a>
               <div class="flex items-center gap-3">
-                <LanguageSwitcher />
+                <!-- <LanguageSwitcher /> -->
                 <ThemeToggle />
               </div>
             </div>

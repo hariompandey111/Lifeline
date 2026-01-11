@@ -91,7 +91,7 @@ const coreValues = [
 
         <div class="max-w-3xl">
           <span class="text-brand font-medium uppercase tracking-widest text-sm">Leadership</span>
-          <h1 class="font-display text-5xl md:text-6xl font-bold mt-4 mb-6 text-theme-heading">
+          <h1 class="font-display text-2xl md:text-6xl font-bold mt-4 mb-6 text-theme-heading">
             Meet Our
             <span class="gradient-text">Leaders</span>
           </h1>

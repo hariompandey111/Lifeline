@@ -25,7 +25,7 @@ useSeoMeta({
             v-motion
             :initial="{ opacity: 0, y: 30 }"
             :enter="{ opacity: 1, y: 0, transition: { delay: 100 } }"
-            class="font-display text-5xl md:text-6xl font-bold mb-6 text-theme-heading"
+            class="font-display text-2xl md:text-6xl font-bold mb-6 text-theme-heading"
           >
             Terms of
             <span class="gradient-text">Service</span>
