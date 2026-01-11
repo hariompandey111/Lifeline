@@ -75,7 +75,35 @@
       "titleHighlight": "Facility?",
       "subtitle": "Let's discuss how LTHS can elevate your hospitality experience with our tailored solutions.",
       "button": "Schedule a Consultation"
-    }
+    },
+    "trustedBy": "Trusted by leading companies",
+    "certifiedTeam": "Certified Team",
+    "trainedProfessionals": "Trained professionals",
+    "quickResponse": "Quick Response",
+    "support247": "24/7 support",
+    "about": {
+      "description1": "Lifetime Hospitality Services (LTHS), established in 2016 with our",
+      "description2": "registered office in Talegaon, Pune, has been at the forefront of",
+      "description3": "delivering exceptional hospitality services.",
+      "description4": "We operate with our own resources and infrastructure, bringing",
+      "description5": "complete expertise across all hospitality domains. Our",
+      "description6": "distinguished list of clients across industries speaks about our",
+      "description7": "credentials and capabilities."
+    },
+    "industries": {
+      "description": "Our versatile team brings industry-specific expertise to deliver customized solutions for diverse sectors.",
+      "list": [
+        "Manufacturing & Industrial",
+        "Healthcare Facilities",
+        "Corporate Offices",
+        "Educational Institutions",
+        "Residential Complexes"
+      ]
+    },
+    "servingIndustries": "Serving",
+    "industriesCount": "5+ Industries",
+    "quickContact": "Quick Contact",
+    "callUsNow": "Call Us Now"
   },
   "services": {
     "patientCare": {

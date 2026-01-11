@@ -54,6 +54,7 @@ const services = computed(() => [
   }
 ])
 
+
 const clients = [
 {
     name: 'Shreeji Construction',
@@ -136,19 +137,19 @@ const clients = [
               <span class="gradient-text block">{{ t('home.hero.title2') }}</span>
             </h1>
 
-            <p class="text-base sm:text-xl text-theme-secondary leading-relaxed mb-6 sm:mb-10 max-w-xl">
+            <p class="text-base sm:text-lg md:text-xl text-theme-secondary leading-relaxed mb-6 sm:mb-10 max-w-xl">
               {{ t('home.hero.description') }}
             </p>
 
             <div class="flex flex-col sm:flex-row flex-wrap gap-4">
               <NuxtLink
                 :to="localePath('/contact')"
-                class="group inline-flex items-center justify-center gap-3 px-6 sm:px-8 py-3 sm:py-4 btn-primary rounded-full w-full sm:w-auto"
+                class="group inline-flex items-center justify-center gap-3 px-6 sm:px-8 py-3 sm:py-4 btn-primary rounded-full w-full sm:w-auto text-sm sm:text-base"
                 data-testid="hero-cta-quote"
               >
                 {{ t('home.hero.cta2') }}
                 <svg
-                  class="w-5 h-5 transform group-hover:translate-x-1 transition-transform"
+                  class="w-4 h-4 sm:w-5 sm:h-5 transform group-hover:translate-x-1 transition-transform"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -163,7 +164,7 @@ const clients = [
               </NuxtLink>
               <NuxtLink
                 :to="localePath('/about')"
-                class="inline-flex items-center justify-center gap-3 px-6 sm:px-8 py-3 sm:py-4 btn-ghost rounded-full w-full sm:w-auto"
+                class="inline-flex items-center justify-center gap-3 px-6 sm:px-8 py-3 sm:py-4 btn-ghost rounded-full w-full sm:w-auto text-sm sm:text-base"
                 data-testid="hero-cta-learn"
               >
                 {{ t('common.learnMore') }}
@@ -172,7 +173,7 @@ const clients = [
 
             <!-- Client Logos Carousel -->
             <div class="mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-theme-light">
-              <p class="text-sm text-theme-muted mb-4">Trusted by leading companies</p>
+              <p class="text-sm sm:text-base text-theme-muted mb-4">{{ t('home.trustedBy') }}</p>
 
               <!-- Mobile: Static card layout -->
               <div class="block sm:hidden">
@@ -188,8 +189,8 @@ const clients = [
                       :alt="client.name"
                       class="h-8 w-8 mx-auto mb-2 object-contain rounded-lg"
                     >
-                    <p class="font-semibold text-sm leading-tight">{{ client.name }}</p>
-                    <p class="text-xs text-theme-muted leading-tight">{{ client.location }}</p>
+                    <p class="font-semibold text-sm sm:text-base leading-tight">{{ client.name }}</p>
+                    <p class="text-xs sm:text-sm text-theme-muted leading-tight">{{ client.location }}</p>
                   </div>
                 </div>
               </div>
@@ -211,7 +212,7 @@ const clients = [
                       :class="client.logoOrientation === 'landscape' ? 'h-10 sm:h-12 w-20 sm:w-24 object-contain rounded-lg overflow-hidden' : 'h-10 sm:h-12 w-10 sm:w-12 object-contain'"
                     >
                     <p class="font-semibold text-sm sm:text-base leading-tight">{{ client.name }}</p>
-                    <p class="text-xs text-theme-muted leading-tight">{{ client.location }}</p>
+                    <p class="text-xs sm:text-sm text-theme-muted leading-tight">{{ client.location }}</p>
                   </div>
                   <!-- Duplicate set for seamless loop -->
                   <div
@@ -227,7 +228,7 @@ const clients = [
                       :class="client.logoOrientation === 'landscape' ? 'h-10 sm:h-12 w-20 sm:w-24 object-contain rounded-lg overflow-hidden' : 'h-10 sm:h-12 w-10 sm:w-12 object-contain'"
                     >
                     <p class="font-semibold text-sm sm:text-base leading-tight">{{ client.name }}</p>
-                    <p class="text-xs text-theme-muted leading-tight">{{ client.location }}</p>
+                    <p class="text-xs sm:text-sm text-theme-muted leading-tight">{{ client.location }}</p>
                   </div>
                 </div>
               </div>
@@ -278,8 +279,8 @@ const clients = [
                   <UIcon name="i-heroicons-star" class="w-7 h-7 text-yellow-400" />
                 </div>
                 <div>
-                  <p class="text-2xl font-bold text-theme-heading">10+</p>
-                  <p class="text-sm text-theme-secondary">Years Experience</p>
+                  <p class="text-2xl font-bold text-theme-heading">{{ stats[0]?.value || '0' }}</p>
+                  <p class="text-sm text-theme-secondary">{{ stats[0]?.label || 'Years of Experience' }}</p>
                 </div>
               </div>
             </div>
@@ -368,15 +369,12 @@ const clients = [
               <span class="gradient-text">{{ t('about.hero.title2') }}</span>
             </h2>
             <p class="text-theme-secondary text-lg leading-relaxed mb-6">
-              Lifetime Hospitality Services (LTHS), established in 2016 with our
-              registered office in Talegaon, Pune, has been at the forefront of
-              delivering exceptional hospitality services.
+              {{ t('home.about.description1') }} {{ t('home.about.description2') }}
+              {{ t('home.about.description3') }}
             </p>
             <p class="text-theme-secondary leading-relaxed mb-8">
-              We operate with our own resources and infrastructure, bringing
-              complete expertise across all hospitality domains. Our
-              distinguished list of clients across industries speaks about our
-              credentials and capabilities.
+              {{ t('home.about.description4') }} {{ t('home.about.description5') }}
+              {{ t('home.about.description6') }} {{ t('home.about.description7') }}
             </p>
 
             <div class="flex flex-wrap gap-6 mb-8">
@@ -397,8 +395,8 @@ const clients = [
                   </svg>
                 </div>
                 <div>
-                  <p class="font-semibold text-theme-heading">Certified Team</p>
-                  <p class="text-sm text-theme-muted">Trained professionals</p>
+                  <p class="font-semibold text-theme-heading">{{ t('home.certifiedTeam') }}</p>
+                  <p class="text-sm text-theme-muted">{{ t('home.trainedProfessionals') }}</p>
                 </div>
               </div>
               <div class="flex items-center gap-3">
@@ -418,8 +416,8 @@ const clients = [
                   </svg>
                 </div>
                 <div>
-                  <p class="font-semibold text-theme-heading">Quick Response</p>
-                  <p class="text-sm text-theme-muted">24/7 support</p>
+                  <p class="font-semibold text-theme-heading">{{ t('home.quickResponse') }}</p>
+                  <p class="text-sm text-theme-muted">{{ t('home.support247') }}</p>
                 </div>
               </div>
             </div>
@@ -445,7 +443,7 @@ const clients = [
     </section>
 
     <!-- Services Section -->
-    <section class="relative py-24 section-dark">
+    <section class="relative py-12 section-dark md:py-24">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16">
           <span
@@ -516,11 +514,11 @@ const clients = [
         <div class="text-center mt-12">
           <NuxtLink
             :to="localePath('/services')"
-            class="inline-flex items-center gap-3 px-8 py-4 btn-outline rounded-full"
+            class="inline-flex items-center gap-3 px-8 py-4 btn-outline rounded-full text-sm sm:text-base"
             data-testid="view-all-services"
           >
             {{ t('common.viewAll') }} {{ t('nav.services') }}
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -544,20 +542,13 @@ const clients = [
               <span class="gradient-text">{{ t('industries.hero.title2') }}</span>
             </h2>
             <p class="text-theme-secondary text-base sm:text-lg leading-relaxed mb-6 sm:mb-8">
-              Our versatile team brings industry-specific expertise to deliver
-              customized solutions for diverse sectors.
+              {{ t('home.industries.description') }}
             </p>
 
             <div class="space-y-4">
               <div
-                v-for="industry in [
-                  'Manufacturing & Industrial',
-                  'Healthcare Facilities',
-                  'Corporate Offices',
-                  'Educational Institutions',
-                  'Residential Complexes',
-                ]"
-                :key="industry"
+                v-for="(industry, index) in 5"
+                :key="index"
                 class="flex items-center gap-4 p-4 rounded-xl card-gradient hover:bg-brand-10 transition-colors cursor-pointer group"
               >
                 <div class="w-10 h-10 rounded-lg icon-box flex items-center justify-center group-hover:bg-brand transition-colors">
@@ -575,7 +566,7 @@ const clients = [
                     />
                   </svg>
                 </div>
-                <span class="font-medium text-theme-heading">{{ industry }}</span>
+                <span class="font-medium text-theme-heading">{{ t(`home.industries.list.${index}`) }}</span>
               </div>
             </div>
           </div>
@@ -592,8 +583,8 @@ const clients = [
 
             <!-- Floating Badge -->
             <div class="absolute -bottom-6 -right-6 glass rounded-2xl p-4 shadow-2xl">
-              <p class="text-sm text-theme-secondary">Serving</p>
-              <p class="text-2xl font-bold text-theme-heading">5+ Industries</p>
+              <p class="text-xs sm:text-sm text-theme-secondary">{{ t('home.servingIndustries') }}</p>
+              <p class="text-xl sm:text-2xl font-bold text-theme-heading">{{ t('home.industriesCount') }}</p>
             </div>
           </div>
         </div>
@@ -601,9 +592,9 @@ const clients = [
     </section>
 
     <!-- Testimonial/CTA Section -->
-    <section class="relative py-24 section-dark">
+    <section class="relative py-12 section-dark md:py-24">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="relative rounded-3xl overflow-hidden card-gradient p-12 md:p-16">
+        <div class="relative rounded-3xl overflow-hidden card-gradient p-6 sm:p-8 md:p-12 lg:p-16">
           <!-- Background Pattern -->
           <div
             class="absolute inset-0 opacity-10"
@@ -613,30 +604,30 @@ const clients = [
             "
           ></div>
 
-          <div class="relative grid lg:grid-cols-2 gap-12 items-center">
+          <div class="relative grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div>
               <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-theme-heading">
                 {{ t('home.cta.title') }}
                 <span class="gradient-text">{{ t('home.cta.titleHighlight') }}</span>
               </h2>
-              <p class="text-theme-secondary text-base sm:text-lg leading-relaxed mb-6 sm:mb-8">
+              <p class="text-theme-secondary text-lg sm:text-xl leading-relaxed mb-6 sm:mb-8 max-w-lg">
                 {{ t('home.cta.subtitle') }}
               </p>
 
-              <div class="flex flex-col sm:flex-row flex-wrap gap-4">
+              <div class="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6">
                 <NuxtLink
                   :to="localePath('/contact')"
-                  class="inline-flex items-center justify-center gap-3 px-6 sm:px-8 py-3 sm:py-4 btn-primary rounded-full w-full sm:w-auto"
+                  class="inline-flex items-center justify-center gap-3 px-6 sm:px-8 py-3 sm:py-4 btn-primary rounded-full w-full sm:w-auto text-sm sm:text-base font-medium"
                   data-testid="cta-get-started"
                 >
                   {{ t('home.cta.button') }}
                 </NuxtLink>
                 <a
                   href="tel:+918320140215"
-                  class="inline-flex items-center justify-center gap-3 px-6 sm:px-8 py-3 sm:py-4 btn-ghost rounded-full w-full sm:w-auto"
+                  class="inline-flex items-center justify-center gap-3 px-6 sm:px-8 py-3 sm:py-4 btn-ghost rounded-full w-full sm:w-auto text-sm sm:text-base font-medium"
                 >
                   <svg
-                    class="w-5 h-5"
+                    class="w-4 h-4 sm:w-5 sm:h-5"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -648,21 +639,21 @@ const clients = [
                       d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                     />
                   </svg>
-                  Call Us Now
+                  {{ t('home.callUsNow') }}
                 </a>
               </div>
             </div>
 
             <!-- Contact Card -->
-            <div class="glass rounded-2xl p-8">
-              <h3 class="font-display text-2xl font-semibold text-theme-heading mb-6">
-                Quick Contact
+            <div class="glass rounded-2xl p-6 sm:p-8">
+              <h3 class="font-display text-2xl sm:text-3xl font-semibold text-theme-heading mb-6 sm:mb-8">
+                {{ t('home.quickContact') }}
               </h3>
-              <div class="space-y-4">
+              <div class="space-y-4 sm:space-y-6">
                 <div class="flex items-center gap-4">
-                  <div class="w-12 h-12 rounded-xl icon-box flex items-center justify-center">
+                  <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl icon-box flex items-center justify-center">
                     <svg
-                      class="w-6 h-6"
+                      class="w-6 h-6 sm:w-7 sm:h-7"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -676,19 +667,19 @@ const clients = [
                     </svg>
                   </div>
                   <div>
-                    <p class="text-sm text-theme-muted">Phone</p>
+                    <p class="text-xs sm:text-sm text-theme-muted">{{ t('common.phone') }}</p>
                     <a
                       href="tel:+918320140215"
-                      class="flex items-center gap-2 text-theme-secondary hover:text-brand transition-colors"
+                      class="flex items-center gap-2 text-sm sm:text-base text-theme-secondary hover:text-brand transition-colors"
                     >
                       +918320140215
                     </a>
                   </div>
                 </div>
                 <div class="flex items-center gap-4">
-                  <div class="w-12 h-12 rounded-xl icon-box flex items-center justify-center">
+                  <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl icon-box flex items-center justify-center">
                     <svg
-                      class="w-6 h-6"
+                      class="w-6 h-6 sm:w-7 sm:h-7"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -702,14 +693,14 @@ const clients = [
                     </svg>
                   </div>
                   <div>
-                    <p class="text-sm text-theme-muted">Email</p>
-                    <p class="text-theme-heading font-medium">anup@lifetimehospitality.in</p>
+                    <p class="text-xs sm:text-sm text-theme-muted">{{ t('common.email') }}</p>
+                    <p class="text-sm sm:text-base text-theme-heading font-medium">anup@lifetimehospitality.in</p>
                   </div>
                 </div>
-                <div class="flex items-start gap-4">
+                <div class="flex items-start gap-4 sm:gap-6">
                   <div class="w-12 h-12 rounded-xl icon-box flex items-center justify-center flex-shrink-0">
                     <svg
-                      class="w-6 h-6"
+                      class="w-6 h-6 sm:w-7 sm:h-7"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -729,8 +720,8 @@ const clients = [
                     </svg>
                   </div>
                   <div>
-                    <p class="text-sm text-theme-muted">Address</p>
-                    <p class="text-theme-heading font-medium text-sm">
+                    <p class="text-xs sm:text-sm text-theme-muted">{{ t('common.address') }}</p>
+                    <p class="text-theme-heading font-medium text-sm sm:text-base leading-relaxed">
                       B-609, Ayush Park, 2, Varale Phata, Talegaon Dabhade, Pune
                       – 410507
                     </p>
