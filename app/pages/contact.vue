@@ -82,7 +82,7 @@ async function handleSubmit() {
             v-motion
             :initial="{ opacity: 0, y: 30 }"
             :enter="{ opacity: 1, y: 0, transition: { delay: 100 } }"
-            class="font-display text-5xl md:text-6xl font-bold mb-6 text-theme-heading"
+            class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-theme-heading"
           >
             Let's Start a
             <span class="gradient-text">Conversation</span>
@@ -91,7 +91,7 @@ async function handleSubmit() {
             v-motion
             :initial="{ opacity: 0, y: 30 }"
             :enter="{ opacity: 1, y: 0, transition: { delay: 200 } }"
-            class="text-xl text-theme-secondary leading-relaxed"
+            class="text-lg sm:text-xl text-theme-secondary leading-relaxed"
           >
             Ready to transform your facility? Get in touch for a free
             consultation and customized quote.
@@ -120,7 +120,7 @@ async function handleSubmit() {
               data-testid="contact-form"
               @submit.prevent="handleSubmit"
             >
-              <div class="grid md:grid-cols-2 gap-6">
+              <div class="grid sm:grid-cols-2 gap-6">
                 <div>
                   <label for="name" class="block text-sm font-medium text-theme-secondary mb-2">Full Name *</label>
                   <input
@@ -147,7 +147,7 @@ async function handleSubmit() {
                 </div>
               </div>
 
-              <div class="grid md:grid-cols-2 gap-6">
+              <div class="grid sm:grid-cols-2 gap-6">
                 <div>
                   <label for="phone" class="block text-sm font-medium text-theme-secondary mb-2">Phone Number *</label>
                   <input

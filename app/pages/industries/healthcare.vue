@@ -88,21 +88,21 @@ const services = [
             :enter="{ opacity: 1, y: 0 }"
             class="inline-block text-brand font-medium uppercase tracking-widest text-sm mb-4"
           >Healthcare Facilities</span>
-          <h1
-            v-motion
-            :initial="{ opacity: 0, y: 30 }"
-            :enter="{ opacity: 1, y: 0, transition: { delay: 100 } }"
-            class="font-display text-5xl md:text-6xl font-bold mb-6 text-theme-heading"
-          >
-            Healthcare Facility
-            <span class="gradient-text">Management</span>
-          </h1>
-          <p
-            v-motion
-            :initial="{ opacity: 0, y: 30 }"
-            :enter="{ opacity: 1, y: 0, transition: { delay: 200 } }"
-            class="text-xl text-theme-secondary leading-relaxed mb-8"
-          >
+            <h1
+              v-motion
+              :initial="{ opacity: 0, y: 30 }"
+              :enter="{ opacity: 1, y: 0, transition: { delay: 100 } }"
+              class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-theme-heading"
+            >
+              Healthcare Facility
+              <span class="gradient-text">Management</span>
+            </h1>
+            <p
+              v-motion
+              :initial="{ opacity: 0, y: 30 }"
+              :enter="{ opacity: 1, y: 0, transition: { delay: 200 } }"
+              class="text-lg sm:text-xl text-theme-secondary leading-relaxed mb-8"
+            >
             Specialized facility management solutions for hospitals, clinics, and healthcare centers.
             Our services are designed to support patient care while maintaining the highest standards of hygiene and safety.
           </p>
@@ -111,7 +111,7 @@ const services = [
             v-motion
             :initial="{ opacity: 0, y: 20 }"
             :enter="{ opacity: 1, y: 0, transition: { delay: 300 } }"
-            class="flex flex-wrap gap-4"
+            class="flex flex-col sm:flex-row flex-wrap gap-4"
           >
             <NuxtLink
               to="/contact"
@@ -244,7 +244,7 @@ const services = [
             :visible="{ opacity: 1, x: 0 }"
             class="aspect-[4/4] rounded-3xl overflow-hidden"
           >
-            <img src="https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/hospitalise.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvaG9zcGl0YWxpc2UucG5nIiwiaWF0IjoxNzY4MTI0NzY0LCJleHAiOjI5NTg1NTYwNTk0MjM2NH0.E3vsMQbeijs5RXfPCkGJ0ycf3D9yJhgM9gpPJFPm1kU" alt="Healthcare Facility Image" class="w-full h-full object-cover scale-150">
+            <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800&h=600&fit=crop&crop=center" alt="Healthcare Facility Image" class="w-full h-full object-cover scale-110 sm:scale-125 md:scale-150">
           </div>
         </div>
       </div>

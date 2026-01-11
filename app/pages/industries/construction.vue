@@ -90,21 +90,21 @@ const services = [
             :enter="{ opacity: 1, y: 0 }"
             class="inline-block text-brand font-medium uppercase tracking-widest text-sm mb-4"
           >Construction & Infrastructure</span>
-          <h1
-            v-motion
-            :initial="{ opacity: 0, y: 30 }"
-            :enter="{ opacity: 1, y: 0, transition: { delay: 100 } }"
-            class="font-display text-5xl md:text-6xl font-bold mb-6 text-theme-heading"
-          >
-            Construction Site
-            <span class="gradient-text">Management</span>
-          </h1>
-          <p
-            v-motion
-            :initial="{ opacity: 0, y: 30 }"
-            :enter="{ opacity: 1, y: 0, transition: { delay: 200 } }"
-            class="text-xl text-theme-secondary leading-relaxed mb-8"
-          >
+            <h1
+              v-motion
+              :initial="{ opacity: 0, y: 30 }"
+              :enter="{ opacity: 1, y: 0, transition: { delay: 100 } }"
+              class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-theme-heading"
+            >
+              Construction Site
+              <span class="gradient-text">Management</span>
+            </h1>
+            <p
+              v-motion
+              :initial="{ opacity: 0, y: 30 }"
+              :enter="{ opacity: 1, y: 0, transition: { delay: 200 } }"
+              class="text-lg sm:text-xl text-theme-secondary leading-relaxed mb-8"
+            >
             Specialized facility management solutions for construction sites and infrastructure projects.
             We provide comprehensive support services that ensure your construction projects run smoothly, safely, and efficiently.
           </p>
@@ -113,7 +113,7 @@ const services = [
             v-motion
             :initial="{ opacity: 0, y: 20 }"
             :enter="{ opacity: 1, y: 0, transition: { delay: 300 } }"
-            class="flex flex-wrap gap-4"
+            class="flex flex-col sm:flex-row flex-wrap gap-4"
           >
             <NuxtLink
               to="/contact"
@@ -246,7 +246,7 @@ const services = [
             class="aspect-[4/4] rounded-3xl overflow-hidden"
           >
             <div class="text-center">
-              <img src="https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/construction.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvY29uc3RydWN0aW9uLnBuZyIsImlhdCI6MTc2ODEyNTY0NCwiZXhwIjozNTYyMzc4Mzk2MDU5NTI4MzB9.53-BtPpV6-evEO6Vzgfud7JXBs0PEFmKWUDGRs25igI" alt="Construction Site Image" class="w-full h-full object-cover scale-150">
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&h=600&fit=crop&crop=center" alt="Construction Site Image" class="w-full h-full object-cover scale-110 sm:scale-125 md:scale-150">
             </div>
           </div>
         </div>

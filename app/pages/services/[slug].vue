@@ -294,9 +294,9 @@ useSeoMeta({
           </div>
 
           <!-- Image Placeholder -->
-          <div class="relative hidden lg:block">
-            <div class="aspect-square rounded-3xl image-placeholder flex items-center justify-center">
-              <img :src="currentService.image" alt="Patient Care Image" class="w-full h-full object-cover rounded-3xl">
+          <div class="relative order-first lg:order-last">
+            <div class="aspect-square lg:aspect-[4/3] rounded-3xl image-placeholder flex items-center justify-center">
+              <img :src="currentService.image" alt="Service Image" class="w-full h-full object-cover rounded-3xl">
             </div>
           </div>
         </div>

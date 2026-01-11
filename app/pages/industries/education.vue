@@ -88,21 +88,21 @@ const services = [
             :enter="{ opacity: 1, y: 0 }"
             class="inline-block text-brand font-medium uppercase tracking-widest text-sm mb-4"
           >Educational Institutions</span>
-          <h1
-            v-motion
-            :initial="{ opacity: 0, y: 30 }"
-            :enter="{ opacity: 1, y: 0, transition: { delay: 100 } }"
-            class="font-display text-5xl md:text-6xl font-bold mb-6 text-theme-heading"
-          >
-            Educational Facility
-            <span class="gradient-text">Management</span>
-          </h1>
-          <p
-            v-motion
-            :initial="{ opacity: 0, y: 30 }"
-            :enter="{ opacity: 1, y: 0, transition: { delay: 200 } }"
-            class="text-xl text-theme-secondary leading-relaxed mb-8"
-          >
+            <h1
+              v-motion
+              :initial="{ opacity: 0, y: 30 }"
+              :enter="{ opacity: 1, y: 0, transition: { delay: 100 } }"
+              class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-theme-heading"
+            >
+              Educational Facility
+              <span class="gradient-text">Management</span>
+            </h1>
+            <p
+              v-motion
+              :initial="{ opacity: 0, y: 30 }"
+              :enter="{ opacity: 1, y: 0, transition: { delay: 200 } }"
+              class="text-lg sm:text-xl text-theme-secondary leading-relaxed mb-8"
+            >
             Comprehensive facility management solutions for schools, colleges, and universities.
             We create safe, clean, and nurturing learning environments that support academic excellence and student development.
           </p>
@@ -111,7 +111,7 @@ const services = [
             v-motion
             :initial="{ opacity: 0, y: 20 }"
             :enter="{ opacity: 1, y: 0, transition: { delay: 300 } }"
-            class="flex flex-wrap gap-4"
+            class="flex flex-col sm:flex-row flex-wrap gap-4"
           >
             <NuxtLink
               to="/contact"
@@ -245,7 +245,7 @@ const services = [
             class="aspect-[4/4] rounded-3xl overflow-hidden"
           >
             <div class="text-center">
-              <img src="https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/education_institution.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvZWR1Y2F0aW9uX2luc3RpdHV0aW9uLnBuZyIsImlhdCI6MTc2ODEyNTQzMiwiZXhwIjo3MzI4MDc4NzQzMTc0MzJ9.P0O2MoEJORT2Mw3ri7IExfjIKW1WTmM361RhFvCLy9k" alt="Educational Institution Image" class="w-full h-full object-cover scale-150">
+              <img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=800&h=600&fit=crop&crop=center" alt="Educational Institution Image" class="w-full h-full object-cover scale-110 sm:scale-125 md:scale-150">
             </div>
           </div>
         </div>

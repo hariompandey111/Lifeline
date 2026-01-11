@@ -99,10 +99,10 @@ const clients = [
 
       <!-- Decorative Elements -->
       <div
-        class="absolute top-20 right-10 w-72 h-72 decorative-blob rounded-full blur-3xl animate-float"
+        class="absolute top-20 right-10 w-48 h-48 sm:w-72 sm:h-72 decorative-blob rounded-full blur-3xl animate-float"
       ></div>
       <div
-        class="absolute bottom-20 left-10 w-96 h-96 decorative-blob rounded-full blur-3xl animate-float"
+        class="absolute bottom-20 left-10 w-64 h-64 sm:w-96 sm:h-96 decorative-blob rounded-full blur-3xl animate-float"
         style="animation-delay: -3s"
       ></div>
 
