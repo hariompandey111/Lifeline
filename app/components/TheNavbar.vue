@@ -208,7 +208,7 @@ function handleScroll() {
           </a>
           
           <!-- Language Switcher -->
-          <LanguageSwitcher />
+          <!-- <LanguageSwitcher /> -->
           
           <!-- Theme Toggle -->
           <ThemeToggle />

@@ -114,8 +114,8 @@ const clients = [
         "
       ></div>
 
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 sm:pt-32 pb-12 sm:pb-20">
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           <!-- Left Content -->
           <div
             v-motion
@@ -130,20 +130,20 @@ const clients = [
             </div>
 
             <h1
-              class="font-display text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-theme-heading"
+              class="font-display text-2xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4 sm:mb-6 text-theme-heading"
             >
               {{ t('home.hero.title1') }}
               <span class="gradient-text block">{{ t('home.hero.title2') }}</span>
             </h1>
 
-            <p class="text-xl text-theme-secondary leading-relaxed mb-10 max-w-xl">
+            <p class="text-base sm:text-xl text-theme-secondary leading-relaxed mb-6 sm:mb-10 max-w-xl">
               {{ t('home.hero.description') }}
             </p>
 
-            <div class="flex flex-wrap gap-4">
+            <div class="flex flex-col sm:flex-row flex-wrap gap-4">
               <NuxtLink
                 :to="localePath('/contact')"
-                class="group inline-flex items-center gap-3 px-8 py-4 btn-primary rounded-full"
+                class="group inline-flex items-center justify-center gap-3 px-6 sm:px-8 py-3 sm:py-4 btn-primary rounded-full w-full sm:w-auto"
                 data-testid="hero-cta-quote"
               >
                 {{ t('home.hero.cta2') }}
@@ -163,7 +163,7 @@ const clients = [
               </NuxtLink>
               <NuxtLink
                 :to="localePath('/about')"
-                class="inline-flex items-center gap-3 px-8 py-4 btn-ghost rounded-full"
+                class="inline-flex items-center justify-center gap-3 px-6 sm:px-8 py-3 sm:py-4 btn-ghost rounded-full w-full sm:w-auto"
                 data-testid="hero-cta-learn"
               >
                 {{ t('common.learnMore') }}
@@ -171,41 +171,63 @@ const clients = [
             </div>
 
             <!-- Client Logos Carousel -->
-            <div class="mt-16 pt-8 border-t border-theme-light">
+            <div class="mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-theme-light">
               <p class="text-sm text-theme-muted mb-4">Trusted by leading companies</p>
-              <div class="client-carousel-container overflow-hidden" data-testid="client-carousel">
-                <div class="client-carousel-track flex gap-8 items-center">
+
+              <!-- Mobile: Static card layout -->
+              <div class="block sm:hidden">
+                <div class="grid grid-cols-1 gap-4">
+                  <div
+                    v-for="client in clients.slice(0, 4)"
+                    :key="`mobile-${client.name}`"
+                    class="client-card text-center p-4 rounded-xl card-gradient hover:border-brand-30 transition-colors"
+                  >
+                    <img
+                      v-if="client.logo"
+                      :src="client.logo"
+                      :alt="client.name"
+                      class="h-8 w-8 mx-auto mb-2 object-contain rounded-lg"
+                    >
+                    <p class="font-semibold text-sm leading-tight">{{ client.name }}</p>
+                    <p class="text-xs text-theme-muted leading-tight">{{ client.location }}</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Desktop: Animated carousel -->
+              <div class="hidden sm:block client-carousel-container overflow-hidden -mx-4 px-4 sm:mx-0 sm:px-0" data-testid="client-carousel">
+                <div class="client-carousel-track flex gap-4 sm:gap-6 lg:gap-8 items-center">
                   <!-- First set of logos -->
                   <div
                     v-for="client in clients"
                     :key="`first-${client.name}`"
-                    class="client-card flex-shrink-0 text-theme-secondary hover:text-brand transition-colors cursor-pointer"
+                    class="client-card flex-shrink-0 text-theme-secondary hover:text-brand transition-colors cursor-pointer min-w-0"
                     data-testid="client-carousel-item"
                   >
-                    <img 
-                      v-if="client.logo" 
-                      :src="client.logo" 
-                      :alt="client.name" 
-                      :class="client.logoOrientation === 'landscape' ? 'h-12 w-24 object-contain rounded-lg overflow-hidden' : 'h-12 w-12 object-contain'"
+                    <img
+                      v-if="client.logo"
+                      :src="client.logo"
+                      :alt="client.name"
+                      :class="client.logoOrientation === 'landscape' ? 'h-10 sm:h-12 w-20 sm:w-24 object-contain rounded-lg overflow-hidden' : 'h-10 sm:h-12 w-10 sm:w-12 object-contain'"
                     >
-                    <p class="font-semibold">{{ client.name }}</p>
-                    <p class="text-xs text-theme-muted">{{ client.location }}</p>
+                    <p class="font-semibold text-sm sm:text-base leading-tight">{{ client.name }}</p>
+                    <p class="text-xs text-theme-muted leading-tight">{{ client.location }}</p>
                   </div>
                   <!-- Duplicate set for seamless loop -->
                   <div
                     v-for="client in clients"
                     :key="`second-${client.name}`"
-                    class="client-card flex-shrink-0 text-theme-secondary hover:text-brand transition-colors cursor-pointer"
+                    class="client-card flex-shrink-0 text-theme-secondary hover:text-brand transition-colors cursor-pointer min-w-0"
                     aria-hidden="true"
                   >
-                    <img 
-                      v-if="client.logo" 
-                      :src="client.logo" 
-                      :alt="client.name" 
-                      :class="client.logoOrientation === 'landscape' ? 'h-12 w-24 object-contain rounded-lg overflow-hidden' : 'h-12 w-12 object-contain'"
+                    <img
+                      v-if="client.logo"
+                      :src="client.logo"
+                      :alt="client.name"
+                      :class="client.logoOrientation === 'landscape' ? 'h-10 sm:h-12 w-20 sm:w-24 object-contain rounded-lg overflow-hidden' : 'h-10 sm:h-12 w-10 sm:w-12 object-contain'"
                     >
-                    <p class="font-semibold">{{ client.name }}</p>
-                    <p class="text-xs text-theme-muted">{{ client.location }}</p>
+                    <p class="font-semibold text-sm sm:text-base leading-tight">{{ client.name }}</p>
+                    <p class="text-xs text-theme-muted leading-tight">{{ client.location }}</p>
                   </div>
                 </div>
               </div>
@@ -220,7 +242,7 @@ const clients = [
             class="relative"
           >
             <div
-              class="relative aspect-[4/5] rounded-3xl overflow-hidden glass pulse-glow"
+              class="relative aspect-[3/4] sm:aspect-[4/5] rounded-3xl overflow-hidden glass pulse-glow"
             >
               <!-- Hero Video -->
               <video
@@ -247,7 +269,7 @@ const clients = [
               v-motion
               :initial="{ opacity: 0, y: 20 }"
               :enter="{ opacity: 1, y: 0, transition: { duration: 600, delay: 600 } }"
-              class="absolute -bottom-8 -left-8 glass rounded-2xl p-6 shadow-2xl"
+              class="absolute -bottom-4 sm:-bottom-8 -right-4 sm:-right-8 glass rounded-2xl p-4 sm:p-6 shadow-2xl sm:-bottom-4 sm:-right-4"
             >
               <div class="flex items-center gap-4">
                 <div
@@ -517,11 +539,11 @@ const clients = [
         <div class="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <span class="text-brand font-medium uppercase tracking-widest text-sm">{{ t('industries.hero.subtitle') }}</span>
-            <h2 class="font-display text-4xl md:text-5xl font-bold mt-4 mb-6 text-theme-heading">
+            <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold mt-4 mb-4 sm:mb-6 text-theme-heading">
               {{ t('industries.hero.title1') }}
               <span class="gradient-text">{{ t('industries.hero.title2') }}</span>
             </h2>
-            <p class="text-theme-secondary text-lg leading-relaxed mb-8">
+            <p class="text-theme-secondary text-base sm:text-lg leading-relaxed mb-6 sm:mb-8">
               Our versatile team brings industry-specific expertise to deliver
               customized solutions for diverse sectors.
             </p>
@@ -593,25 +615,25 @@ const clients = [
 
           <div class="relative grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-theme-heading">
+              <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-theme-heading">
                 {{ t('home.cta.title') }}
                 <span class="gradient-text">{{ t('home.cta.titleHighlight') }}</span>
               </h2>
-              <p class="text-theme-secondary text-lg leading-relaxed mb-8">
+              <p class="text-theme-secondary text-base sm:text-lg leading-relaxed mb-6 sm:mb-8">
                 {{ t('home.cta.subtitle') }}
               </p>
 
-              <div class="flex flex-wrap gap-4">
+              <div class="flex flex-col sm:flex-row flex-wrap gap-4">
                 <NuxtLink
                   :to="localePath('/contact')"
-                  class="inline-flex items-center gap-3 px-8 py-4 btn-primary rounded-full"
+                  class="inline-flex items-center justify-center gap-3 px-6 sm:px-8 py-3 sm:py-4 btn-primary rounded-full w-full sm:w-auto"
                   data-testid="cta-get-started"
                 >
                   {{ t('home.cta.button') }}
                 </NuxtLink>
                 <a
                   href="tel:+918320140215"
-                  class="inline-flex items-center gap-3 px-8 py-4 btn-ghost rounded-full"
+                  class="inline-flex items-center justify-center gap-3 px-6 sm:px-8 py-3 sm:py-4 btn-ghost rounded-full w-full sm:w-auto"
                 >
                   <svg
                     class="w-5 h-5"
