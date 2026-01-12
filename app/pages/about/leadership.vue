@@ -24,7 +24,7 @@ const leaders = [
       'Client Relationship Management',
       'Compliance & Safety Standards',
     ],
-    linkedIn: 'https://www.linkedin.com/in/vishal-londhe-2b471a130/'
+    linkedIn: 'https://www.linkedin.com/in/vishal-londhe-571852257/'
   },
   {
     name: 'Mr. Anoop Mishra',
