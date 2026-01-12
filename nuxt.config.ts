@@ -11,7 +11,11 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxtjs/i18n',
     '@vueuse/motion/nuxt',
+    'nuxt-gtag',
   ],
+  gtag: {
+    id: 'G-WJ2FFXX752'
+  },
 
   devtools: { enabled: true },
   compatibilityDate: '2024-04-03',
@@ -118,4 +122,5 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/css/main.css'],
+  
 })
