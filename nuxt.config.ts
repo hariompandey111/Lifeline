@@ -53,8 +53,8 @@ export default defineNuxtConfig({
   },
 
   colorMode: {
-    preference: 'light', // default theme
-    fallback: 'light',
+    preference: 'dark', // default theme
+    fallback: 'dark',
     classSuffix: '',
     storageKey: 'lths-color-mode',
   },
