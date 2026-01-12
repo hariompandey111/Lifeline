@@ -152,12 +152,13 @@ const clients = [
             v-motion
             :initial="{ opacity: 0, x: -50 }"
             :enter="{ opacity: 1, x: 0, transition: { duration: 800 } }"
+            class="order-2 lg:order-1"
           >
             <div
               class="inline-flex items-center gap-2 px-4 py-2 bg-brand-10 rounded-full border border-brand-20 mb-8"
             >
               <span class="w-2 h-2 bg-brand rounded-full animate-pulse"></span>
-              <span class="text-brand text-sm font-medium">{{ t('common.tagline') }}</span>
+              <span class="text-brand md:text-sm font-medium text-xs">{{ t('common.tagline') }}</span>
             </div>
 
             <h1
@@ -270,7 +271,7 @@ const clients = [
             v-motion
             :initial="{ opacity: 0, x: 50 }"
             :enter="{ opacity: 1, x: 0, transition: { duration: 800, delay: 200 } }"
-            class="relative"
+            class="relative order-1 lg:order-2"
           >
             <div
               class="relative aspect-[3/4] sm:aspect-[4/5] rounded-3xl overflow-hidden glass pulse-glow"
