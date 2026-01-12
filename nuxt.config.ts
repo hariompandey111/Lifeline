@@ -43,7 +43,7 @@ export default defineNuxtConfig({
     supabaseUrl: '',
     supabaseServiceRoleKey: '',
     resendApiKey: '',
-    emailFrom: 'LTHS Contact <onboarding@resend.dev>',
+    emailFrom: 'LTHS Contact <anup@lifetimehospitality.in>',
     emailTo: 'anup@lifetimehospitality.in',
 
     // Public keys (exposed to client)
