@@ -163,7 +163,10 @@ function handleScroll() {
             >
               <div
                 v-if="item.children && openDropdown === item.label"
-                class="absolute top-full left-0 w-64 bg-theme-card/95 backdrop-blur-xl rounded-2xl shadow-2xl border border-theme overflow-hidden"
+                :class="isScrolled
+                  ? 'bg-theme/95 backdrop-blur-xl'
+                  : 'bg-theme/95 backdrop-blur-xl shadow-2xl border-b border-theme'"
+                class="absolute top-full left-0 w-64 rounded-2xl shadow-2xl border border-theme overflow-hidden"
               >
                 <div class="py-2">
                   <NuxtLink

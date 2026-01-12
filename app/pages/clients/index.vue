@@ -132,6 +132,7 @@ const stats = [
 
         <div class="grid md:grid-cols-3 gap-8">
           <div
+            @click="navigateTo('/clients/case-studies')"
             v-for="(client, index) in clients"
             :key="client.name"
             v-motion

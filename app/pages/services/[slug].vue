@@ -43,7 +43,7 @@ const servicesData: Record<string, ServiceData> = {
       { step: 4, title: 'Ongoing Support', description: 'Regular monitoring and quality checks.' },
     ],
     image: "https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/patient_care.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvcGF0aWVudF9jYXJlLmpwZyIsImlhdCI6MTc2ODEyMTUxNSwiZXhwIjoxOTk3ODM3ODM5NjE1Mjc5OTAwfQ.K0oa-97kzLyieFSDhJ-e1-cspw2HJOZDxsb0kt7mL0E",
-    collectiveImage: "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800&h=600&fit=crop&crop=center"
+    collectiveImage: "https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/healthcare_facility.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvaGVhbHRoY2FyZV9mYWNpbGl0eS5qcGciLCJpYXQiOjE3NjgyMTA2MzAsImV4cCI6MTg0MzIyMjAzNzgzMH0.snh_PeaT-B2mpriVyZWPN1zIpt4UeXoM-pxVPWKHgqQ"
   },
   housekeeping: {
     icon: 'i-heroicons-sparkles',
@@ -64,7 +64,7 @@ const servicesData: Record<string, ServiceData> = {
       { step: 4, title: 'Quality Audits', description: 'Regular inspections ensure standards.' },
     ],
     image: "https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/housekeeping.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvaG91c2VrZWVwaW5nLmpwZyIsImlhdCI6MTc2ODEyMTY3MSwiZXhwIjoxODMyNzI3Mjc0NDAyOTcxNjAwMDB9.qacs6VBHCY1RchlDbMCTx1G11dYoLjXCfmMJzB_C6IY",
-    collectiveImage: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&h=600&fit=crop&crop=center"
+    collectiveImage: "https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/houseKeeping_rep.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvaG91c2VLZWVwaW5nX3JlcC5qcGciLCJpYXQiOjE3NjgyMTA3NjQsImV4cCI6MTA0NzQ0OTU1NTE1NjR9.z0daEyTDBEcVF7h0rPaCTrfGvS7p3rYtHwYdbIR6npY"
   },
   horticulture: {
     icon: 'i-lucide-leaf',
@@ -148,7 +148,7 @@ const servicesData: Record<string, ServiceData> = {
       { step: 4, title: 'Deployment', description: 'Place workers at your site with supervision.' },
     ],
     image: "https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/labour-supply.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvbGFib3VyLXN1cHBseS5qcGciLCJpYXQiOjE3NjgxMjIzMjQsImV4cCI6MjY5ODM5NjE1MjgwNzI0fQ.apA3ueus9StFNflK0yEBBv36IIApgzg_f6Qg6DtG8WA",
-    collectiveImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&h=600&fit=crop&crop=center"
+    collectiveImage: "https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/labour-represenetation.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvbGFib3VyLXJlcHJlc2VuZXRhdGlvbi5wbmciLCJpYXQiOjE3NjgyMTEwNjYsImV4cCI6MTA0OTA0MDkyNzg2Nn0.-A2mypUXFKemziKKqKHMwcOCKgiA-Q54S-QroKgVP0g"
   },
   maintenance: {
     icon: 'i-heroicons-wrench-screwdriver',
@@ -169,7 +169,7 @@ const servicesData: Record<string, ServiceData> = {
         { step: 4, title: 'Report', description: 'Detailed reporting and recommendations.' },
       ],
     image: "https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/elecrician.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvZWxlY3JpY2lhbi5qcGciLCJpYXQiOjE3NjgxMjI0MDgsImV4cCI6MTg0MTU2MDU5NDk2MDh9.OTb0cE8fEQ_sKW3I_yj1ckrbhfCX_VoARkftRYjOR5k",
-    collectiveImage: "https://images.unsplash.com/photo-1621905252479-2e3d3b36d23b?w=800&h=600&fit=crop&crop=center"
+    collectiveImage: "https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/labouser_service.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvbGFib3VzZXJfc2VydmljZS5qcGciLCJpYXQiOjE3NjgyMTA4ODksImV4cCI6MTgzNDM5NjA2MDM4MDg5fQ.BJJ8dQJ1FbKJhzP9bSTra4AnHosaClDiZ-h3zFqyJAY"
   },
   pantry: {
     icon: 'i-lucide-coffee',
@@ -190,7 +190,7 @@ const servicesData: Record<string, ServiceData> = {
       { step: 4, title: 'Inventory', description: 'Regular stock management and replenishment.' },
     ],
     image: "https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/pantry.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvcGFudHJ5LmpwZyIsImlhdCI6MTc2ODEyMjQ3NywiZXhwIjoxODQxMzg0NTYxNTYwNTk1MDAwMH0.X-ZLIIF-KG-xELplLpVTFPxF7sLeYJu9zY_4b__uwuY",
-    collectiveImage: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&h=600&fit=crop&crop=center"
+    collectiveImage: "https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/pantry_rep.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvcGFudHJ5X3JlcC5wbmciLCJpYXQiOjE3NjgyMTEzOTUsImV4cCI6MTA2Mzc2OTkwNDkyODE5NX0.TWqWzAYAJnccgzuZ2D98D2dbt5spWqZHqxf2Z-VFBVI"
   },
   security: {
     icon: 'i-heroicons-shield-check',
@@ -211,7 +211,7 @@ const servicesData: Record<string, ServiceData> = {
       { step: 4, title: 'Monitoring', description: 'Continuous oversight and improvement.' },
     ],
     image: "https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/security.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvc2VjdXJpdHkuanBnIiwiaWF0IjoxNzY4MTIyNjM0LCJleHAiOjIxODUxMTExNDM0fQ.cODlK1UzZL1RhesBEasrRMLxK42_xddzD6iIhvAT-io",
-    collectiveImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop&crop=center"
+    collectiveImage: "https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/security_representation.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvc2VjdXJpdHlfcmVwcmVzZW50YXRpb24ucG5nIiwiaWF0IjoxNzY4MjExMjAwLCJleHAiOjY5OTk1NjI0MzIwMH0.YBQd0RlG1mEEwBZofTmXo4j6HTzOrTHN-ysU1-qboYE"
   },
 }
 
@@ -295,8 +295,8 @@ useSeoMeta({
 
           <!-- Image Placeholder -->
           <div class="relative order-first lg:order-last">
-            <div class="aspect-square lg:aspect-[4/3] rounded-3xl image-placeholder flex items-center justify-center">
-              <img :src="currentService.image" alt="Service Image" class="w-full h-full object-cover rounded-3xl">
+            <div class="aspect-square lg:aspect-[4/3] rounded-3xl image-placeholder flex items-center justify-center overflow-hidden">
+              <img :src="currentService.image" alt="Service Image" class="w-full h-full object-cover rounded-3xl scale-150 sm:scale-125 md:scale-150">
             </div>
           </div>
         </div>
@@ -339,9 +339,9 @@ useSeoMeta({
         <div class="grid lg:grid-cols-2 gap-16 items-center">
           <!-- Image Placeholder -->
           <div class="relative">
-            <div class="aspect-[4/3] rounded-3xl image-placeholder flex items-center justify-center">
+            <div class="aspect-[3/4] rounded-3xl image-placeholder flex items-center justify-center overflow-hidden">
               <div class="text-center">
-                <img :src="currentService.collectiveImage" alt="Collective Image" class="w-full h-full object-cover rounded-3xl">
+                <img :src="currentService.collectiveImage" alt="Collective Image" class="w-full h-full object-cover rounded-3xl scale-150 sm:scale-125 md:scale-150">
               </div>
             </div>
           </div>

@@ -1,6 +1,8 @@
 <script setup lang="ts">
 const { t } = useI18n()
 const localePath = useLocalePath()
+const router = useRouter()
+
 
 useSeoMeta({
   title: 'LTHS - Lifetime Hospitality Services | Premium Hospitality Since 2016',
@@ -14,6 +16,34 @@ const stats = computed(() => [
   { value: '10+', label: t('home.stats.clients') },
   { value: '9+', label: t('nav.services') },
 ])
+
+const industries = [
+  {
+    name: 'Manufacturing & Industrial',
+    icon: 'i-heroicons-cog-6-tooth',
+    href: '/industries/manufacturing',
+  },
+  {
+    name: 'Healthcare Facilities',
+    icon: 'i-heroicons-heart',
+    href: '/industries/healthcare',
+  },
+  {
+    name: 'Corporate Offices',
+    icon: 'i-heroicons-building-office',
+    href: '/industries/corporate',
+  },
+  {
+    name: 'Educational Institutions',
+    icon: 'i-heroicons-academic-cap',
+    href: '/industries/education',
+  },
+  {
+    name: 'Residential Complexes',
+    icon: 'i-heroicons-home',
+    href: '/industries/residential',
+  }
+]
 
 const services = computed(() => [
   {
@@ -176,7 +206,7 @@ const clients = [
               <p class="text-sm sm:text-base text-theme-muted mb-4">{{ t('home.trustedBy') }}</p>
 
               <!-- Mobile: Static card layout -->
-              <div class="block sm:hidden">
+              <div class="block sm:hidden" @click="router.push('/clients')">
                 <div class="grid grid-cols-1 gap-4">
                   <div
                     v-for="client in clients.slice(0, 4)"
@@ -196,7 +226,7 @@ const clients = [
               </div>
 
               <!-- Desktop: Animated carousel -->
-              <div class="hidden sm:block client-carousel-container overflow-hidden -mx-4 px-4 sm:mx-0 sm:px-0" data-testid="client-carousel">
+              <div class="hidden sm:block client-carousel-container overflow-hidden -mx-4 px-4 sm:mx-0 sm:px-0" data-testid="client-carousel" @click="router.push('/clients')">
                 <div class="client-carousel-track flex gap-4 sm:gap-6 lg:gap-8 items-center">
                   <!-- First set of logos -->
                   <div
@@ -335,19 +365,19 @@ const clients = [
               <div
                 class="aspect-[3/4] rounded-2xl image-placeholder flex items-center justify-center"
               >
-                <img src="https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/home_grid_1.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvaG9tZV9ncmlkXzEucG5nIiwiaWF0IjoxNzY4MTI5MjMxLCJleHAiOjI5NjE2ODM2NDMxfQ.ARsP3wzSDuLIxirPQ_9MZZzeU-FR5Hls-7y-0oGKo-8" alt="Home Grid 1" class="w-full h-full object-cover rounded-2xl">
+                <img src="https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/user_abstract.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvdXNlcl9hYnN0cmFjdC5qcGciLCJpYXQiOjE3NjgyMDkxNTQsImV4cCI6MTA0OTA0MDkyNTk1NH0.vAuGkVrAgbxPnO12t6Kujez3FcMMFsaBk9kf9St1weg" alt="Home Grid 1" class="w-full h-full object-cover rounded-2xl">
               </div>
               <div
                 class="aspect-square rounded-2xl image-placeholder flex items-center justify-center"
               >
-                <img src="https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/home_grid_2.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvaG9tZV9ncmlkXzIucG5nIiwiaWF0IjoxNzY4MTI5MjU2LCJleHAiOjI2OTgzNzg1NTUxOTcyNDU2fQ.flKfCM3BzfJT0ncTAKtp58Ze4Lk8koo-VJS9NZala8g" alt="Home Grid 2" class="w-full h-full object-cover rounded-2xl">
+                <img src="https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/logo_golden.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvbG9nb19nb2xkZW4uanBnIiwiaWF0IjoxNzY4MjA5MTg3LCJleHAiOjEwNDc0NTUzNTU0OTk4N30.et9RrlcKAcDFKlvzdAIBFNfQF-zX8In5bBUYiShkmDY" alt="Home Grid 2" class="w-full h-full object-cover rounded-2xl">
               </div>
             </div>
             <div class="space-y-4 pt-8">
               <div
                 class="aspect-square rounded-2xl image-placeholder flex items-center justify-center"
               >
-                <img src="https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/home_grid_3.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvaG9tZV9ncmlkXzMucG5nIiwiaWF0IjoxNzY4MTI5MjY3LCJleHAiOjI2OTgzOTYwNTk1NjQ2N30.yTRBb21K1lax7W0iQ0RI1a-bdVrKRmqIWDSY8a8y9Cs" alt="Home Grid 3" class="w-full h-full object-cover rounded-2xl">
+                <img src="https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/building_abstract.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvYnVpbGRpbmdfYWJzdHJhY3QuanBnIiwiaWF0IjoxNzY4MjA5MTE5LCJleHAiOjE5OTg3MTUxOTY1OTE5fQ.6JswAEsqq1XW0rGo3o1xGYX4IRfQ6A2uLRPk-6cmLik" alt="Home Grid 3" class="w-full h-full object-cover rounded-2xl">
               </div>
               <div
                 class="aspect-[3/4] rounded-2xl image-placeholder flex items-center justify-center"
@@ -547,26 +577,18 @@ const clients = [
 
             <div class="space-y-4">
               <div
-                v-for="(industry, index) in 5"
+                v-for="(industry, index) in industries"
                 :key="index"
                 class="flex items-center gap-4 p-4 rounded-xl card-gradient hover:bg-brand-10 transition-colors cursor-pointer group"
+                @click="router.push(industry.href)"
               >
                 <div class="w-10 h-10 rounded-lg icon-box flex items-center justify-center group-hover:bg-brand transition-colors">
-                  <svg
+                  <UIcon
+                    :name="industry.icon"
                     class="w-5 h-5 group-hover:text-white transition-colors"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
+                  />
                 </div>
-                <span class="font-medium text-theme-heading">{{ t(`home.industries.list.${index}`) }}</span>
+                <span class="font-medium text-theme-heading">{{ industry.name }}</span>
               </div>
             </div>
           </div>

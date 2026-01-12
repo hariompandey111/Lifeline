@@ -244,7 +244,7 @@ const services = [
             :visible="{ opacity: 1, x: 0 }"
             class="aspect-[4/4] rounded-3xl overflow-hidden"
           >
-            <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800&h=600&fit=crop&crop=center" alt="Healthcare Facility Image" class="w-full h-full object-cover scale-110 sm:scale-125 md:scale-150">
+            <img src="https://gayoqnznilzdyltepowm.supabase.co/storage/v1/object/sign/lifetime-assets/healthcare_facility.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xOTQ0OTI5Yy1jYTE1LTQ0MDctOWJlYS1jMjgyODM5ZTcyNzUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJsaWZldGltZS1hc3NldHMvaGVhbHRoY2FyZV9mYWNpbGl0eS5qcGciLCJpYXQiOjE3NjgyMTAwNDMsImV4cCI6MTkyMDg5NTQ2NDQ0M30.IqpGArSaRQad8nKTAONGDs0y5hDHVcVH9f393WW_eSo" alt="Healthcare Facility Image" class="w-full h-full object-cover scale-110 sm:scale-125 md:scale-150">
           </div>
         </div>
       </div>
