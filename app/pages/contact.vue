@@ -343,7 +343,7 @@ async function handleSubmit() {
                 title: 'WhatsApp',
                 desc: 'Quick chat with us',
                 action: 'Start Chat',
-                href: 'https://wa.me/918320140215',
+                href: 'https://wa.me/919104431728',
               },
             ]"
             :key="item.title"
